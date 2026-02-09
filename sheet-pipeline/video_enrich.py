@@ -57,7 +57,11 @@ OUT_PATH = os.path.join(OUT_DIR, OUT_JSON)
 CACHE_PATH = os.path.join(OUT_DIR, CACHE_JSON)
 
 session = requests.Session()
-session.headers.update({"User-Agent": USER_AGENT})
+session.headers.update({
+    "User-Agent": USER_AGENT,
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+})
 
 
 def load_json(path, default):
