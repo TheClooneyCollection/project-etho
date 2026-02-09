@@ -1,0 +1,10 @@
+services:
+  sheet-pipeline:
+    image: sheet-pipeline
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./pipeline.py:/app/pipeline.py:ro
+      - ./out:/out
+    command: ["python", "/app/pipeline.py"]
