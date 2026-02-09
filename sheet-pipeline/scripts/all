@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+mkdir -p out
+docker compose run --rm sheet-pipeline sh -lc \
+  "python /app/pipeline.py && python /app/video_enrich.py"

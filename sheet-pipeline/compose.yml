@@ -6,5 +6,6 @@ services:
       - .env
     volumes:
       - ./pipeline.py:/app/pipeline.py:ro
+      - ./video_enrich.py:/app/video_enrich.py:ro
       - ./out:/out
-    command: ["python", "/app/pipeline.py"]
+    # no command here — we pass it at runtime
