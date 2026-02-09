@@ -1,17 +1,20 @@
 name: data-pipeline
 
 on:
+  push:
+    branches: [ "main" ]
   workflow_dispatch: {}
 
 permissions:
   contents: write
+  packages: read
 
 jobs:
   sheet-pipeline:
     runs-on: ubuntu-latest
 
     container:
-      image: ghcr.io/<OWNER>/<REPO>:main
+      image: ghcr.io/theclooneycollection/project-etho:main
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
@@ -22,8 +25,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0   # needed for committing
+
+      - name: Export .env to job env
+        shell: bash
+        run: |
+          grep -v '^\s*#' .env | grep -v '^\s*$' >> "$GITHUB_ENV"
+
+      - name: Wire /out to repo out/
+        shell: bash
+        run: |
+          mkdir -p out
+          rm -rf /out
+          ln -s "$GITHUB_WORKSPACE/sheet-pipeline/out" /out
+          ls -la /out
 
       - name: Run sheet pipeline
         run: |
@@ -31,15 +45,39 @@ jobs:
           python pipeline.py
           python video_enrich.py
 
+      - name: Upload out/ artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sheet-pipeline-out
+          path: sheet-pipeline/out
+          if-no-files-found: error
+
+  commit-out:
+    needs: sheet-pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download out/ artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: sheet-pipeline-out
+          path: sheet-pipeline/out
+
       - name: Commit outputs if changed
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git add out
-            git commit -m "chore(sheet-pipeline): update outputs"
-            git push
-          else
-            echo "No changes to commit"
+          git add sheet-pipeline/out
+          if git diff --cached --quiet; then
+            echo "No out/ changes"
+            exit 0
           fi
+
+          git commit -m "Update data"
+          git push
