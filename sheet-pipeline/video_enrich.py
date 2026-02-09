@@ -132,7 +132,6 @@ def normalize_url(url: str) -> str:
 
 
 _YT_ID_RE = re.compile(r"(?:v=|/shorts/|/embed/)([A-Za-z0-9_-]{6,})")
-_TWITCH_VOD_RE = re.compile(r"twitch\.tv/videos/(\d+)")
 
 
 def youtube_video_id(url: str) -> str | None:
@@ -201,29 +200,39 @@ def youtube_thumbnail_from_id(vid: str) -> str | None:
     return candidates[1]
 
 
-def scrape_meta(html_text: str, prop: str) -> str | None:
-    # Handles <meta property="og:title" content="...">
-    # Also tolerate name= variants.
-    pat = re.compile(
-        rf'<meta[^>]+(?:property|name)=["\']{re.escape(prop)}["\'][^>]+content=["\']([^"\']+)["\']',
-        re.IGNORECASE,
-    )
-    m = pat.search(html_text)
-    if not m:
-        return None
-    return html.unescape(m.group(1)).strip() or None
+# EXACTLY matches:
+# curl ... | rg -o 'property="og:image" content="[^"]+"' -m 1 | rg -o 'https?://[^"]+'
+_TWITCH_OG_IMAGE_BLOCK = re.compile(r'property="og:image" content="[^"]+"')
+_HTTP_URL = re.compile(r'https?://[^"]+')
 
+_TWITCH_OG_TITLE_BLOCK = re.compile(r'property="og:title" content="[^"]+"')
+# (optional, but keeps title consistent with the same style)
 
 def twitch_vod_meta(url: str) -> tuple[str | None, str | None]:
-    # Read HTML and grab og:title + og:image
+    # Important: keep the URL exactly as-is (incl ?t=) to mirror your curl behavior.
     try:
         t = http_get_text(url)
     except Exception:
         return None, None
 
-    title = scrape_meta(t, "og:title")
-    image = scrape_meta(t, "og:image")
-    return title, image
+    title = None
+    thumb = None
+
+    # Title: follow the same "first match" approach (optional but recommended)
+    m_title = _TWITCH_OG_TITLE_BLOCK.search(t)
+    if m_title:
+        m_url = re.search(r'content="([^"]+)"', m_title.group(0))
+        if m_url:
+            title = html.unescape(m_url.group(1)).strip() or None
+
+    # Thumbnail: EXACT curl/rg pattern
+    m_img = _TWITCH_OG_IMAGE_BLOCK.search(t)
+    if m_img:
+        m_url = _HTTP_URL.search(m_img.group(0))
+        if m_url:
+            thumb = m_url.group(0)
+
+    return title, thumb
 
 
 def fetch_video_info(url: str) -> dict:
