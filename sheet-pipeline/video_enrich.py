@@ -31,6 +31,8 @@ import json
 import time
 import html
 import hashlib
+import calendar
+from datetime import datetime, date
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 import requests
@@ -274,6 +276,48 @@ def base_name_from_link_field(field: str) -> str:
     return s
 
 
+def parse_iso_date(value: str) -> date | None:
+    if not value:
+        return None
+    s = str(value).strip()
+    if not s:
+        return None
+    try:
+        if s.endswith("Z"):
+            s = s[:-1] + "+00:00"
+        dt = datetime.fromisoformat(s)
+        return dt.date()
+    except Exception:
+        return None
+
+
+def subtract_months(d: date, months: int) -> date:
+    year = d.year
+    month = d.month - months
+    while month <= 0:
+        month += 12
+        year -= 1
+    day = min(d.day, calendar.monthrange(year, month)[1])
+    return date(year, month, day)
+
+
+def should_skip_old_twitch_vod(row: dict, url: str) -> bool:
+    if not is_twitch(url):
+        return False
+    media_type = str(row.get("Media type", "") or "").strip()
+    if media_type != "VOD⏳":
+        return False
+    d = (
+        parse_iso_date(row.get("Date"))
+        or parse_iso_date(row.get("Added date"))
+        or parse_iso_date(row.get("date"))
+    )
+    if not d:
+        return False
+    cutoff = subtract_months(date.today(), 3)
+    return d < cutoff
+
+
 def main():
     rows = load_json(IN_PATH, default=[])
     cache = load_json(CACHE_PATH, default={})
@@ -284,6 +328,7 @@ def main():
     # Collect unique URLs to fetch
     wanted = []
     seen = set()
+    url_skip = {}
 
     for row in rows:
         if not isinstance(row, dict):
@@ -293,12 +338,21 @@ def main():
             if not url:
                 continue
             if url in seen:
+                skip = should_skip_old_twitch_vod(row, url)
+                url_skip[url] = url_skip.get(url, True) and skip
                 continue
             seen.add(url)
-            if url not in cache:
+            skip = should_skip_old_twitch_vod(row, url)
+            url_skip[url] = url_skip.get(url, True) and skip
+            if url not in cache and not url_skip[url]:
                 wanted.append(url)
 
+    skipped = [u for u, skip in url_skip.items() if skip and u not in cache]
     print(f"Found {len(seen)} unique URLs, {len(wanted)} new to fetch.")
+    if skipped:
+        print(f"Skipping {len(skipped)} Twitch VOD⏳ URLs older than 3 months:")
+        for u in skipped:
+            print(f"  - {u}")
 
     # Fetch new ones with light throttling
     for i, url in enumerate(wanted, 1):
@@ -334,6 +388,10 @@ def main():
             thumb_field = f"{base} thumbnail"
 
             if not url:
+                out[title_field] = ""
+                out[thumb_field] = ""
+                continue
+            if should_skip_old_twitch_vod(row, url):
                 out[title_field] = ""
                 out[thumb_field] = ""
                 continue
