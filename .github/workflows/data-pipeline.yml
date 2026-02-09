@@ -1,0 +1,45 @@
+name: data-pipeline
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sheet-pipeline:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/<OWNER>/<REPO>:main
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    defaults:
+      run:
+        working-directory: sheet-pipeline
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed for committing
+
+      - name: Run sheet pipeline
+        run: |
+          mkdir -p out
+          python pipeline.py
+          python video_enrich.py
+
+      - name: Commit outputs if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add out
+            git commit -m "chore(sheet-pipeline): update outputs"
+            git push
+          else
+            echo "No changes to commit"
+          fi
