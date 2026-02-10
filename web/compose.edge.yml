@@ -1,0 +1,19 @@
+services:
+  dev:
+    ports: !reset []
+    networks:
+      edge:
+        aliases:
+          - project-etho-dev
+
+  prod:
+    ports: !reset []
+    networks:
+      edge:
+        aliases:
+          - project-etho-prod
+
+networks:
+  edge:
+    external: true
+    name: edge

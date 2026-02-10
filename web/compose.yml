@@ -1,0 +1,53 @@
+services:
+  dev:
+    image: node:25-bookworm-slim
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./:/app:cached
+      - node_modules:/app/node_modules
+      - _site_dev:/app/_site
+    environment:
+      - CHOKIDAR_USEPOLLING=1
+      - CHOKIDAR_INTERVAL=200
+    ports:
+      - "127.0.0.1:8180:8080"
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://localhost:8080', r => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))\""]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 20s
+    command: >
+      sh -lc "npm install && npm run dev"
+
+  prod:
+    image: node:25-bookworm-slim
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./:/app:cached
+      - node_modules:/app/node_modules
+      - _site_prod:/app/_site
+    environment:
+      - CHOKIDAR_USEPOLLING=1
+      - CHOKIDAR_INTERVAL=200
+    ports:
+      - "127.0.0.1:8190:8080"
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://localhost:8080', r => process.exit(r.statusCode === 200 ? 0 : 1)).on('error', () => process.exit(1))\""]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 20s
+    command: >
+      sh -lc "npm install && npm run prod"
+
+volumes:
+  node_modules:
+  _site_dev:
+  _site_prod:
