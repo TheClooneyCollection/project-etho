@@ -389,6 +389,12 @@
     "thumbnail": "https://i.ytimg.com/vi/9PxmU3wxi6E/maxresdefault.jpg",
     "title": "Vault Hunters SMP S4 day 4"
   },
+  "https://www.youtube.com/watch?v=9bNwTMbBaI4": {
+    "fetched_at": "2026-02-10T14:49:02Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/9bNwTMbBaI4/maxresdefault.jpg",
+    "title": "My Boys Helping Me Out! - Hermitcraft Stream"
+  },
   "https://www.youtube.com/watch?v=9i3CqB-KoGc": {
     "fetched_at": "2026-02-09T18:46:05Z",
     "source": "youtube_oembed",
@@ -1930,6 +1936,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/qxwLoF7OJKg/maxresdefault.jpg",
     "title": "MEET MY NEW CATS!    -  Hermitcraft Season 10 VOD Stream"
+  },
+  "https://www.youtube.com/watch?v=rB6k5s5sric": {
+    "fetched_at": "2026-02-10T14:49:02Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/rB6k5s5sric/maxresdefault.jpg",
+    "title": "Hermitcraft - Spider Science!"
   },
   "https://www.youtube.com/watch?v=rfnYo956U1w": {
     "fetched_at": "2026-02-09T18:46:33Z",
