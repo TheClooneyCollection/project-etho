@@ -5,9 +5,9 @@
   "description": "Eleventy static site for Project Etho",
   "type": "module",
   "scripts": {
-    "dev": "ELEVENTY_ENV=development eleventy",
-    "prod": "ELEVENTY_ENV=production eleventy",
-    "build": "ELEVENTY_ENV=production eleventy"
+    "dev": "ELEVENTY_ENV=development eleventy --serve",
+    "prod": "ELEVENTY_ENV=production eleventy --serve",
+    "build": "ELEVENTY_ENV=production eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "3.1.2"
