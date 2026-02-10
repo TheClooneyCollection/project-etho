@@ -1,0 +1,15 @@
+{
+  "name": "project-etho-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Eleventy static site for Project Etho",
+  "type": "module",
+  "scripts": {
+    "dev": "ELEVENTY_ENV=development eleventy",
+    "prod": "ELEVENTY_ENV=production eleventy",
+    "build": "ELEVENTY_ENV=production eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "3.1.2"
+  }
+}
