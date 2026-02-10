@@ -1,3 +1,5 @@
+name: project-etho
+
 services:
   dev:
     image: node:25-bookworm-slim
