@@ -67,3 +67,6 @@ The web container reads pipeline output from:
 - Pipeline config lives in `sheet-pipeline/.env`.
 - This project expects a public Google Sheet (no OAuth flow required).
 - `video_enrich.py` keeps `metadata.last_updated` unchanged when the `videos` array has no content changes.
+
+## Contributing and Feedback
+If you find a bug, spot data issues, or want to propose a new feature, please open an issue in this repository. Contributions and suggestions are welcome.
