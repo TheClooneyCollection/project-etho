@@ -1,0 +1,27 @@
+<div class="month-controls">
+  <div class="month-controls__buttons">
+    <a class="month-controls__button" href="{{ latestHref }}">Latest month</a>
+    <a class="month-controls__button" href="{{ oldestHref }}">Oldest month</a>
+  </div>
+
+  <div class="month-picker js-month-picker">
+    <label class="month-picker__label" for="month-picker-input">Jump to month</label>
+    <input
+      id="month-picker-input"
+      class="month-picker__input js-month-picker-input"
+      type="month"
+      value="{{ monthPage.key }}"
+      min="{{ oldestPage.key }}"
+      max="{{ latestPage.key }}"
+    >
+    <button class="month-picker__go js-month-picker-go" type="button">Go</button>
+    <div class="month-picker__routes" hidden>
+      {% for entry in videosByMonth %}
+        <a
+          data-month="{{ entry.key }}"
+          href="{% if loop.first %}/{% else %}/{{ entry.key }}/{% endif %}"
+        ></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

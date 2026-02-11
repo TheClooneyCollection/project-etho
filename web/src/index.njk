@@ -31,6 +31,7 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}{{ monthPage.
       >{{ videosByMonth[pagination.pageNumber - 1].key }}</span>
     </a>
   {% endif %}
+{% include "month-controls.njk" %}
 
   {% if pagination.href.next %}
     <a class="month-pagination__link month-pagination__link--next" href="{{ pagination.href.next }}">

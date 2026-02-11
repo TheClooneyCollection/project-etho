@@ -48,6 +48,61 @@ p {
   display: grid;
   gap: 1rem;
 }
+.month-controls {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.8rem 1rem;
+}
+.month-controls__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+.month-controls__button {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #c4b79d;
+  border-radius: 8px;
+  color: var(--fg);
+  background: #fdf8ec;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.month-controls__button:hover {
+  text-decoration: underline;
+}
+.month-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.month-picker__label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.month-picker__input,
+.month-picker__go {
+  font: inherit;
+  font-size: 0.9rem;
+}
+.month-picker__input {
+  border: 1px solid #c4b79d;
+  border-radius: 8px;
+  padding: 0.25rem 0.45rem;
+  background: #fffdf7;
+  color: var(--fg);
+}
+.month-picker__go {
+  border: 1px solid #c4b79d;
+  border-radius: 8px;
+  padding: 0.27rem 0.6rem;
+  background: #fdf8ec;
+  color: var(--fg);
+  cursor: pointer;
+}
 .month-pagination {
   margin-top: 0.5rem;
   display: flex;
@@ -126,6 +181,10 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 700px) {
+  .month-picker {
+    flex-wrap: wrap;
+  }
+
   .video-card {
     grid-template-columns: 1fr;
   }

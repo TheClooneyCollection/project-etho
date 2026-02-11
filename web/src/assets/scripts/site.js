@@ -69,3 +69,75 @@
     }
   });
 })();
+
+(function initMonthPicker() {
+  const container = document.querySelector(".js-month-picker");
+  if (!container) {
+    return;
+  }
+
+  const input = container.querySelector(".js-month-picker-input");
+  const goButton = container.querySelector(".js-month-picker-go");
+  const routeNodes = container.querySelectorAll(".month-picker__routes [data-month]");
+  if (!input || !goButton || !routeNodes.length) {
+    return;
+  }
+
+  const monthToHref = {};
+  routeNodes.forEach((node) => {
+    const month = node.getAttribute("data-month");
+    const href = node.getAttribute("href");
+    if (!month || !href) {
+      return;
+    }
+    monthToHref[month] = href;
+  });
+
+  const availableMonths = Object.keys(monthToHref).sort().reverse();
+  if (!availableMonths.length) {
+    return;
+  }
+
+  function resolveTargetMonth(selectedMonth) {
+    if (monthToHref[selectedMonth]) {
+      return selectedMonth;
+    }
+
+    if (selectedMonth >= availableMonths[0]) {
+      return availableMonths[0];
+    }
+    if (selectedMonth <= availableMonths[availableMonths.length - 1]) {
+      return availableMonths[availableMonths.length - 1];
+    }
+
+    for (const month of availableMonths) {
+      if (month <= selectedMonth) {
+        return month;
+      }
+    }
+
+    return null;
+  }
+
+  function goToMonth() {
+    const selected = String(input.value || "").trim();
+    if (!selected) {
+      return;
+    }
+
+    const target = resolveTargetMonth(selected);
+    if (!target || !monthToHref[target]) {
+      return;
+    }
+
+    window.location.assign(monthToHref[target]);
+  }
+
+  goButton.addEventListener("click", goToMonth);
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      goToMonth();
+    }
+  });
+})();
