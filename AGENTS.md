@@ -41,3 +41,6 @@ Run commands from `sheet-pipeline/` unless noted.
 - Keep `SHEET_ID` and column mappings in `sheet-pipeline/.env`.
 - Only use public-sheet data; do not commit secrets or private tokens.
 - Treat `sheet-pipeline/out/` as generated data and review diffs before merging.
+
+## Documentation Workflow
+- After completing a feature, first check whether a relevant feature doc already exists and update it when behavior changes. If no relevant doc exists, ask the user whether they want one created.
