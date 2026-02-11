@@ -402,8 +402,16 @@ def main():
 
         enriched.append(out)
 
+    last_updated = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    enriched_output = {
+        "videos": enriched,
+        "metadata": {
+            "last_updated": last_updated,
+        },
+    }
+
     save_json(CACHE_PATH, cache)
-    save_json(OUT_PATH, enriched)
+    save_json(OUT_PATH, enriched_output)
 
     print("Wrote:", CACHE_PATH)
     print("Wrote:", OUT_PATH)
