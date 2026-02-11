@@ -1,12 +1,20 @@
 <article class="video-card">
-  <a class="video-card__thumb-link" href="{{ video.timestamp1.link }}" target="_blank" rel="noopener noreferrer">
-    <img
-      class="video-card__thumb js-video-thumb"
-      src="{{ video.timestamp1.thumbnail }}"
-      alt="{{ video.timestamp1.title }}"
-      loading="lazy"
-    >
-  </a>
+  <div
+    class="video-card__media js-video-media"
+    data-video-url="{{ video.timestamp1.link }}"
+    data-media-type="{{ video.mediaType }}"
+    data-video-date="{{ video.date }}"
+  >
+    <a class="video-card__thumb-link js-video-thumb-link" href="{{ video.timestamp1.link }}" target="_blank" rel="noopener noreferrer">
+      <img
+        class="video-card__thumb js-video-thumb"
+        src="{{ video.timestamp1.thumbnail }}"
+        alt="{{ video.timestamp1.title }}"
+        loading="lazy"
+      >
+    </a>
+    <div class="video-card__embed-shell js-video-embed-shell" hidden></div>
+  </div>
 
   <div class="video-card__body">
     <h3 class="video-card__title">
