@@ -321,6 +321,7 @@ def should_skip_old_twitch_vod(row: dict, url: str) -> bool:
 def main():
     rows = load_json(IN_PATH, default=[])
     cache = load_json(CACHE_PATH, default={})
+    existing_output = load_json(OUT_PATH, default={})
 
     if not isinstance(cache, dict):
         raise SystemExit("video_info.json must be a JSON object (map of url -> info)")
@@ -402,7 +403,24 @@ def main():
 
         enriched.append(out)
 
-    last_updated = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    existing_videos = []
+    existing_last_updated = None
+    if isinstance(existing_output, dict):
+        videos = existing_output.get("videos")
+        metadata = existing_output.get("metadata")
+        if isinstance(videos, list):
+            existing_videos = videos
+        if isinstance(metadata, dict):
+            ts = metadata.get("last_updated")
+            if isinstance(ts, str) and ts.strip():
+                existing_last_updated = ts.strip()
+
+    videos_changed = enriched != existing_videos
+    if videos_changed or not existing_last_updated:
+        last_updated = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    else:
+        last_updated = existing_last_updated
+
     enriched_output = {
         "videos": enriched,
         "metadata": {
@@ -415,6 +433,10 @@ def main():
 
     print("Wrote:", CACHE_PATH)
     print("Wrote:", OUT_PATH)
+    if videos_changed:
+        print("Videos changed; updated metadata.last_updated.")
+    else:
+        print("Videos unchanged; kept existing metadata.last_updated.")
 
 
 if __name__ == "__main__":
