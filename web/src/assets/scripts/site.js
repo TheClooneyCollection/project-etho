@@ -1,3 +1,44 @@
+(function initThemeSwitcher() {
+  const storageKey = "project-etho-theme";
+  const select = document.querySelector(".js-theme-select");
+  if (!select) {
+    return;
+  }
+
+  let saved = "system";
+  try {
+    const stored = window.localStorage.getItem(storageKey);
+    if (stored === "light" || stored === "dark") {
+      saved = stored;
+    }
+  } catch (_error) {}
+
+  select.value = saved;
+
+  function applyTheme(mode) {
+    if (mode === "light" || mode === "dark") {
+      document.documentElement.setAttribute("data-theme", mode);
+      return;
+    }
+    document.documentElement.removeAttribute("data-theme");
+  }
+
+  applyTheme(saved);
+
+  select.addEventListener("change", () => {
+    const mode = select.value;
+    applyTheme(mode);
+
+    try {
+      if (mode === "system") {
+        window.localStorage.removeItem(storageKey);
+      } else {
+        window.localStorage.setItem(storageKey, mode);
+      }
+    } catch (_error) {}
+  });
+})();
+
 (function formatDatesForLocale() {
   if (!("Intl" in window)) {
     return;

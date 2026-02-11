@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ title or "Project Etho" }}</title>
+    <script>
+      (function applySavedThemeEarly() {
+        try {
+          var key = "project-etho-theme";
+          var saved = window.localStorage.getItem(key);
+          if (saved === "light" || saved === "dark") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (_error) {}
+      })();
+    </script>
     <link rel="stylesheet" href="/assets/styles/site.css">
   </head>
   <body>

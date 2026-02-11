@@ -1,9 +1,61 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   --bg: #f7f3e9;
   --fg: #1b1b18;
   --accent: #8a5a44;
   --muted: #5f5a50;
+  --surface: #fdf8ec;
+  --border: #d2c7af;
+  --control-border: #c4b79d;
+  --input-bg: #fffdf7;
+  --thumb-bg: #ddd3bc;
+  --warn: #8c3d2e;
+  --bg-glow-1: #efe2c8;
+  --bg-glow-2: #d9d0b6;
+}
+html[data-theme="light"] {
+  --bg: #f7f3e9;
+  --fg: #1b1b18;
+  --accent: #8a5a44;
+  --muted: #5f5a50;
+  --surface: #fdf8ec;
+  --border: #d2c7af;
+  --control-border: #c4b79d;
+  --input-bg: #fffdf7;
+  --thumb-bg: #ddd3bc;
+  --warn: #8c3d2e;
+  --bg-glow-1: #efe2c8;
+  --bg-glow-2: #d9d0b6;
+}
+html[data-theme="dark"] {
+  --bg: #191813;
+  --fg: #f1e8d3;
+  --accent: #d9a46a;
+  --muted: #b9ad95;
+  --surface: #23211b;
+  --border: #4c4537;
+  --control-border: #5d5443;
+  --input-bg: #1f1d18;
+  --thumb-bg: #3d362b;
+  --warn: #f0a785;
+  --bg-glow-1: #2b251b;
+  --bg-glow-2: #332f24;
+}
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --bg: #191813;
+    --fg: #f1e8d3;
+    --accent: #d9a46a;
+    --muted: #b9ad95;
+    --surface: #23211b;
+    --border: #4c4537;
+    --control-border: #5d5443;
+    --input-bg: #1f1d18;
+    --thumb-bg: #3d362b;
+    --warn: #f0a785;
+    --bg-glow-1: #2b251b;
+    --bg-glow-2: #332f24;
+  }
 }
 * {
   box-sizing: border-box;
@@ -13,8 +65,8 @@ body {
   font-family: "Georgia", "Times New Roman", serif;
   color: var(--fg);
   background:
-    radial-gradient(circle at 10% 20%, #efe2c8 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, #d9d0b6 0%, transparent 35%),
+    radial-gradient(circle at 10% 20%, var(--bg-glow-1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, var(--bg-glow-2) 0%, transparent 35%),
     var(--bg);
   min-height: 100vh;
 }
@@ -48,6 +100,25 @@ p {
   display: grid;
   gap: 1rem;
 }
+.theme-switcher {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.theme-switcher__label {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.theme-switcher__select {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 1px solid var(--control-border);
+  border-radius: 8px;
+  padding: 0.25rem 0.45rem;
+  background: var(--input-bg);
+  color: var(--fg);
+}
 .month-controls {
   margin-top: 0.5rem;
   display: flex;
@@ -64,10 +135,10 @@ p {
 .month-controls__button {
   display: inline-block;
   padding: 0.35rem 0.65rem;
-  border: 1px solid #c4b79d;
+  border: 1px solid var(--control-border);
   border-radius: 8px;
   color: var(--fg);
-  background: #fdf8ec;
+  background: var(--surface);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -89,17 +160,17 @@ p {
   font-size: 0.9rem;
 }
 .month-picker__input {
-  border: 1px solid #c4b79d;
+  border: 1px solid var(--control-border);
   border-radius: 8px;
   padding: 0.25rem 0.45rem;
-  background: #fffdf7;
+  background: var(--input-bg);
   color: var(--fg);
 }
 .month-picker__go {
-  border: 1px solid #c4b79d;
+  border: 1px solid var(--control-border);
   border-radius: 8px;
   padding: 0.27rem 0.6rem;
-  background: #fdf8ec;
+  background: var(--surface);
   color: var(--fg);
   cursor: pointer;
 }
@@ -124,9 +195,9 @@ p {
   grid-template-columns: 280px 1fr;
   gap: 1rem;
   padding: 0.9rem;
-  border: 1px solid #d2c7af;
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background: #fdf8ec;
+  background: var(--surface);
 }
 .video-card__thumb-link {
   display: block;
@@ -137,7 +208,7 @@ p {
   border-radius: 10px;
   display: block;
   object-fit: cover;
-  background: #ddd3bc;
+  background: var(--thumb-bg);
 }
 .video-card__body {
   min-width: 0;
@@ -168,7 +239,7 @@ p {
 }
 .video-card__expiry-note {
   margin: 0.5rem 0 0;
-  color: #8c3d2e;
+  color: var(--warn);
   font-size: 0.88rem;
   font-weight: 600;
 }
