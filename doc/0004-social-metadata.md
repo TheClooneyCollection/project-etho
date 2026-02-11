@@ -13,7 +13,7 @@ Defined in `web/src/_data/site.js`:
 - `name`: `"Project Etho"`
 - `description`: `"Etho's appearances across the web."`
 - `url`: canonical site base URL (default `https://etho.clooney.io`)
-- `socialImagePath`: `"/assets/social/project-etho-og.svg"`
+- `socialImagePath`: `"/assets/social/project-etho-og.png"`
 
 `SITE_URL` can override `site.url` at build time.
 
@@ -24,6 +24,7 @@ Defined in `web/src/_data/site.js`:
 - `<meta name="description">`
 - `<link rel="canonical">`
 - `og:type`, `og:site_name`, `og:title`, `og:description`, `og:url`, `og:image`, `og:image:alt`
+- `og:image:type`, `og:image:width`, `og:image:height`
 - `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`, `twitter:image:alt`
 
 ## Page-Specific Behavior
@@ -34,10 +35,10 @@ Defined in `web/src/_data/site.js`:
 
 ## Social Image Asset
 Shared image file:
-- `web/src/assets/social/project-etho-og.svg`
+- `web/src/assets/social/project-etho-og.png`
 
 Output path after build:
-- `web/_site/assets/social/project-etho-og.svg`
+- `web/_site/assets/social/project-etho-og.png`
 
 ## Notes
 - This is a static fallback image strategy (Option 2: page-specific metadata + shared image).

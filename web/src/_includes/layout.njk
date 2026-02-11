@@ -3,7 +3,7 @@
   <head>
     {% set metaTitle = socialTitle or title or site.name or "Project Etho" %}
     {% set metaDescription = socialDescription or site.description or "Etho's appearances across the web." %}
-    {% if monthPage %}
+    {% if monthPage and pagination and pagination.pageNumber > 0 %}
       {% set metaTitle = "Project Etho - " ~ monthPage.key %}
       {% set metaDescription = "Etho appearances for " ~ monthPage.key ~ "." %}
     {% endif %}
@@ -25,6 +25,9 @@
     <meta property="og:description" content="{{ metaDescription }}">
     <meta property="og:url" content="{{ canonicalUrl }}">
     <meta property="og:image" content="{{ socialImageUrl }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="{{ metaImageAlt }}">
 
     <meta name="twitter:card" content="summary_large_image">

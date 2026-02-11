@@ -12,5 +12,5 @@ export default {
   name: "Project Etho",
   description: "Etho's appearances across the web.",
   url: normalizeSiteUrl(process.env.SITE_URL || DEFAULT_SITE_URL),
-  socialImagePath: "/assets/social/project-etho-og.svg"
+  socialImagePath: "/assets/social/project-etho-og.png"
 };
