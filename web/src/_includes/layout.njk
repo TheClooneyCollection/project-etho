@@ -4,57 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ title or "Project Etho" }}</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f7f3e9;
-        --fg: #1b1b18;
-        --accent: #8a5a44;
-        --muted: #5f5a50;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Georgia", "Times New Roman", serif;
-        color: var(--fg);
-        background:
-          radial-gradient(circle at 10% 20%, #efe2c8 0%, transparent 40%),
-          radial-gradient(circle at 90% 80%, #d9d0b6 0%, transparent 35%),
-          var(--bg);
-        min-height: 100vh;
-      }
-      main {
-        max-width: 820px;
-        margin: 0 auto;
-        padding: 3rem 1.25rem;
-      }
-      h1 {
-        line-height: 1.1;
-        margin: 0 0 0.75rem;
-      }
-      p {
-        line-height: 1.7;
-      }
-      .pill {
-        display: inline-block;
-        padding: 0.25rem 0.6rem;
-        border: 1px solid var(--accent);
-        border-radius: 999px;
-        color: var(--accent);
-        font-size: 0.8rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-      .subtle {
-        color: var(--muted);
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/styles/site.css">
   </head>
   <body>
     <main>
       {{ content | safe }}
     </main>
+    <script src="/assets/scripts/site.js"></script>
   </body>
 </html>

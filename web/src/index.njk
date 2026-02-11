@@ -1,0 +1,51 @@
+---
+layout: layout.njk
+title: Project Etho
+pagination:
+  data: videosByMonth
+  size: 1
+  alias: monthPage
+permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}{{ monthPage.key }}/index.html{% endif %}"
+---
+
+<span class="pill">11ty</span>
+
+<h1>Project Etho</h1>
+
+<h2>
+  <span
+    class="js-locale-month"
+    data-year="{{ monthPage.year }}"
+    data-month="{{ monthPage.month }}"
+  >{{ monthPage.key }}</span>
+</h2>
+
+<nav class="month-pagination" aria-label="Month pagination">
+  {% if pagination.href.previous %}
+    <a class="month-pagination__link" href="{{ pagination.href.previous }}">
+      ←
+      <span
+        class="js-locale-month"
+        data-year="{{ videosByMonth[pagination.pageNumber - 1].year }}"
+        data-month="{{ videosByMonth[pagination.pageNumber - 1].month }}"
+      >{{ videosByMonth[pagination.pageNumber - 1].key }}</span>
+    </a>
+  {% endif %}
+
+  {% if pagination.href.next %}
+    <a class="month-pagination__link month-pagination__link--next" href="{{ pagination.href.next }}">
+      <span
+        class="js-locale-month"
+        data-year="{{ videosByMonth[pagination.pageNumber + 1].year }}"
+        data-month="{{ videosByMonth[pagination.pageNumber + 1].month }}"
+      >{{ videosByMonth[pagination.pageNumber + 1].key }}</span>
+      →
+    </a>
+  {% endif %}
+</nav>
+
+<section class="video-grid">
+  {% for video in monthPage.videos %}
+    {% include "video-card.njk" %}
+  {% endfor %}
+</section>

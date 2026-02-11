@@ -1,0 +1,35 @@
+<article class="video-card">
+  <a class="video-card__thumb-link" href="{{ video.timestamp1.link }}" target="_blank" rel="noopener noreferrer">
+    <img
+      class="video-card__thumb"
+      src="{{ video.timestamp1.thumbnail }}"
+      alt="{{ video.timestamp1.title }}"
+      loading="lazy"
+    >
+  </a>
+
+  <div class="video-card__body">
+    <h3 class="video-card__title">
+      <a href="{{ video.timestamp1.link }}" target="_blank" rel="noopener noreferrer">
+        {{ video.timestamp1.title }}
+      </a>
+    </h3>
+
+    <p class="video-card__meta">
+      <span>{{ video.creator }}</span>
+      <span>{{ video.mediaType }}</span>
+      <span>{{ video.contentType }}</span>
+      <time class="js-locale-date" datetime="{{ video.date }}">{{ video.date | replace("T00:00:00", "") }}</time>
+    </p>
+
+    {% if video.notes %}
+      <p class="video-card__notes">{{ video.notes }}</p>
+    {% endif %}
+
+    {% if video.timestamp2.link %}
+      <p class="video-card__secondary">
+        <a href="{{ video.timestamp2.link }}" target="_blank" rel="noopener noreferrer">Secondary timestamp link</a>
+      </p>
+    {% endif %}
+  </div>
+</article>

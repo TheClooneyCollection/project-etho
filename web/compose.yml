@@ -5,8 +5,11 @@ services:
     image: node:25-bookworm-slim
     restart: unless-stopped
     working_dir: /app
+    environment:
+      ENRICHED_JSON_PATH: /data/out/out.enriched.json
     volumes:
-      - ./:/app:cached
+      - ./:/app
+      - ../sheet-pipeline/out:/data/out:ro
       - node_modules:/app/node_modules
       - _site_dev:/app/_site
     ports:
@@ -26,8 +29,11 @@ services:
     image: node:25-bookworm-slim
     restart: unless-stopped
     working_dir: /app
+    environment:
+      ENRICHED_JSON_PATH: /data/out/out.enriched.json
     volumes:
-      - ./:/app:cached
+      - ./:/app
+      - ../sheet-pipeline/out:/data/out:ro
       - node_modules:/app/node_modules
       - _site_prod:/app/_site
     ports:
