@@ -9,9 +9,6 @@ services:
       - ./:/app:cached
       - node_modules:/app/node_modules
       - _site_dev:/app/_site
-    environment:
-      - CHOKIDAR_USEPOLLING=1
-      - CHOKIDAR_INTERVAL=200
     ports:
       - "127.0.0.1:8180:8080"
     expose:
@@ -33,9 +30,6 @@ services:
       - ./:/app:cached
       - node_modules:/app/node_modules
       - _site_prod:/app/_site
-    environment:
-      - CHOKIDAR_USEPOLLING=1
-      - CHOKIDAR_INTERVAL=200
     ports:
       - "127.0.0.1:8190:8080"
     expose:
