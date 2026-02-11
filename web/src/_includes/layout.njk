@@ -16,6 +16,9 @@
       })();
     </script>
     <link rel="stylesheet" href="/assets/styles/site.css">
+    {% if environment == "production" %}
+      <script defer src="https://analytics.clooney.ninja/script.js" data-website-id="c130bb6c-d57d-4df0-903d-2fc783966246"></script>
+    {% endif %}
   </head>
   <body>
     <main>
