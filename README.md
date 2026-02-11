@@ -2,6 +2,9 @@
 
 Beautiful statically generated frontend for Etho’s appearances across the web
 
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/c7eea507-b31b-4612-849e-624edba4c79c" />
+
+
 ## What This Repo Is
 
 This project turns a living spreadsheet of videos into a clean, visual timeline.
