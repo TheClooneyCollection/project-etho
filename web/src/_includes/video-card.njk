@@ -26,15 +26,15 @@
       <p class="video-card__notes">{{ video.notes }}</p>
     {% endif %}
 
-    {% if video.mediaType == "VOD⏳" %}
-      <p class="video-card__expiry-note js-expiry-note" data-date="{{ video.date }}" hidden>
-        Likely expired
+    {% if video.timestamp2.link %}
+      <p class="video-card__secondary">
+        <a href="{{ video.timestamp2.link }}" target="_blank" rel="noopener noreferrer">Second timestamp</a>
       </p>
     {% endif %}
 
-    {% if video.timestamp2.link %}
-      <p class="video-card__secondary">
-        <a href="{{ video.timestamp2.link }}" target="_blank" rel="noopener noreferrer">Secondary timestamp link</a>
+    {% if video.mediaType == "VOD⏳" %}
+      <p class="video-card__expiry-note js-expiry-note" data-date="{{ video.date }}" hidden>
+        Likely expired
       </p>
     {% endif %}
   </div>
