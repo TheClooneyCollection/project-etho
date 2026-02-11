@@ -90,27 +90,27 @@
     "title": "Hermitcraft - Spider Science and Willy's Waters? - tangotek on Twitch"
   },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
-    "fetched_at": "2026-02-09T18:45:45Z",
-    "source": null,
-    "thumbnail": null,
+    "fetched_at": "2026-02-11T13:06:26Z",
+    "source": "youtube_thumb",
+    "thumbnail": "https://i.ytimg.com/vi/5UFgKAcFUF0/maxresdefault.jpg",
     "title": null
   },
   "https://www.youtube.com/live/BT5FjavyHMM": {
-    "fetched_at": "2026-02-09T18:45:44Z",
+    "fetched_at": "2026-02-11T13:06:25Z",
     "source": "youtube_oembed",
-    "thumbnail": null,
+    "thumbnail": "https://i.ytimg.com/vi/BT5FjavyHMM/maxresdefault.jpg",
     "title": "FINAL WORLD TOUR! | Hermitcraft Season 10"
   },
   "https://www.youtube.com/live/EvSCBJ6pQD4": {
-    "fetched_at": "2026-02-09T18:46:10Z",
+    "fetched_at": "2026-02-11T13:06:26Z",
     "source": "youtube_oembed",
-    "thumbnail": null,
+    "thumbnail": "https://i.ytimg.com/vi/EvSCBJ6pQD4/maxresdefault.jpg",
     "title": "🔴 HUNGRY HERMITS /w Tango LIVE!! | Minecraft HermitCraft LIVE"
   },
   "https://www.youtube.com/live/H3AapZa7sEw": {
-    "fetched_at": "2026-02-09T18:45:49Z",
+    "fetched_at": "2026-02-11T13:06:26Z",
     "source": "youtube_oembed",
-    "thumbnail": null,
+    "thumbnail": "https://i.ytimg.com/vi/H3AapZa7sEw/maxresdefault.jpg",
     "title": "I Joined Hermitcraft to Playtest Metro Mayhem!"
   },
   "https://www.youtube.com/watch?v=-4M0LhRDL5c": {
