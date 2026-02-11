@@ -133,7 +133,7 @@ def normalize_url(url: str) -> str:
     return urlunparse(u)
 
 
-_YT_ID_RE = re.compile(r"(?:v=|/shorts/|/embed/)([A-Za-z0-9_-]{6,})")
+_YT_ID_RE = re.compile(r"(?:v=|/shorts/|/embed/|/live/)([A-Za-z0-9_-]{6,})")
 
 
 def youtube_video_id(url: str) -> str | None:
