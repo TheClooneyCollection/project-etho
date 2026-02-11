@@ -42,10 +42,10 @@
     "title": null
   },
   "https://www.twitch.tv/videos/2642142958": {
-    "fetched_at": "2026-02-09T19:48:55Z",
+    "fetched_at": "2026-02-11T12:37:54Z",
     "source": "twitch_og",
     "thumbnail": null,
-    "title": null
+    "title": "Twitch"
   },
   "https://www.twitch.tv/videos/2643061971": {
     "fetched_at": "2026-02-09T18:45:22Z",
@@ -54,16 +54,16 @@
     "title": "Hermitcraft - The Griandstone - grian on Twitch"
   },
   "https://www.twitch.tv/videos/2644936399": {
-    "fetched_at": "2026-02-09T19:48:55Z",
+    "fetched_at": "2026-02-11T12:37:54Z",
     "source": "twitch_og",
-    "thumbnail": null,
-    "title": null
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d1m7jfoe9zdc1j/adeb6bcd24c0246fcf64_ijevin_316580124634_1765844597//thumb/thumb0-640x360.jpg",
+    "title": "Hermitcraft 11! | !plush !birthday !wishlist - ijevin on Twitch"
   },
   "https://www.twitch.tv/videos/2656884341": {
-    "fetched_at": "2026-02-09T19:48:54Z",
+    "fetched_at": "2026-02-11T12:32:08Z",
     "source": "twitch_og",
-    "thumbnail": null,
-    "title": null
+    "thumbnail": "https://static-cdn.jtvnw.net/cf_vods/d2vi6trrdongqn/db06f0d5b982f238b546_hypnotizd_316552527710_1767118267//thumb/thumb0-640x360.jpg",
+    "title": "HermitCraft LIVE! - Dec. 30, 2025 - hypnotizd on Twitch"
   },
   "https://www.twitch.tv/videos/2658571917": {
     "fetched_at": "2026-02-09T19:36:32Z",
