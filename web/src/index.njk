@@ -8,7 +8,13 @@ pagination:
 permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}{{ monthPage.key }}/index.html{% endif %}"
 ---
 
-<span class="pill">11ty</span>
+{% set latestPage = videosByMonth[0] %}
+{% set oldestPage = videosByMonth[videosByMonth.length - 1] %}
+{% set latestHref = "/" %}
+{% set oldestHref = "/" %}
+{% if videosByMonth.length > 1 %}
+  {% set oldestHref = "/" ~ oldestPage.key ~ "/" %}
+{% endif %}
 
 <h1>Project Etho</h1>
 
@@ -20,33 +26,18 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}{{ monthPage.
   >{{ monthPage.key }}</span>
 </h2>
 
-<nav class="month-pagination" aria-label="Month pagination">
-  {% if pagination.href.previous %}
-    <a class="month-pagination__link" href="{{ pagination.href.previous }}">
-      ←
-      <span
-        class="js-locale-month"
-        data-year="{{ videosByMonth[pagination.pageNumber - 1].year }}"
-        data-month="{{ videosByMonth[pagination.pageNumber - 1].month }}"
-      >{{ videosByMonth[pagination.pageNumber - 1].key }}</span>
-    </a>
-  {% endif %}
 {% include "month-controls.njk" %}
 
-  {% if pagination.href.next %}
-    <a class="month-pagination__link month-pagination__link--next" href="{{ pagination.href.next }}">
-      <span
-        class="js-locale-month"
-        data-year="{{ videosByMonth[pagination.pageNumber + 1].year }}"
-        data-month="{{ videosByMonth[pagination.pageNumber + 1].month }}"
-      >{{ videosByMonth[pagination.pageNumber + 1].key }}</span>
-      →
-    </a>
-  {% endif %}
-</nav>
+{% set navAriaLabel = "Month pagination" %}
+{% set navClass = "" %}
+{% include "month-pagination.njk" %}
 
 <section class="video-grid">
   {% for video in monthPage.videos %}
     {% include "video-card.njk" %}
   {% endfor %}
 </section>
+
+{% set navAriaLabel = "Month pagination bottom" %}
+{% set navClass = "month-pagination--bottom" %}
+{% include "month-pagination.njk" %}

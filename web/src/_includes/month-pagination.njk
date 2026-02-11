@@ -1,0 +1,23 @@
+<nav class="month-pagination{% if navClass %} {{ navClass }}{% endif %}" aria-label="{{ navAriaLabel or 'Month pagination' }}">
+  {% if pagination.href.previous %}
+    <a class="month-pagination__link" href="{{ pagination.href.previous }}">
+      ←
+      <span
+        class="js-locale-month"
+        data-year="{{ videosByMonth[pagination.pageNumber - 1].year }}"
+        data-month="{{ videosByMonth[pagination.pageNumber - 1].month }}"
+      >{{ videosByMonth[pagination.pageNumber - 1].key }}</span>
+    </a>
+  {% endif %}
+
+  {% if pagination.href.next %}
+    <a class="month-pagination__link month-pagination__link--next" href="{{ pagination.href.next }}">
+      <span
+        class="js-locale-month"
+        data-year="{{ videosByMonth[pagination.pageNumber + 1].year }}"
+        data-month="{{ videosByMonth[pagination.pageNumber + 1].month }}"
+      >{{ videosByMonth[pagination.pageNumber + 1].key }}</span>
+      →
+    </a>
+  {% endif %}
+</nav>
