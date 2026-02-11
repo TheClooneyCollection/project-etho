@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Project Etho</title>
+  <desc id="desc">Etho's appearances across the web</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f1b16"/>
+      <stop offset="100%" stop-color="#3a2d21"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="100" r="260" fill="#f0c89a" opacity="0.12"/>
+  <circle cx="1080" cy="530" r="280" fill="#d9975f" opacity="0.15"/>
+
+  <g fill="#f7e7cf" font-family="Georgia, 'Times New Roman', serif">
+    <text x="96" y="286" font-size="88" font-weight="700">Project Etho</text>
+    <text x="96" y="350" font-size="38" opacity="0.92">Etho's appearances across the web</text>
+  </g>
+
+  <g fill="#dba874" font-family="Georgia, 'Times New Roman', serif" font-size="30">
+    <text x="96" y="530">etho.clooney.io</text>
+  </g>
+</svg>

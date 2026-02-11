@@ -1,9 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% set metaTitle = socialTitle or title or site.name or "Project Etho" %}
+    {% set metaDescription = socialDescription or site.description or "Etho's appearances across the web." %}
+    {% if monthPage %}
+      {% set metaTitle = "Project Etho - " ~ monthPage.key %}
+      {% set metaDescription = "Etho appearances for " ~ monthPage.key ~ "." %}
+    {% endif %}
+    {% set metaImagePath = socialImagePath or site.socialImagePath %}
+    {% set metaImageAlt = socialImageAlt or "Project Etho social preview" %}
+    {% set pagePath = page.url or "/" %}
+    {% set canonicalUrl = (site.url or "") ~ pagePath %}
+    {% set socialImageUrl = (site.url or "") ~ metaImagePath %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ title or "Project Etho" }}</title>
+    <title>{{ metaTitle }}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    <link rel="canonical" href="{{ canonicalUrl }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    <meta property="og:url" content="{{ canonicalUrl }}">
+    <meta property="og:image" content="{{ socialImageUrl }}">
+    <meta property="og:image:alt" content="{{ metaImageAlt }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ metaTitle }}">
+    <meta name="twitter:description" content="{{ metaDescription }}">
+    <meta name="twitter:image" content="{{ socialImageUrl }}">
+    <meta name="twitter:image:alt" content="{{ metaImageAlt }}">
+
     <script>
       (function applySavedThemeEarly() {
         try {
