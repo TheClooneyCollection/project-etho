@@ -60,7 +60,7 @@ The web container reads pipeline output from:
 - `web/`: Eleventy frontend
 - `web/src/_includes/`: reusable Nunjucks templates/components
 - `web/src/_data/`: normalized data loaders used by templates
-- `web/src/assets/`: frontend CSS and JavaScript assets
+- `web/src/assets/`: frontend CSS and JavaScript, and image assets
 
 ## Notes
 - `out.enriched.json` is the frontend’s source of truth.
