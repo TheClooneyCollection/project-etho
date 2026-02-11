@@ -39,6 +39,62 @@
   });
 })();
 
+(function initVideoThumbnailFallbacks() {
+  const fallbackImages = [
+    "/assets/images/sorry-etho-1.png",
+    "/assets/images/sorry-etho-2.png"
+  ];
+
+  function pickRandomFallback(excludeSrc) {
+    const normalizedExclude = String(excludeSrc || "");
+    const options = fallbackImages.filter((src) => src !== normalizedExclude);
+    const pool = options.length ? options : fallbackImages;
+    const index = Math.floor(Math.random() * pool.length);
+    return pool[index];
+  }
+
+  function isValidThumbnailUrl(value) {
+    const raw = String(value || "").trim();
+    if (!raw) {
+      return false;
+    }
+    if (raw.startsWith("/assets/")) {
+      return true;
+    }
+
+    try {
+      const parsed = new URL(raw, window.location.origin);
+      return parsed.protocol === "http:" || parsed.protocol === "https:";
+    } catch (_error) {
+      return false;
+    }
+  }
+
+  function applyFallback(image) {
+    if (!image || image.dataset.fallbackApplied === "true") {
+      return;
+    }
+
+    const currentSrc = image.getAttribute("src") || "";
+    const fallback = pickRandomFallback(currentSrc);
+    image.dataset.fallbackApplied = "true";
+    image.src = fallback;
+  }
+
+  const images = document.querySelectorAll(".js-video-thumb");
+  images.forEach((image) => {
+    const originalSrc = image.getAttribute("src");
+    if (!isValidThumbnailUrl(originalSrc)) {
+      applyFallback(image);
+      return;
+    }
+
+    image.addEventListener("error", () => {
+      applyFallback(image);
+    }, { once: true });
+  });
+})();
+
 (function formatDatesForLocale() {
   if (!("Intl" in window)) {
     return;
