@@ -79,6 +79,31 @@ h1 {
   line-height: 1.1;
   margin: 0 0 0.75rem;
 }
+.page-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+}
+.page-title-row h1 {
+  margin: 0;
+}
+.page-title-row__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.page-title-row__about {
+  color: var(--fg);
+  opacity: 0.72;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.page-title-row__about:hover {
+  text-decoration: underline;
+}
 p {
   line-height: 1.7;
 }
@@ -102,7 +127,6 @@ p {
 }
 .theme-switcher {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   gap: 0.5rem;
 }
@@ -132,7 +156,8 @@ p {
   flex-wrap: wrap;
   gap: 0.55rem;
 }
-.month-controls__button {
+.month-controls__button,
+.ui-link-button {
   display: inline-block;
   padding: 0.35rem 0.65rem;
   border: 1px solid var(--control-border);
@@ -142,7 +167,8 @@ p {
   text-decoration: none;
   font-size: 0.9rem;
 }
-.month-controls__button:hover {
+.month-controls__button:hover,
+.ui-link-button:hover {
   text-decoration: underline;
 }
 .month-picker {
@@ -252,6 +278,16 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 700px) {
+  .page-title-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .page-title-row__meta {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
   .month-picker {
     flex-wrap: wrap;
   }

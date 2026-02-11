@@ -16,16 +16,21 @@ permalink: "{% if pagination.pageNumber == 0 %}index.html{% else %}{{ monthPage.
   {% set oldestHref = "/" ~ oldestPage.key ~ "/" %}
 {% endif %}
 
-<div class="theme-switcher">
-  <label class="theme-switcher__label" for="theme-switcher-select">Theme</label>
-  <select id="theme-switcher-select" class="theme-switcher__select js-theme-select">
-    <option value="system">System</option>
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-  </select>
+<div class="page-title-row">
+  <h1>Project Etho</h1>
+  <div class="page-title-row__meta">
+    <div class="theme-switcher">
+      <label class="theme-switcher__label" for="theme-switcher-select">Theme</label>
+      <select id="theme-switcher-select" class="theme-switcher__select js-theme-select">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+    <a class="page-title-row__about" href="/about/">About</a>
+  </div>
 </div>
-
-<h1>Project Etho</h1>
+<p class="subtle">Etho's appearances across the web</p>
 
 <h2>
   <span
