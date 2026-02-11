@@ -111,6 +111,12 @@ p {
   margin: 0.6rem 0 0;
   line-height: 1.5;
 }
+.video-card__expiry-note {
+  margin: 0.5rem 0 0;
+  color: #8c3d2e;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
 .video-card__secondary {
   margin: 0.6rem 0 0;
   font-size: 0.88rem;

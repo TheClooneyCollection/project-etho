@@ -41,3 +41,31 @@
     node.textContent = monthFormatter.format(parsed);
   });
 })();
+
+(function markLikelyExpiredVods() {
+  const nodes = document.querySelectorAll(".js-expiry-note[data-date]");
+  if (!nodes.length) {
+    return;
+  }
+
+  const now = new Date();
+
+  nodes.forEach((node) => {
+    const raw = node.getAttribute("data-date");
+    if (!raw) {
+      return;
+    }
+
+    const publishedAt = new Date(raw);
+    if (Number.isNaN(publishedAt.getTime())) {
+      return;
+    }
+
+    const expiryAt = new Date(publishedAt.getTime());
+    expiryAt.setMonth(expiryAt.getMonth() + 2);
+
+    if (now >= expiryAt) {
+      node.hidden = false;
+    }
+  });
+})();
