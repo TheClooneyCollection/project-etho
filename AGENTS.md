@@ -44,3 +44,4 @@ Run commands from `sheet-pipeline/` unless noted.
 
 ## Documentation Workflow
 - After completing a feature, first check whether a relevant feature doc already exists and update it when behavior changes. If no relevant doc exists, ask the user whether they want one created.
+- When adding or updating files in `doc/`, also update `doc/README.md` so the current-doc list stays accurate.
