@@ -29,11 +29,34 @@ This pipeline solves that by:
 * `out/sheet.xlsx` – raw exported spreadsheet
 * `out/out.csv` – flattened CSV (links preserved)
 * `out/out.json` – normalized JSON (dates → ISO-8601 strings)
+* `out/out.enriched.json` – link-enriched JSON with per-link title/thumbnail fields
+* `out/video_info.json` – URL metadata cache used by enrichment
 
 Hyperlink columns are split into:
 
 * text column (e.g. `timestamp 1`)
 * url column (e.g. `timestamp 1 link`)
+
+---
+
+## Video enrichment
+
+Run enrichment after extraction to add title/thumbnail fields for video links:
+
+```bash
+./scripts/enrich
+```
+
+or run both extract + enrich:
+
+```bash
+./scripts/all
+```
+
+Notes:
+* YouTube uses oEmbed titles and deterministic `i.ytimg.com` thumbnails.
+* Twitch uses page `og:title` and `og:image` metadata.
+* Twitch placeholder image `https://vod-secure.twitch.tv/_404/404_processing_640x360.png` is treated as missing and saved as `null`.
 
 ---
 
