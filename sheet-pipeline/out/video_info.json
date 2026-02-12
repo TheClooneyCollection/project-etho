@@ -86,14 +86,14 @@
   "https://www.twitch.tv/videos/2693415272": {
     "fetched_at": "2026-02-10T13:17:23Z",
     "source": "twitch_og",
-    "thumbnail": "https://vod-secure.twitch.tv/_404/404_processing_640x360.png",
+    "thumbnail": null,
     "title": "Hermitcraft - Spider Science and Willy's Waters? - tangotek on Twitch"
   },
   "https://www.twitch.tv/videos/2694328383": {
-    "fetched_at": "2026-02-12T13:11:24Z",
+    "fetched_at": "2026-02-12T15:13:37Z",
     "source": "twitch_og",
     "thumbnail": null,
-    "title": null
+    "title": "Hermitcraft 11! Making a Sugarcane Farm! - cubfan135 on Twitch"
   },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-11T13:06:26Z",
