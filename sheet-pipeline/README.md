@@ -53,6 +53,12 @@ or run both extract + enrich:
 ./scripts/all
 ```
 
+Quickly report missing video metadata (title/thumbnail) from cache:
+
+```bash
+./scripts/check-video-info
+```
+
 Notes:
 * YouTube uses oEmbed titles and deterministic `i.ytimg.com` thumbnails.
 * Twitch uses page `og:title` and `og:image` metadata.
