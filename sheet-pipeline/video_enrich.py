@@ -206,9 +206,22 @@ def youtube_thumbnail_from_id(vid: str) -> str | None:
 # curl ... | rg -o 'property="og:image" content="[^"]+"' -m 1 | rg -o 'https?://[^"]+'
 _TWITCH_OG_IMAGE_BLOCK = re.compile(r'property="og:image" content="[^"]+"')
 _HTTP_URL = re.compile(r'https?://[^"]+')
+_TWITCH_BAD_THUMBNAILS = {
+    "https://vod-secure.twitch.tv/_404/404_processing_640x360.png",
+}
 
 _TWITCH_OG_TITLE_BLOCK = re.compile(r'property="og:title" content="[^"]+"')
 # (optional, but keeps title consistent with the same style)
+
+
+def sanitize_twitch_thumbnail(thumb: str | None) -> str | None:
+    if not isinstance(thumb, str):
+        return None
+    value = thumb.strip()
+    if not value or value in _TWITCH_BAD_THUMBNAILS:
+        return None
+    return value
+
 
 def twitch_vod_meta(url: str) -> tuple[str | None, str | None]:
     # Important: keep the URL exactly as-is (incl ?t=) to mirror your curl behavior.
@@ -232,7 +245,7 @@ def twitch_vod_meta(url: str) -> tuple[str | None, str | None]:
     if m_img:
         m_url = _HTTP_URL.search(m_img.group(0))
         if m_url:
-            thumb = m_url.group(0)
+            thumb = sanitize_twitch_thumbnail(m_url.group(0))
 
     return title, thumb
 
@@ -260,7 +273,7 @@ def fetch_video_info(url: str) -> dict:
     if is_twitch(url):
         title, image = twitch_vod_meta(url)
         info["title"] = title
-        info["thumbnail"] = image
+        info["thumbnail"] = sanitize_twitch_thumbnail(image)
         info["source"] = "twitch_og"
         return info
 
@@ -325,6 +338,11 @@ def main():
 
     if not isinstance(cache, dict):
         raise SystemExit("video_info.json must be a JSON object (map of url -> info)")
+
+    for cached_url, cached_info in cache.items():
+        if not (isinstance(cached_info, dict) and is_twitch(cached_url)):
+            continue
+        cached_info["thumbnail"] = sanitize_twitch_thumbnail(cached_info.get("thumbnail"))
 
     # Collect unique URLs to fetch
     wanted = []
