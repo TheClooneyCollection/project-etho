@@ -11,7 +11,7 @@ Outputs:
   - /out/video_info.json  (updated)
 
 Fetch strategy:
-  - YouTube: oEmbed for title; deterministic i.ytimg.com thumbnails (maxres -> hq -> mq -> sd)
+  - YouTube: oEmbed title (with fallback to page og:title); deterministic i.ytimg.com thumbnails (maxres -> hq -> mq -> sd)
   - Twitch VOD: scrape og:title + og:image from HTML
 
 Config via env:
@@ -78,6 +78,10 @@ def save_json(path, obj):
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2, sort_keys=True)
     os.replace(tmp, path)
+
+
+def has_text(value) -> bool:
+    return isinstance(value, str) and bool(value.strip())
 
 
 def sha1(s: str) -> str:
@@ -187,6 +191,49 @@ def youtube_oembed_title(url: str) -> str | None:
         return None
 
 
+_OG_TITLE_BLOCK = re.compile(r'property="og:title" content="[^"]+"')
+_YOUTUBE_UNAVAILABLE_TITLE_RE = re.compile(
+    r"^(video unavailable|this video is unavailable|this video is private)(?:\b|$)",
+    re.IGNORECASE,
+)
+_YOUTUBE_UNAVAILABLE_MARKERS = (
+    '"playabilityStatus":{"status":"ERROR"',
+    '"playabilityStatus":{"status":"UNPLAYABLE"',
+    '"playabilityStatus":{"status":"LOGIN_REQUIRED"',
+    '"reason":"Video unavailable"',
+    '"reason":"This video is unavailable"',
+    '"reason":"This video is private"',
+    '"subreason":{"simpleText":"Private video"}',
+    "This video is unavailable",
+    "This video is private",
+    "Private video",
+)
+
+
+def youtube_page_meta(url: str) -> tuple[str | None, bool]:
+    try:
+        t = http_get_text(url)
+    except Exception:
+        return None, False
+
+    m_title = _OG_TITLE_BLOCK.search(t)
+    title = None
+    if not m_title:
+        title = None
+    else:
+        m_url = re.search(r'content="([^"]+)"', m_title.group(0))
+        if m_url:
+            title = html.unescape(m_url.group(1)).strip() or None
+
+    unavailable = False
+    if isinstance(title, str) and _YOUTUBE_UNAVAILABLE_TITLE_RE.search(title):
+        unavailable = True
+    if any(marker in t for marker in _YOUTUBE_UNAVAILABLE_MARKERS):
+        unavailable = True
+
+    return title, unavailable
+
+
 def youtube_thumbnail_from_id(vid: str) -> str | None:
     # Prefer maxres if it exists
     candidates = [
@@ -255,7 +302,7 @@ def fetch_video_info(url: str) -> dict:
     Returns dict with keys:
       - title (optional)
       - thumbnail (optional)
-      - source (youtube_oembed / youtube_thumb / twitch_og / unknown)
+      - source (youtube_oembed / youtube_oembed_watch / youtube_page_og / youtube_unavailable / youtube_thumb / twitch_og / unknown)
     """
     info = {"title": None, "thumbnail": None, "source": None}
 
@@ -268,6 +315,24 @@ def fetch_video_info(url: str) -> dict:
         if title:
             info["title"] = title
             info["source"] = "youtube_oembed"
+            return info
+        if vid:
+            watch_url = f"https://www.youtube.com/watch?v={vid}"
+            title = youtube_oembed_title(watch_url)
+            if title:
+                info["title"] = title
+                info["source"] = "youtube_oembed_watch"
+                return info
+        page_url = f"https://www.youtube.com/watch?v={vid}" if vid else url
+        title, unavailable = youtube_page_meta(page_url)
+        if unavailable:
+            info["title"] = None
+            info["thumbnail"] = None
+            info["source"] = "youtube_unavailable"
+            return info
+        if title:
+            info["title"] = title
+            info["source"] = "youtube_page_og"
         return info
 
     if is_twitch(url):
@@ -363,7 +428,14 @@ def main():
             seen.add(url)
             skip = should_skip_old_twitch_vod(row, url)
             url_skip[url] = url_skip.get(url, True) and skip
-            if url not in cache and not url_skip[url]:
+            cached = cache.get(url)
+            needs_youtube_title_retry = (
+                is_youtube(url)
+                and isinstance(cached, dict)
+                and cached.get("source") != "youtube_unavailable"
+                and not has_text(cached.get("title"))
+            )
+            if (url not in cache or needs_youtube_title_retry) and not url_skip[url]:
                 wanted.append(url)
 
     skipped = [u for u, skip in url_skip.items() if skip and u not in cache]

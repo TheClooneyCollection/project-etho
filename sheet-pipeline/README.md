@@ -60,7 +60,7 @@ Quickly report missing video metadata (title/thumbnail) from cache:
 ```
 
 Notes:
-* YouTube uses oEmbed titles and deterministic `i.ytimg.com` thumbnails.
+* YouTube titles use oEmbed first, then page `og:title` fallback; unavailable videos are classified as `youtube_unavailable`; thumbnails use deterministic `i.ytimg.com`.
 * Twitch uses page `og:title` and `og:image` metadata.
 * Twitch placeholder image `https://vod-secure.twitch.tv/_404/404_processing_640x360.png` is treated as missing and saved as `null`.
 
