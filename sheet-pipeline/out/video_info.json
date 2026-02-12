@@ -1,12 +1,12 @@
 {
   "http://www.youtube.com/watch?v=AWCPi39yfbo": {
-    "fetched_at": "2026-02-09T18:46:51Z",
+    "fetched_at": "2026-02-12T15:42:25Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/AWCPi39yfbo/maxresdefault.jpg",
     "title": "Hermitcraft - Flying Guardians and Cauldron Allays!"
   },
   "http://www.youtube.com/watch?v=nuCQs2dax9E": {
-    "fetched_at": "2026-02-09T18:45:29Z",
+    "fetched_at": "2026-02-12T15:42:22Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/nuCQs2dax9E/maxresdefault.jpg",
     "title": "Farming Ghasts with Etho and Grian! Hermitcraft Stream VOD"
@@ -96,55 +96,55 @@
     "title": "Hermitcraft 11! Making a Sugarcane Farm! - cubfan135 on Twitch"
   },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
-    "fetched_at": "2026-02-11T13:06:26Z",
-    "source": "youtube_thumb",
+    "fetched_at": "2026-02-12T15:42:23Z",
+    "source": "youtube_oembed_watch",
     "thumbnail": "https://i.ytimg.com/vi/5UFgKAcFUF0/maxresdefault.jpg",
-    "title": null
+    "title": "🔴 MCC PRACTICE /w TEAM!! /w Etho, Smajor & Jojo! | Minecraft LIVE"
   },
   "https://www.youtube.com/live/BT5FjavyHMM": {
-    "fetched_at": "2026-02-11T13:06:25Z",
+    "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/BT5FjavyHMM/maxresdefault.jpg",
     "title": "FINAL WORLD TOUR! | Hermitcraft Season 10"
   },
   "https://www.youtube.com/live/EvSCBJ6pQD4": {
-    "fetched_at": "2026-02-11T13:06:26Z",
+    "fetched_at": "2026-02-12T15:42:24Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/EvSCBJ6pQD4/maxresdefault.jpg",
     "title": "🔴 HUNGRY HERMITS /w Tango LIVE!! | Minecraft HermitCraft LIVE"
   },
   "https://www.youtube.com/live/H3AapZa7sEw": {
-    "fetched_at": "2026-02-11T13:06:26Z",
+    "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/H3AapZa7sEw/maxresdefault.jpg",
     "title": "I Joined Hermitcraft to Playtest Metro Mayhem!"
   },
   "https://www.youtube.com/watch?v=-4M0LhRDL5c": {
-    "fetched_at": "2026-02-09T18:46:24Z",
+    "fetched_at": "2026-02-12T15:42:24Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/-4M0LhRDL5c/maxresdefault.jpg",
     "title": "Bdubs Wild Life :: Bye Bye!"
   },
   "https://www.youtube.com/watch?v=-EMOGTYysvU": {
-    "fetched_at": "2026-02-09T18:46:27Z",
+    "fetched_at": "2026-02-12T15:42:24Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/-EMOGTYysvU/maxresdefault.jpg",
     "title": "Hungry Hermits is Ready! Etho, Bdubs, and Skizz doing HILARIOUS Full Games!"
   },
   "https://www.youtube.com/watch?v=-bSPhb9zui0": {
-    "fetched_at": "2026-02-09T18:45:09Z",
+    "fetched_at": "2026-02-12T15:42:21Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/-bSPhb9zui0/maxresdefault.jpg",
     "title": "Hermitcraft - Sorters and Shenanigans"
   },
   "https://www.youtube.com/watch?v=-lB4ChSBP04": {
-    "fetched_at": "2026-02-09T18:47:06Z",
+    "fetched_at": "2026-02-12T15:42:25Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/-lB4ChSBP04/maxresdefault.jpg",
     "title": "Hermitcraft - Paper Farm and Huge Hermit Hangout!"
   },
   "https://www.youtube.com/watch?v=-mMIF7-eY0c": {
-    "fetched_at": "2026-02-09T18:45:12Z",
+    "fetched_at": "2026-02-12T15:42:21Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/-mMIF7-eY0c/maxresdefault.jpg",
     "title": "Hermitcraft 11 - Ep. 13: THE HERMIT BUNCH! (Minecraft Let's Play)"
@@ -162,9 +162,9 @@
     "title": "Hermitcraft 11 VOD: Building A Perfect Ghast Farm"
   },
   "https://www.youtube.com/watch?v=01h51m05s": {
-    "fetched_at": "2026-02-09T18:45:56Z",
-    "source": "youtube_thumb",
-    "thumbnail": "https://i.ytimg.com/vi/01h51m05s/hqdefault.jpg",
+    "fetched_at": "2026-02-12T15:34:28Z",
+    "source": "youtube_unavailable",
+    "thumbnail": null,
     "title": null
   },
   "https://www.youtube.com/watch?v=0237C5kpdmA": {
@@ -204,25 +204,25 @@
     "title": "Hermitcraft S10#10: Finishing Touches"
   },
   "https://www.youtube.com/watch?v=1kYFh2nQl7s": {
-    "fetched_at": "2026-02-09T18:45:40Z",
+    "fetched_at": "2026-02-12T15:42:22Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/1kYFh2nQl7s/maxresdefault.jpg",
     "title": "The Hermitcraft Hotseat (ft. everyone)"
   },
   "https://www.youtube.com/watch?v=2SjblaC69BM": {
-    "fetched_at": "2026-02-09T18:46:37Z",
+    "fetched_at": "2026-02-12T15:42:25Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/2SjblaC69BM/maxresdefault.jpg",
     "title": "Hermitcraft - Feline Deliveries and Parrot Murder!"
   },
   "https://www.youtube.com/watch?v=2m8OR4xC-_w": {
-    "fetched_at": "2026-02-09T18:45:58Z",
+    "fetched_at": "2026-02-12T15:42:24Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/2m8OR4xC-_w/maxresdefault.jpg",
     "title": "Hermitcraft Stream - Hey! I Worked Beforehand So I COULD Mess Around!"
   },
   "https://www.youtube.com/watch?v=2sEre5_tE_M": {
-    "fetched_at": "2026-02-09T18:45:35Z",
+    "fetched_at": "2026-02-12T15:42:22Z",
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/2sEre5_tE_M/maxresdefault.jpg",
     "title": "Hermitcraft 11: Episode 2 - LEARNING REDSTONE!"
@@ -942,9 +942,9 @@
     "title": "The Center Piece! | HermitCraft 11 | 08"
   },
   "https://www.youtube.com/watch?v=ORaNKlz5Srg": {
-    "fetched_at": "2026-02-09T18:46:59Z",
-    "source": "youtube_thumb",
-    "thumbnail": "https://i.ytimg.com/vi/ORaNKlz5Srg/hqdefault.jpg",
+    "fetched_at": "2026-02-12T15:36:04Z",
+    "source": "youtube_unavailable",
+    "thumbnail": null,
     "title": null
   },
   "https://www.youtube.com/watch?v=OSrVYSa3YTk": {
@@ -1206,9 +1206,9 @@
     "title": "Past Life #3 - Secret Society Task"
   },
   "https://www.youtube.com/watch?v=YfvAJG_xK9Q": {
-    "fetched_at": "2026-02-09T18:47:00Z",
-    "source": "youtube_thumb",
-    "thumbnail": "https://i.ytimg.com/vi/YfvAJG_xK9Q/hqdefault.jpg",
+    "fetched_at": "2026-02-12T15:36:04Z",
+    "source": "youtube_unavailable",
+    "thumbnail": null,
     "title": null
   },
   "https://www.youtube.com/watch?v=YxHJDFDzjA0": {
