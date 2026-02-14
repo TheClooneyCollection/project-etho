@@ -24,3 +24,4 @@ Create the next number in sequence for new docs.
 - `0003`: Month pagination/navigation
 - `0004`: Social metadata
 - `0005`: Image fallback behavior
+- `0006`: Twitch mobile embed `time` known issue
