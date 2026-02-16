@@ -95,6 +95,12 @@
     "thumbnail": null,
     "title": "Hermitcraft 11! Making a Sugarcane Farm! - cubfan135 on Twitch"
   },
+  "https://www.twitch.tv/videos/2698628518": {
+    "fetched_at": "2026-02-16T13:06:49Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -1463,6 +1469,12 @@
     "thumbnail": "https://i.ytimg.com/vi/eUG6YJGNwdE/maxresdefault.jpg",
     "title": "I Built an ENTIRE CASTLE to Fix My Storage | Hermitcraft S11 - Ep. 6"
   },
+  "https://www.youtube.com/watch?v=eoW-BVtc4LE": {
+    "fetched_at": "2026-02-16T13:06:50Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/eoW-BVtc4LE/maxresdefault.jpg",
+    "title": "IN PROGRESS! Hermitcraft 11 - Episode 10"
+  },
   "https://www.youtube.com/watch?v=f3BrhUwqDzM": {
     "fetched_at": "2026-02-09T18:46:15Z",
     "source": "youtube_oembed",
@@ -1498,6 +1510,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/fnpsX1sU0h0/maxresdefault.jpg",
     "title": "I Started My MEGA Base! - Hermitcraft 11 Episode 9"
+  },
+  "https://www.youtube.com/watch?v=fqjg1y_jVsE": {
+    "fetched_at": "2026-02-16T13:06:50Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/fqjg1y_jVsE/maxresdefault.jpg",
+    "title": "Nether tunnels! Wind charges! Lighting grids! (feat. Cleo, Gem, & more!) — HermitCraft 11: ep 17"
   },
   "https://www.youtube.com/watch?v=frViJbKCiPw": {
     "fetched_at": "2026-02-09T18:46:29Z",

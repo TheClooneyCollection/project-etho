@@ -1,8 +1,65 @@
 {
   "metadata": {
-    "last_updated": "2026-02-12T15:36:04Z"
+    "last_updated": "2026-02-16T13:06:50Z"
   },
   "videos": [
+    {
+      "Added date": "2026-02-16T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "GeminiTay\n",
+      "Date": "2026-02-15T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD⏳",
+      "Notes": "Building the nether hub with hermits (etho muted for the first part)",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h17m11s",
+      "timestamp 1 link": "https://www.twitch.tv/videos/2698628518?t=00h17m11s",
+      "timestamp 1 thumbnail": "",
+      "timestamp 1 title": "",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-02-16T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "JoeHills",
+      "Date": "2026-02-14T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Etho, Joe, Cub and Jev are messing around with wind charge",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h19m51s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=fqjg1y_jVsE&t=00h19m51s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/fqjg1y_jVsE/maxresdefault.jpg",
+      "timestamp 1 title": "Nether tunnels! Wind charges! Lighting grids! (feat. Cleo, Gem, & more!) — HermitCraft 11: ep 17",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-02-16T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "GeminiTay\n",
+      "Date": "2026-02-14T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h23m56s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=eoW-BVtc4LE&t=00h23m56s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/eoW-BVtc4LE/maxresdefault.jpg",
+      "timestamp 1 title": "IN PROGRESS! Hermitcraft 11 - Episode 10",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-02-12T00:00:00",
       "Content type": "Hermitcraft",
