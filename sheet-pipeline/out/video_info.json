@@ -101,6 +101,12 @@
     "thumbnail": null,
     "title": null
   },
+  "https://www.twitch.tv/videos/2699538964": {
+    "fetched_at": "2026-02-17T09:52:23Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermitcraft 11! Nautilus Race Area! - cubfan135 on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -292,6 +298,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/5-7yVNPlY7M/maxresdefault.jpg",
     "title": "HERMITCRAFT WORLD TOUR w/ Friends!"
+  },
+  "https://www.youtube.com/watch?v=53TGIvhlbPk": {
+    "fetched_at": "2026-02-17T09:52:23Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/53TGIvhlbPk/maxresdefault.jpg",
+    "title": "Supervising the Hermitcraft Nether Hub Building! Stream VOD"
   },
   "https://www.youtube.com/watch?v=5u1vg3NqQaw": {
     "fetched_at": "2026-02-09T18:46:05Z",

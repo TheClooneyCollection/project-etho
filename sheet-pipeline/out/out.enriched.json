@@ -1,8 +1,27 @@
 {
   "metadata": {
-    "last_updated": "2026-02-16T20:34:13Z"
+    "last_updated": "2026-02-17T09:52:23Z"
   },
   "videos": [
+    {
+      "Added date": "2026-02-17T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "cubfan135",
+      "Date": "2026-02-16T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD⏳",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "04h24m09s",
+      "timestamp 1 link": "https://www.twitch.tv/videos/2699538964?t=04h24m09s",
+      "timestamp 1 thumbnail": "",
+      "timestamp 1 title": "Hermitcraft 11! Nautilus Race Area! - cubfan135 on Twitch",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-02-16T00:00:00",
       "Content type": "Hermitcraft",
@@ -29,13 +48,13 @@
       "Date": "2026-02-15T00:00:00",
       "Date type": "S",
       "Icon": "",
-      "Media type": "VOD⏳",
+      "Media type": "VOD",
       "Notes": "Building the nether hub with hermits (etho muted before 01h00m)",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
-      "timestamp 1": "00h17m11s",
-      "timestamp 1 link": "https://www.twitch.tv/videos/2698628518?t=00h17m11s",
-      "timestamp 1 thumbnail": "",
-      "timestamp 1 title": "",
+      "timestamp 1": "00h05m49s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=53TGIvhlbPk&t=00h05m49s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/53TGIvhlbPk/maxresdefault.jpg",
+      "timestamp 1 title": "Supervising the Hermitcraft Nether Hub Building! Stream VOD",
       "timestamp 2": "",
       "timestamp 2 link": "",
       "timestamp 2 thumbnail": "",
