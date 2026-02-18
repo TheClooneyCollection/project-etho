@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-mkdir -p out
-docker compose run --rm sheet-pipeline sh -lc \
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PIPELINE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+mkdir -p "$PIPELINE_DIR/../data"
+docker compose -f "$PIPELINE_DIR/compose.yml" run --rm sheet-pipeline sh -lc \
   "python /app/pipeline.py && python /app/video_enrich.py"

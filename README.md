@@ -15,7 +15,7 @@ Over time, this can evolve into a fuller web application, but today the workflow
 ## How It Works
 1. `sheet-pipeline/pipeline.py` exports a public Google Sheet and preserves rich-text links.
 2. `sheet-pipeline/video_enrich.py` fetches metadata (titles/thumbnails) for YouTube and Twitch links.
-3. The pipeline writes `sheet-pipeline/out/out.enriched.json`.
+3. The pipeline writes `data/out.enriched.json`.
 4. `web/` (Eleventy) reads enriched data and renders month-paginated static pages.
 
 ## Web Frontend Features
@@ -53,13 +53,13 @@ docker compose -f compose.yml up -d dev
 ```
 
 The web container reads pipeline output from:
-- host: `sheet-pipeline/out/out.enriched.json`
-- container: `/data/out/out.enriched.json` (via `ENRICHED_JSON_PATH`)
+- host: `data/out.enriched.json`
+- container: `/app/src/_data/out.enriched.json` (via `ENRICHED_JSON_PATH`)
 
 ## Repository Layout
 - `sheet-pipeline/`: Dockerized extraction + enrichment pipeline
 - `sheet-pipeline/scripts/`: helper scripts (`extract`, `enrich`, `all`)
-- `sheet-pipeline/out/`: generated outputs used by the frontend
+- `data/`: generated outputs used by the frontend
 - `web/`: Eleventy frontend
 - `web/src/_includes/`: reusable Nunjucks templates/components
 - `web/src/_data/`: normalized data loaders used by templates

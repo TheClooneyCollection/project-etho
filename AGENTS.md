@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 - `sheet-pipeline/`: data pipeline workspace.
-- `sheet-pipeline/pipeline.py`: exports a public Google Sheet to `out/out.csv` and `out/out.json`.
-- `sheet-pipeline/video_enrich.py`: enriches links with titles/thumbnails and writes `out/out.enriched.json`.
+- `sheet-pipeline/pipeline.py`: exports a public Google Sheet to `data/out.csv` and `data/out.json`.
+- `sheet-pipeline/video_enrich.py`: enriches links with titles/thumbnails and writes `data/out.enriched.json`.
 - `sheet-pipeline/scripts/`: runnable helpers (`extract`, `enrich`, `all`).
-- `sheet-pipeline/out/`: generated artifacts.
+- `data/`: generated artifacts.
 
 ## Build, Test, and Development Commands
 Run commands from `sheet-pipeline/` unless noted.
@@ -17,7 +17,7 @@ Run commands from `sheet-pipeline/` unless noted.
 
 ## Coding Style & Naming Conventions
 - Python: follow PEP 8, 4-space indentation, `snake_case` for functions/variables, `UPPER_SNAKE_CASE` for env-config constants.
-- Keep scripts deterministic and side-effect aware: write outputs only under `/out`.
+- Keep scripts deterministic and side-effect aware: write outputs only under `/out` (mapped to repo `data/`).
 - Prefer small, focused scripts in `sheet-pipeline/scripts/` for operational tasks.
 - Preserve existing JSON field naming in outputs (for frontend compatibility).
 
@@ -25,7 +25,7 @@ Run commands from `sheet-pipeline/` unless noted.
 - No formal test suite exists yet; validate with pipeline runs.
 - Minimum validation before PR:
   - Run `./scripts/all`.
-  - Confirm `sheet-pipeline/out/out.json` and `sheet-pipeline/out/out.enriched.json` are regenerated without errors.
+  - Confirm `data/out.json` and `data/out.enriched.json` are regenerated without errors.
   - Open `index.html` and verify data renders as expected.
 
 ## Commit & Pull Request Guidelines
@@ -40,7 +40,7 @@ Run commands from `sheet-pipeline/` unless noted.
 ## Security & Configuration Tips
 - Keep `SHEET_ID` and column mappings in `sheet-pipeline/.env`.
 - Only use public-sheet data; do not commit secrets or private tokens.
-- Treat `sheet-pipeline/out/` as generated data and review diffs before merging.
+- Treat `data/` as generated data and review diffs before merging.
 
 ## Documentation Workflow
 - After completing a feature, first check whether a relevant feature doc already exists and update it when behavior changes. If no relevant doc exists, ask the user whether they want one created.

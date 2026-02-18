@@ -13,11 +13,11 @@ function resolveEnrichedJsonPath() {
 
   const candidates = [
     // Case 1: Resolve from this file's location in the default repo layout.
-    path.resolve(__dirname, "../../../sheet-pipeline/out/out.enriched.json"),
+    path.resolve(__dirname, "../../../data/out.enriched.json"),
     // Case 2: Resolve when running from `web/` as the current working directory.
-    path.resolve(process.cwd(), "../sheet-pipeline/out/out.enriched.json"),
+    path.resolve(process.cwd(), "../data/out.enriched.json"),
     // Case 3: Resolve when running from repo root as the current working directory.
-    path.resolve(process.cwd(), "sheet-pipeline/out/out.enriched.json")
+    path.resolve(process.cwd(), "data/out.enriched.json")
   ];
 
   return candidates.find((candidate) => fs.existsSync(candidate)) || candidates[0];

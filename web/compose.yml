@@ -9,8 +9,8 @@ services:
       ENRICHED_JSON_PATH: /app/src/_data/out.enriched.json
     volumes:
       - ./:/app
-      - ../sheet-pipeline/out:/data/out:ro
-      - ../sheet-pipeline/out/out.enriched.json:/app/src/_data/out.enriched.json:ro
+      - ../data:/data:ro
+      - ../data/out.enriched.json:/app/src/_data/out.enriched.json:ro
       - node_modules:/app/node_modules
       - _site_dev:/app/_site
     ports:
@@ -34,8 +34,8 @@ services:
       ENRICHED_JSON_PATH: /app/src/_data/out.enriched.json
     volumes:
       - ./:/app
-      - ../sheet-pipeline/out:/data/out:ro
-      - ../sheet-pipeline/out/out.enriched.json:/app/src/_data/out.enriched.json:ro
+      - ../data:/data:ro
+      - ../data/out.enriched.json:/app/src/_data/out.enriched.json:ro
       - node_modules:/app/node_modules
       - _site_prod:/app/_site
     ports:
