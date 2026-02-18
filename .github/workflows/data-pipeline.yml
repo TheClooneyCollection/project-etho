@@ -6,6 +6,12 @@ on:
     paths:
       - "sheet-pipeline/**"
       - ".github/workflows/data-pipeline.yml"
+  pull_request:
+    branches: [ "main" ]
+    types: [opened, synchronize, reopened]
+    paths:
+      - "sheet-pipeline/**"
+      - ".github/workflows/data-pipeline.yml"
   schedule:
     - cron: "0 * * * *"
   workflow_dispatch: {}
@@ -81,6 +87,11 @@ jobs:
           git add data
           if git diff --cached --quiet; then
             echo "No data/ changes"
+            exit 0
+          fi
+
+          if [ "${GITHUB_EVENT_NAME}" != "push" ] || [ "${GITHUB_REF}" != "refs/heads/main" ]; then
+            echo "data/ changed, but this is not a push to main; skipping commit"
             exit 0
           fi
 
