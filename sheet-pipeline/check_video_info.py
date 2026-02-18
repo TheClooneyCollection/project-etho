@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Check out/video_info.json for entries with missing title and/or thumbnail.
+Check data/video_info.json for entries with missing title and/or thumbnail.
 
 Skip rule:
-  - Ignore Twitch URLs when all matching rows in out/out.json are:
+  - Ignore Twitch URLs when all matching rows in data/out.json are:
     - Media type == "VOD⏳"
     - row date older than CUTOFF_MONTHS (default: 2)
 """
@@ -16,7 +16,7 @@ from collections import defaultdict
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 
-OUT_DIR = os.environ.get("OUT_DIR", "out")
+OUT_DIR = os.environ.get("OUT_DIR", "../data")
 IN_JSON = os.environ.get("IN_JSON", "out.json")
 CACHE_JSON = os.environ.get("CACHE_JSON", "video_info.json")
 VIDEO_LINK_FIELDS = [

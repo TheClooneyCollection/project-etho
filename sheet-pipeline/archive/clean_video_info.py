@@ -5,7 +5,7 @@ from pathlib import Path
 
 BAD_THUMB = "https://static-cdn.jtvnw.net/ttv-static-metadata/twitch_logo3.jpg"
 
-path = Path(sys.argv[1] if len(sys.argv) > 1 else "out/video_info.json")
+path = Path(sys.argv[1] if len(sys.argv) > 1 else "../data/video_info.json")
 
 data = json.loads(path.read_text(encoding="utf-8"))
 if not isinstance(data, dict):

@@ -29,7 +29,7 @@ It reads enriched JSON and renders a month-paginated timeline using Eleventy.
 ## Requirements
 
 * Node.js 20+ (or Docker)
-* Generated data from `sheet-pipeline/out/out.enriched.json`
+* Generated data from `data/out.enriched.json`
 
 ---
 
@@ -97,7 +97,7 @@ The app reads `out.enriched.json` through `web/src/_data/enrichedVideos.js`.
 Path resolution order:
 
 1. `ENRICHED_JSON_PATH` (if set)
-2. `../sheet-pipeline/out/out.enriched.json` from repo layout
+2. `../data/out.enriched.json` from repo layout
 3. fallback candidates based on current working directory
 
 If the file is missing or invalid JSON, the site renders with an empty video list.

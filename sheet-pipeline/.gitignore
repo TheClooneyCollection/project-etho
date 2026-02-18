@@ -1,4 +1,1 @@
 __pycache__/
-/out/*
-!/out/video_info.json
-!/out/out.enriched.json

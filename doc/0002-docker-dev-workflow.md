@@ -16,15 +16,15 @@ Both run:
 - command: `npm install && npm run dev|prod`
 
 ## Data Mounts and Env
-Frontend needs `sheet-pipeline/out/out.enriched.json`.
+Frontend needs `data/out.enriched.json`.
 
 Current wiring in `compose.yml`:
 
 - `ENRICHED_JSON_PATH=/app/src/_data/out.enriched.json`
 - bind mount:
-  - `../sheet-pipeline/out/out.enriched.json:/app/src/_data/out.enriched.json:ro`
+  - `../data/out.enriched.json:/app/src/_data/out.enriched.json:ro`
 - additional output directory mount:
-  - `../sheet-pipeline/out:/data/out:ro`
+  - `../data:/data:ro`
 
 This makes enriched JSON available inside container even though source lives outside `web/`.
 

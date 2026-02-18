@@ -36,25 +36,25 @@ jobs:
         run: |
           grep -v '^\s*#' .env | grep -v '^\s*$' >> "$GITHUB_ENV"
 
-      - name: Wire /out to repo out/
+      - name: Wire /out to repo data/
         shell: bash
         run: |
-          mkdir -p out
+          mkdir -p "$GITHUB_WORKSPACE/data"
           rm -rf /out
-          ln -s "$GITHUB_WORKSPACE/sheet-pipeline/out" /out
+          ln -s "$GITHUB_WORKSPACE/data" /out
           ls -la /out
 
       - name: Run sheet pipeline
         run: |
-          mkdir -p out
+          mkdir -p "$GITHUB_WORKSPACE/data"
           python pipeline.py
           python video_enrich.py
 
-      - name: Upload out/ artifact
+      - name: Upload data/ artifact
         uses: actions/upload-artifact@v4
         with:
-          name: sheet-pipeline-out
-          path: sheet-pipeline/out
+          name: sheet-pipeline-data
+          path: data
           if-no-files-found: error
 
   commit-out:
@@ -66,11 +66,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download out/ artifact
+      - name: Download data/ artifact
         uses: actions/download-artifact@v4
         with:
-          name: sheet-pipeline-out
-          path: sheet-pipeline/out
+          name: sheet-pipeline-data
+          path: data
 
       - name: Commit outputs if changed
         shell: bash
@@ -78,9 +78,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add sheet-pipeline/out
+          git add data
           if git diff --cached --quiet; then
-            echo "No out/ changes"
+            echo "No data/ changes"
             exit 0
           fi
 

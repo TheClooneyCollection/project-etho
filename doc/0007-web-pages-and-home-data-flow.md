@@ -40,10 +40,10 @@ Supporting files (not standalone pages):
 Data flow, end to end:
 
 1. `sheet-pipeline/pipeline.py`
-Converts public Google Sheet data into `sheet-pipeline/out/out.json`.
+Converts public Google Sheet data into `data/out.json`.
 
 2. `sheet-pipeline/video_enrich.py`
-Enriches that JSON and writes `sheet-pipeline/out/out.enriched.json`.
+Enriches that JSON and writes `data/out.enriched.json`.
 
 3. `web/src/_data/enrichedVideos.js`
 Reads `out.enriched.json` and normalizes rows into frontend fields.

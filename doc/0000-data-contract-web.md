@@ -4,7 +4,7 @@
 This document defines the normalized data shape consumed by Nunjucks templates in `web/`.
 
 Source of truth:
-- `sheet-pipeline/out/out.enriched.json` (pipeline output)
+- `data/out.enriched.json` (pipeline output)
 
 Normalization layer:
 - `web/src/_data/enrichedVideos.js`

@@ -26,11 +26,11 @@ This pipeline solves that by:
 
 ## What it outputs
 
-* `out/sheet.xlsx` – raw exported spreadsheet
-* `out/out.csv` – flattened CSV (links preserved)
-* `out/out.json` – normalized JSON (dates → ISO-8601 strings)
-* `out/out.enriched.json` – link-enriched JSON with per-link title/thumbnail fields
-* `out/video_info.json` – URL metadata cache used by enrichment
+* `../data/sheet.xlsx` – raw exported spreadsheet
+* `../data/out.csv` – flattened CSV (links preserved)
+* `../data/out.json` – normalized JSON (dates → ISO-8601 strings)
+* `../data/out.enriched.json` – link-enriched JSON with per-link title/thumbnail fields
+* `../data/video_info.json` – URL metadata cache used by enrichment
 
 Hyperlink columns are split into:
 
@@ -83,7 +83,7 @@ No Google Cloud account or OAuth needed.
 ├── pipeline.py
 ├── compose.yml
 ├── .env
-└── out/
+└── ../data/
 ```
 
 ---
@@ -132,7 +132,7 @@ docker compose run --rm sheet-pipeline
 
 `--rm` ensures containers are discarded after each run (no clutter).
 
-Outputs appear in `./out`.
+Outputs appear in `../data`.
 
 ---
 
