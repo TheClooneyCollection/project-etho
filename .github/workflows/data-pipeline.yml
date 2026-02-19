@@ -90,8 +90,12 @@ jobs:
             exit 0
           fi
 
-          if [ "${GITHUB_EVENT_NAME}" != "push" ] || [ "${GITHUB_REF}" != "refs/heads/main" ]; then
-            echo "data/ changed, but this is not a push to main; skipping commit"
+          if [ "${GITHUB_EVENT_NAME}" = "push" ] && [ "${GITHUB_REF}" = "refs/heads/main" ]; then
+            echo "Push to main detected; committing data/"
+          elif [ "${GITHUB_EVENT_NAME}" = "schedule" ]; then
+            echo "Scheduled run detected; committing data/"
+          else
+            echo "data/ changed, but this event is not allowed to commit; skipping commit"
             exit 0
           fi
 
