@@ -107,6 +107,12 @@
     "thumbnail": null,
     "title": "Hermitcraft 11! Nautilus Race Area! - cubfan135 on Twitch"
   },
+  "https://www.twitch.tv/videos/2701306887": {
+    "fetched_at": "2026-02-19T14:02:22Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermitcraft - Wither Skelly Delivery System! - tangotek on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -184,6 +190,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/0237C5kpdmA/maxresdefault.jpg",
     "title": "Wild Life! Ep 2 - AN UNEXPECTED ENEMY!!!"
+  },
+  "https://www.youtube.com/watch?v=05NYmzIVWUU": {
+    "fetched_at": "2026-02-19T14:02:23Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/05NYmzIVWUU/maxresdefault.jpg",
+    "title": "Hermitcraft - Nether Tunnel and Decked Out Design Chatting"
   },
   "https://www.youtube.com/watch?v=0Eeh0JjOpJY": {
     "fetched_at": "2026-02-09T18:47:11Z",
@@ -928,6 +940,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/Nxv795hRDZA/maxresdefault.jpg",
     "title": "Hermitcraft S10#11: Roof, Rockets, & RAGE!"
+  },
+  "https://www.youtube.com/watch?v=NyLw52JUj0Q": {
+    "fetched_at": "2026-02-19T14:02:23Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/NyLw52JUj0Q/maxresdefault.jpg",
+    "title": "Hermitcraft 11 - Ep. 16: MISCHIEF MASTERS!! (Minecraft Let's Play)"
   },
   "https://www.youtube.com/watch?v=NzfuM22DncY": {
     "fetched_at": "2026-02-09T18:46:53Z",
@@ -1684,6 +1702,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/jMmzHBtAqAU/maxresdefault.jpg",
     "title": "MCC Season 4! #PinkParrots!"
+  },
+  "https://www.youtube.com/watch?v=j_LS2qb4kvg": {
+    "fetched_at": "2026-02-19T14:02:22Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/j_LS2qb4kvg/maxresdefault.jpg",
+    "title": "Fire Hazard :: Minecraft Hermitcraft"
   },
   "https://www.youtube.com/watch?v=k47RX9yb2X0": {
     "fetched_at": "2026-02-09T18:46:00Z",
