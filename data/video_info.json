@@ -113,6 +113,24 @@
     "thumbnail": null,
     "title": "Hermitcraft - Wither Skelly Delivery System! - tangotek on Twitch"
   },
+  "https://www.twitch.tv/videos/2701438385?sr=a": {
+    "fetched_at": "2026-02-20T21:26:56Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "GIGGS is going Ape Ship! | !prime - impulsesv on Twitch"
+  },
+  "https://www.twitch.tv/videos/2701439298": {
+    "fetched_at": "2026-02-20T21:26:56Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
+  "https://www.twitch.tv/videos/2701439498": {
+    "fetched_at": "2026-02-20T21:26:56Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -202,6 +220,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/0Eeh0JjOpJY/maxresdefault.jpg",
     "title": "Hermitcraft - Detailing the Factory!"
+  },
+  "https://www.youtube.com/watch?v=0LtJv9a_Kbo": {
+    "fetched_at": "2026-02-20T21:26:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/0LtJv9a_Kbo/maxresdefault.jpg",
+    "title": "Hermitcraft - Wither Skelly Delivery System!"
   },
   "https://www.youtube.com/watch?v=0QcGaqiie7c": {
     "fetched_at": "2026-02-09T18:46:56Z",
@@ -1138,6 +1162,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/USg_IpGNjQU/maxresdefault.jpg",
     "title": "Hermitcraft 11: Episode 5 - GETTING GIFTS!"
+  },
+  "https://www.youtube.com/watch?v=UTU8XTLDhOw%3Ft%3D00h00m00s": {
+    "fetched_at": "2026-02-20T21:26:55Z",
+    "source": "youtube_unavailable",
+    "thumbnail": null,
+    "title": null
   },
   "https://www.youtube.com/watch?v=UX1NIdbjtJ8": {
     "fetched_at": "2026-02-09T18:46:20Z",
