@@ -131,6 +131,18 @@
     "thumbnail": null,
     "title": null
   },
+  "https://www.twitch.tv/videos/2704936414": {
+    "fetched_at": "2026-02-23T13:08:14Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
+  "https://www.twitch.tv/videos/2704977456": {
+    "fetched_at": "2026-02-23T13:08:14Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermitcraft I guess - grian on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
