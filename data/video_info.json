@@ -1151,6 +1151,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Tf0w9iZkU8Q/maxresdefault.jpg",
     "title": "Hermitcraft Stream - B.E.S.T. Team Vibes!"
   },
+  "https://www.youtube.com/watch?v=TxARlL29W-M": {
+    "fetched_at": "2026-02-25T09:56:24Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/TxARlL29W-M/maxresdefault.jpg",
+    "title": "Wardens and Terrain with Grian and Etho! Hermitcraft Stream VOD"
+  },
   "https://www.youtube.com/watch?v=TygMMDTSWy4": {
     "fetched_at": "2026-02-09T18:47:13Z",
     "source": "youtube_oembed",
