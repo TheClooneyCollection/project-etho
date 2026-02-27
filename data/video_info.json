@@ -701,6 +701,12 @@
     "thumbnail": "https://i.ytimg.com/vi/FmzZrSFguMU/maxresdefault.jpg",
     "title": "The Deadliest Podcast! - Hermitcraft Stream"
   },
+  "https://www.youtube.com/watch?v=Fwf7n7vBAC4": {
+    "fetched_at": "2026-02-27T13:02:08Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/Fwf7n7vBAC4/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Episode 11 - THE BASE BEGINS!"
+  },
   "https://www.youtube.com/watch?v=Fxw5Aank-5Y": {
     "fetched_at": "2026-02-09T18:46:13Z",
     "source": "youtube_oembed",
