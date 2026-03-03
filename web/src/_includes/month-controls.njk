@@ -36,7 +36,9 @@
     <summary class="creator-filter__summary">Filter by creator</summary>
     <div class="creator-filter__content">
       <p class="creator-filter__active js-creator-active" hidden></p>
-      <button class="creator-filter__clear js-creator-clear" type="button" hidden>Clear filter</button>
+      <div class="creator-filter__actions">
+        <button class="creator-filter__clear js-creator-clear" type="button" hidden>Clear filter</button>
+      </div>
       <ul class="creator-filter__list">
         {% for creator in creatorIndex %}
           {% set creatorHref = "/" %}
@@ -44,15 +46,19 @@
             {% set creatorHref = "/" ~ creator.months[0] ~ "/" %}
           {% endif %}
           <li>
-            <a
-              class="creator-filter__option js-creator-option"
-              data-creator-key="{{ creator.key }}"
-              data-creator-name="{{ creator.name }}"
-              data-video-count="{{ creator.videoCount }}"
-              data-months="{{ creator.months | join(',') }}"
-              data-base-href="{{ creatorHref }}"
-              href="{{ creatorHref }}"
-            >{{ creator.name }} ({{ creator.videoCount }})</a>
+            <div class="creator-filter__item-row">
+              <p class="creator-filter__option">{{ creator.name }} ({{ creator.videoCount }})</p>
+              <a
+                class="ui-link-button js-creator-option"
+                data-creator-key="{{ creator.key }}"
+                data-creator-name="{{ creator.name }}"
+                data-video-count="{{ creator.videoCount }}"
+                data-months="{{ creator.months | join(',') }}"
+                data-base-href="{{ creatorHref }}"
+                href="{{ creatorHref }}"
+              >By month</a>
+              <a class="ui-link-button creator-filter__view-all" href="/creator/{{ creator.pathKey }}/">View all</a>
+            </div>
           </li>
         {% endfor %}
       </ul>
