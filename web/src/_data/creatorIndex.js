@@ -42,6 +42,14 @@ function pickDisplayName(variants) {
   return topName;
 }
 
+function toPathSlug(value) {
+  return String(value || "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "creator";
+}
+
 const creatorIndex = [...creators.values()]
   .map((creator) => ({
     key: creator.key,
@@ -54,6 +62,20 @@ const creatorIndex = [...creators.values()]
       return b.videoCount - a.videoCount;
     }
     return a.name.localeCompare(b.name);
-  });
+  })
+  .map((creator) => ({
+    ...creator,
+    basePathKey: toPathSlug(creator.name),
+    pathKey: ""
+  }));
+
+const usedPathKeys = new Map();
+for (const creator of creatorIndex) {
+  const base = creator.basePathKey;
+  const nextIndex = (usedPathKeys.get(base) || 0) + 1;
+  usedPathKeys.set(base, nextIndex);
+  creator.pathKey = nextIndex === 1 ? base : `${base}-${nextIndex}`;
+  delete creator.basePathKey;
+}
 
 export default creatorIndex;
