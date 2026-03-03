@@ -64,9 +64,12 @@ If reading/parsing fails, it returns `{ videos: [] }`, resulting in an empty ren
 
 ## Consumer Templates
 - `web/src/index.njk`
+- `web/src/creator.njk`
 - `web/src/_includes/video-card.njk`
 - `web/src/_data/videosByMonth.js` (groups normalized videos by month)
 - `web/src/_data/creatorIndex.js` (creator counts + months)
+- `web/src/_data/videosByCreator.js` (creator pages with full video lists)
+- `web/src/_data/creatorVideoPages.js` (creator pages split into 10-video chunks)
 
 ## Compatibility Notes
 - Preserve pipeline raw field names in `sheet-pipeline` output for compatibility.
