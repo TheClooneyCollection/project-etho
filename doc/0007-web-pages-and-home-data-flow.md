@@ -1,7 +1,7 @@
 # Web Pages and Home Data Flow
 
 ## Purpose
-This doc gives a quick map of what pages exist in `web/`, what the home template does, and where `videosByMonth` comes from.
+This doc gives a quick map of what pages exist in `web/`, what the home template does, and where month/creator page data comes from.
 
 For deeper contract details, see:
 - `doc/0000-data-contract-web.md`
@@ -11,6 +11,7 @@ For deeper contract details, see:
 Current page templates:
 
 - `web/src/index.njk`: main/home page (monthly listing with pagination)
+- `web/src/creator.njk`: creator page (all videos for one creator)
 - `web/src/about.njk`: about page
 
 Supporting files (not standalone pages):
@@ -36,7 +37,7 @@ Supporting files (not standalone pages):
   - top and bottom month pagination include
   - video card grid for `monthPage.videos`
 
-## Where `videosByMonth` Comes From
+## Where `videosByMonth` and `videosByCreator` Come From
 Data flow, end to end:
 
 1. `sheet-pipeline/pipeline.py`
@@ -51,8 +52,22 @@ Reads `out.enriched.json` and normalizes rows into frontend fields.
 4. `web/src/_data/videosByMonth.js`
 Groups normalized videos by `YYYY-MM` from `video.date` and sorts descending (newest first).
 
-5. `web/src/index.njk`
+5. `web/src/_data/creatorIndex.js`
+Builds creator metadata (`key`, `pathKey`, counts, active months).
+
+6. `web/src/_data/videosByCreator.js`
+Builds per-creator full video lists (sorted newest first).
+
+7. `web/src/_data/creatorVideoPages.js`
+Splits creator video lists into 10-item pages and precomputes creator-page routes/navigation.
+
+8. `web/src/index.njk`
 Uses Eleventy pagination (`pagination.data: videosByMonth`) to render the monthly pages.
+
+9. `web/src/creator.njk`
+Uses Eleventy pagination (`pagination.data: creatorVideoPages`) to render creator pages at:
+- `/creator/<pathKey>/` (page 1)
+- `/creator/<pathKey>/<pageNumber>/` (page 2+)
 
 ## When to Use the Other Docs
 - Use `doc/0000-data-contract-web.md` when you need exact field mapping, normalization behavior, or JSON resolution fallback order.
