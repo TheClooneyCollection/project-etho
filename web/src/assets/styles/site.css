@@ -273,7 +273,12 @@ p {
 }
 .creator-filter__option {
   margin: 0;
+  color: var(--fg);
+  text-decoration: none;
   font-size: 0.94rem;
+}
+.creator-filter__option:hover {
+  text-decoration: underline;
 }
 .creator-filter__item-row {
   display: flex;
