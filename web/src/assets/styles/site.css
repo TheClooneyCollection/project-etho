@@ -60,6 +60,9 @@ html[data-theme="dark"] {
 * {
   box-sizing: border-box;
 }
+[hidden] {
+  display: none !important;
+}
 body {
   margin: 0;
   font-family: "Georgia", "Times New Roman", serif;
@@ -215,6 +218,63 @@ p {
 }
 .month-pagination__link:hover {
   text-decoration: underline;
+}
+.creator-filter {
+  margin-top: 0.8rem;
+}
+.creator-filter__details {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.creator-filter__summary {
+  cursor: pointer;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+.creator-filter__content {
+  padding: 0 0.7rem 0.7rem;
+}
+.creator-filter__active {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.creator-filter__clear {
+  font: inherit;
+  border: 1px solid var(--control-border);
+  border-radius: 8px;
+  padding: 0.27rem 0.6rem;
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+}
+.creator-filter__list {
+  list-style: none;
+  margin: 0.65rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+  max-height: 15rem;
+  overflow: auto;
+}
+.creator-filter__option {
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.94rem;
+}
+.creator-filter__option:hover {
+  text-decoration: underline;
+}
+.creator-filter__option.is-active {
+  font-weight: 700;
+  color: var(--accent);
+}
+.creator-filter__empty {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 .video-card {
   display: grid;

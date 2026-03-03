@@ -18,6 +18,18 @@ Month grouping is built in `web/src/_data/videosByMonth.js`.
   - `month`
   - `videos` (array for that month)
 
+Shared month parsing/grouping helpers live in `web/src/_data/videoGrouping.js`.
+
+Creator index data is built in `web/src/_data/creatorIndex.js`.
+
+- Input: normalized `enrichedVideos`.
+- Creator key: lower-cased `video.creatorKey`.
+- Output shape per creator:
+  - `key`
+  - `name`
+  - `videoCount`
+  - `months` (sorted desc `YYYY-MM` keys)
+
 ## Page Generation
 Pagination is configured in `web/src/index.njk`.
 
@@ -38,6 +50,16 @@ Month navigation is DRY via includes.
   - `Latest month` button
   - `Oldest month` button
   - month picker (`input type="month"`) + `Go`
+  - expandable creator list (`<details>`) with `Creator (count)` rows
+
+## Creator Filter Behavior
+Implemented in `web/src/assets/scripts/site.js` (`initCreatorFilter()`).
+
+- Active creator is driven by URL query parameter: `?creator=<creatorKey>`.
+- Cards are filtered client-side using `data-video-creator-key`.
+- If a creator has no videos in the current month route, the page redirects to the nearest available month for that creator.
+- Prev/next month links and month picker are rewritten to creator-scoped months while a creator filter is active.
+- `Clear filter` removes the `creator` query parameter and returns to all creators for the current month route.
 
 ## Month Picker Behavior
 Implemented in `web/src/assets/scripts/site.js` (`initMonthPicker()`).

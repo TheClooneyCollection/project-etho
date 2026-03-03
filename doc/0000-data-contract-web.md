@@ -25,6 +25,7 @@ Each item in `enrichedVideos` is:
   mediaType: string,
   contentType: string,
   creator: string, // trimmed
+  creatorKey: string, // lower-cased creator
   notes: string,
   timestamp1: {
     link: string,
@@ -44,6 +45,7 @@ Raw -> normalized:
 - `Media type` -> `mediaType`
 - `Content type` -> `contentType`
 - `Creator` -> `creator` (trimmed)
+- `Creator` -> `creatorKey` (trimmed + lower-cased)
 - `Notes` -> `notes`
 - `timestamp 1 link` -> `timestamp1.link`
 - `timestamp 1 thumbnail` -> `timestamp1.thumbnail`
@@ -64,6 +66,7 @@ If reading/parsing fails, it returns `{ videos: [] }`, resulting in an empty ren
 - `web/src/index.njk`
 - `web/src/_includes/video-card.njk`
 - `web/src/_data/videosByMonth.js` (groups normalized videos by month)
+- `web/src/_data/creatorIndex.js` (creator counts + months)
 
 ## Compatibility Notes
 - Preserve pipeline raw field names in `sheet-pipeline` output for compatibility.

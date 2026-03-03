@@ -350,6 +350,282 @@
   });
 })();
 
+(function initCreatorFilter() {
+  const container = document.querySelector(".js-creator-filter");
+  if (!container) {
+    return;
+  }
+
+  const currentMonth = String(container.getAttribute("data-current-month") || "").trim();
+  const optionNodes = [...container.querySelectorAll(".js-creator-option[data-creator-key]")];
+  const cards = [...document.querySelectorAll(".video-card[data-video-creator-key]")];
+  const emptyState = container.querySelector(".js-creator-empty");
+  const activeState = container.querySelector(".js-creator-active");
+  const clearButton = container.querySelector(".js-creator-clear");
+  const routeNodes = [...document.querySelectorAll(".month-picker__routes [data-month]")];
+  const prevLinks = [...document.querySelectorAll(".js-month-pagination-prev")];
+  const nextLinks = [...document.querySelectorAll(".js-month-pagination-next")];
+
+  if (!optionNodes.length) {
+    return;
+  }
+
+  const monthToBaseHref = {};
+  routeNodes.forEach((node) => {
+    const month = node.getAttribute("data-month");
+    const baseHref = node.getAttribute("data-base-href") || node.getAttribute("href");
+    if (!month || !baseHref) {
+      return;
+    }
+    monthToBaseHref[month] = baseHref;
+  });
+
+  const creatorsByKey = {};
+  optionNodes.forEach((node) => {
+    const key = String(node.getAttribute("data-creator-key") || "").trim().toLowerCase();
+    if (!key) {
+      return;
+    }
+
+    const months = String(node.getAttribute("data-months") || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean)
+      .sort((a, b) => b.localeCompare(a));
+
+    creatorsByKey[key] = {
+      key,
+      name: String(node.getAttribute("data-creator-name") || "").trim(),
+      videoCount: Number.parseInt(node.getAttribute("data-video-count") || "0", 10) || 0,
+      months
+    };
+  });
+
+  function withCreatorQuery(href, creatorKey) {
+    if (!creatorKey) {
+      return href;
+    }
+    try {
+      const parsed = new URL(href, window.location.origin);
+      parsed.searchParams.set("creator", creatorKey);
+      return `${parsed.pathname}${parsed.search}${parsed.hash}`;
+    } catch (_error) {
+      const separator = href.includes("?") ? "&" : "?";
+      return `${href}${separator}creator=${encodeURIComponent(creatorKey)}`;
+    }
+  }
+
+  function getMonthLabelParts(monthKey) {
+    const year = Number.parseInt(monthKey.slice(0, 4), 10);
+    const month = Number.parseInt(monthKey.slice(5, 7), 10);
+    if (!year || !month) {
+      return null;
+    }
+    return { year, month };
+  }
+
+  function setLocalizedMonthText(node, monthKey) {
+    const parts = getMonthLabelParts(monthKey);
+    if (!parts) {
+      node.textContent = monthKey;
+      return;
+    }
+
+    node.setAttribute("data-year", String(parts.year));
+    node.setAttribute("data-month", String(parts.month));
+
+    if (!("Intl" in window)) {
+      node.textContent = monthKey;
+      return;
+    }
+
+    const parsed = new Date(Date.UTC(parts.year, parts.month - 1, 1));
+    const formatter = new Intl.DateTimeFormat(undefined, {
+      year: "numeric",
+      month: "long"
+    });
+    node.textContent = formatter.format(parsed);
+  }
+
+  function resolveTargetMonth(selectedMonth, availableMonths) {
+    if (!selectedMonth || !availableMonths.length) {
+      return null;
+    }
+    if (availableMonths.includes(selectedMonth)) {
+      return selectedMonth;
+    }
+
+    if (selectedMonth >= availableMonths[0]) {
+      return availableMonths[0];
+    }
+    if (selectedMonth <= availableMonths[availableMonths.length - 1]) {
+      return availableMonths[availableMonths.length - 1];
+    }
+
+    for (const month of availableMonths) {
+      if (month <= selectedMonth) {
+        return month;
+      }
+    }
+
+    return null;
+  }
+
+  function findAdjacentMonths(current, availableMonths) {
+    const newer = availableMonths.filter((month) => month > current).sort();
+    const older = availableMonths.filter((month) => month < current).sort();
+    return {
+      previous: newer.length ? newer[0] : null,
+      next: older.length ? older[older.length - 1] : null
+    };
+  }
+
+  function updateNavLinks(links, targetMonth, creatorKey) {
+    links.forEach((link) => {
+      if (!targetMonth) {
+        link.hidden = true;
+        return;
+      }
+
+      const baseHref = monthToBaseHref[targetMonth] || link.getAttribute("data-base-href");
+      if (!baseHref) {
+        link.hidden = true;
+        return;
+      }
+
+      link.hidden = false;
+      link.setAttribute("href", withCreatorQuery(baseHref, creatorKey));
+      link.setAttribute("data-month", targetMonth);
+
+      const monthNode = link.querySelector(".js-locale-month");
+      if (monthNode) {
+        setLocalizedMonthText(monthNode, targetMonth);
+      }
+    });
+  }
+
+  function updateMonthPickerRoutes(activeCreator) {
+    routeNodes.forEach((node) => {
+      const month = node.getAttribute("data-month");
+      const baseHref = node.getAttribute("data-base-href") || node.getAttribute("href");
+      if (!month || !baseHref) {
+        return;
+      }
+
+      if (!activeCreator) {
+        node.setAttribute("href", baseHref);
+        return;
+      }
+
+      if (activeCreator.months.includes(month)) {
+        node.setAttribute("href", withCreatorQuery(baseHref, activeCreator.key));
+      } else {
+        node.setAttribute("href", "");
+      }
+    });
+  }
+
+  function applyFilter(activeCreator) {
+    let visibleCount = 0;
+
+    cards.forEach((card) => {
+      const creatorKey = String(card.getAttribute("data-video-creator-key") || "").trim().toLowerCase();
+      const matches = !activeCreator || creatorKey === activeCreator.key;
+      card.hidden = !matches;
+      if (matches) {
+        visibleCount += 1;
+      }
+    });
+
+    if (emptyState) {
+      emptyState.hidden = !(activeCreator && visibleCount === 0);
+    }
+
+    if (activeState) {
+      if (activeCreator) {
+        activeState.hidden = false;
+        activeState.textContent = `Showing ${activeCreator.name} (${activeCreator.videoCount})`;
+      } else {
+        activeState.hidden = true;
+        activeState.textContent = "";
+      }
+    }
+
+    if (clearButton) {
+      clearButton.hidden = !activeCreator;
+    }
+
+    optionNodes.forEach((node) => {
+      const creatorKey = String(node.getAttribute("data-creator-key") || "").trim().toLowerCase();
+      node.classList.toggle("is-active", Boolean(activeCreator) && creatorKey === activeCreator.key);
+    });
+
+    updateMonthPickerRoutes(activeCreator);
+
+    if (!activeCreator) {
+      updateNavLinks(prevLinks, null, "");
+      updateNavLinks(nextLinks, null, "");
+
+      prevLinks.forEach((link) => {
+        const baseHref = link.getAttribute("data-base-href");
+        if (!baseHref) {
+          return;
+        }
+        link.hidden = false;
+        link.setAttribute("href", baseHref);
+      });
+      nextLinks.forEach((link) => {
+        const baseHref = link.getAttribute("data-base-href");
+        if (!baseHref) {
+          return;
+        }
+        link.hidden = false;
+        link.setAttribute("href", baseHref);
+      });
+      return;
+    }
+
+    const adjacent = findAdjacentMonths(currentMonth, activeCreator.months);
+    updateNavLinks(prevLinks, adjacent.previous, activeCreator.key);
+    updateNavLinks(nextLinks, adjacent.next, activeCreator.key);
+  }
+
+  optionNodes.forEach((node) => {
+    const creatorKey = String(node.getAttribute("data-creator-key") || "").trim().toLowerCase();
+    if (!creatorKey || !creatorsByKey[creatorKey]) {
+      return;
+    }
+
+    const creator = creatorsByKey[creatorKey];
+    const firstMonth = creator.months[0];
+    const baseHref = (firstMonth && monthToBaseHref[firstMonth]) || node.getAttribute("data-base-href") || "/";
+    node.setAttribute("href", withCreatorQuery(baseHref, creatorKey));
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const activeCreatorKey = String(params.get("creator") || "").trim().toLowerCase();
+  const activeCreator = creatorsByKey[activeCreatorKey] || null;
+
+  if (activeCreator && !activeCreator.months.includes(currentMonth)) {
+    const targetMonth = resolveTargetMonth(currentMonth, activeCreator.months);
+    const targetBaseHref = targetMonth ? monthToBaseHref[targetMonth] : null;
+    if (targetMonth && targetBaseHref) {
+      window.location.replace(withCreatorQuery(targetBaseHref, activeCreator.key));
+      return;
+    }
+  }
+
+  if (clearButton) {
+    clearButton.addEventListener("click", () => {
+      const parsed = new URL(window.location.href);
+      parsed.searchParams.delete("creator");
+      window.location.assign(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+    });
+  }
+
+  applyFilter(activeCreator);
+})();
+
 (function initMonthPicker() {
   const container = document.querySelector(".js-month-picker");
   if (!container) {
