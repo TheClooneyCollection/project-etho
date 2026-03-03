@@ -51,16 +51,16 @@ Month navigation is DRY via includes.
   - `Latest month` button
   - `Oldest month` button
   - month picker (`input type="month"`) + `Go`
-  - expandable creator list (`<details>`) with `Creator (count)` rows
-  - per-creator action buttons: `By month` and `View all`
+  - expandable creator list (`<details>`) with month-scoped `Creator (count)` links
+  - per-creator `View all (total)` action to dedicated creator pages
 
 ## Creator Filter Behavior
 Implemented in `web/src/assets/scripts/site.js` (`initCreatorFilter()`).
 
 - Active creator is driven by URL query parameter: `?creator=<creatorKey>`.
 - Cards are filtered client-side using `data-video-creator-key`.
-- If a creator has no videos in the current month route, the page redirects to the nearest available month for that creator.
-- Prev/next month links and month picker are rewritten to creator-scoped months while a creator filter is active.
+- Creator list is month-specific and shows per-month video counts.
+- Filter applies only to the current month page.
 - `Clear filter` removes the `creator` query parameter and returns to all creators for the current month route.
 
 ## Creator Pages
