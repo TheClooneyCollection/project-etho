@@ -21,7 +21,7 @@ Create the next number in sequence for new docs.
 - `0000`: Data contract for web input
 - `0001`: Video card behavior
 - `0002`: Docker dev workflow
-- `0003`: Month pagination/navigation
+- `0003`: Month pagination/navigation + creator filter behavior
 - `0004`: Social metadata
 - `0005`: Image fallback behavior
 - `0006`: Twitch mobile embed `time` known issue

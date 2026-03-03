@@ -17,11 +17,46 @@
     <button class="month-picker__go js-month-picker-go" type="button">Go</button>
     <div class="month-picker__routes" hidden>
       {% for entry in videosByMonth %}
+        {% set monthHref = "/" %}
+        {% if not loop.first %}
+          {% set monthHref = "/" ~ entry.key ~ "/" %}
+        {% endif %}
         <a
           data-month="{{ entry.key }}"
-          href="{% if loop.first %}/{% else %}/{{ entry.key }}/{% endif %}"
+          data-base-href="{{ monthHref }}"
+          href="{{ monthHref }}"
         ></a>
       {% endfor %}
     </div>
   </div>
+</div>
+
+<div class="creator-filter js-creator-filter" data-current-month="{{ monthPage.key }}">
+  <details class="creator-filter__details">
+    <summary class="creator-filter__summary">Filter by creator</summary>
+    <div class="creator-filter__content">
+      <p class="creator-filter__active js-creator-active" hidden></p>
+      <button class="creator-filter__clear js-creator-clear" type="button" hidden>Clear filter</button>
+      <ul class="creator-filter__list">
+        {% for creator in creatorIndex %}
+          {% set creatorHref = "/" %}
+          {% if creator.months and creator.months.length > 0 and creator.months[0] != latestPage.key %}
+            {% set creatorHref = "/" ~ creator.months[0] ~ "/" %}
+          {% endif %}
+          <li>
+            <a
+              class="creator-filter__option js-creator-option"
+              data-creator-key="{{ creator.key }}"
+              data-creator-name="{{ creator.name }}"
+              data-video-count="{{ creator.videoCount }}"
+              data-months="{{ creator.months | join(',') }}"
+              data-base-href="{{ creatorHref }}"
+              href="{{ creatorHref }}"
+            >{{ creator.name }} ({{ creator.videoCount }})</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </details>
+  <p class="creator-filter__empty js-creator-empty" hidden>No videos for this creator in this month.</p>
 </div>

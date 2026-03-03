@@ -33,11 +33,13 @@ function readEnrichedFile() {
 }
 
 function normalizeVideo(video) {
+  const creatorName = (video["Creator"] || "").trim();
   return {
     date: video["Date"] || "",
     mediaType: video["Media type"] || "",
     contentType: video["Content type"] || "",
-    creator: (video["Creator"] || "").trim(),
+    creator: creatorName,
+    creatorKey: creatorName.toLowerCase(),
     notes: video["Notes"] || "",
     timestamp1: {
       link: video["timestamp 1 link"] || "",
