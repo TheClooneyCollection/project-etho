@@ -29,7 +29,7 @@ Run commands from `sheet-pipeline/` unless noted.
   - Open `index.html` and verify data renders as expected.
 
 ## Commit & Pull Request Guidelines
-- Commit style in history is short, imperative, and scoped (example: `Fix twitch parsing issue`).
+- Commit style in history should follow Conventional Commits (example: `feat(web): add creator filter`).
 - Prefer one logical change per commit.
 - PRs should include:
   - What changed and why.
