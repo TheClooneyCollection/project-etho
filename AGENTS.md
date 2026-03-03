@@ -33,6 +33,7 @@ Run commands from `sheet-pipeline/` unless noted.
 - Prefer one logical change per commit.
 - Commit often in small, atomic commits so each change is independently reviewable and reversible.
 - When user feedback leads to a new iteration, create a dedicated commit for that iteration to preserve decision history.
+- Commit immediately after making changes; do not leave local modifications uncommitted between iterations.
 - PRs should include:
   - What changed and why.
   - Any `.env` or output schema impact.
