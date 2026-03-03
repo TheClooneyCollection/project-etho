@@ -31,6 +31,8 @@ Run commands from `sheet-pipeline/` unless noted.
 ## Commit & Pull Request Guidelines
 - Commit style in history should follow Conventional Commits (example: `feat(web): add creator filter`).
 - Prefer one logical change per commit.
+- Commit often in small, atomic commits so each change is independently reviewable and reversible.
+- When user feedback leads to a new iteration, create a dedicated commit for that iteration to preserve decision history.
 - PRs should include:
   - What changed and why.
   - Any `.env` or output schema impact.
