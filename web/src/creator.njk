@@ -1,0 +1,65 @@
+---
+layout: layout.njk
+title: Project Etho - Creator
+pagination:
+  data: creatorVideoPages
+  size: 1
+  alias: creatorPage
+permalink: "creator/{{ creatorPage.pathKey }}/{% if creatorPage.pageNumber > 1 %}{{ creatorPage.pageNumber }}/{% endif %}index.html"
+eleventyComputed:
+  title: "Project Etho / {{ creatorPage.creatorName }}"
+---
+
+<div class="page-title-row">
+  <h1><a class="page-home-link" href="/">Project Etho</a> / {{ creatorPage.creatorName }}</h1>
+  <div class="page-title-row__meta">
+    <div class="theme-switcher">
+      <label class="theme-switcher__label" for="theme-switcher-select">Theme</label>
+      <select id="theme-switcher-select" class="theme-switcher__select js-theme-select">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+    <a class="page-title-row__about" href="/about/">About</a>
+  </div>
+</div>
+<p class="subtle">Etho's appearances across {{ creatorPage.creatorName }}'s videos</p>
+
+<div class="creator-page__toolbar">
+  <a class="creator-page__back" href="/">Back to timeline</a>
+</div>
+<p class="subtle creator-page__count">
+  {{ creatorPage.totalVideos }} videos total
+  {% if creatorPage.totalPages > 1 %}
+    · page {{ creatorPage.pageNumber }} of {{ creatorPage.totalPages }}
+  {% endif %}
+</p>
+
+{% if creatorPage.totalPages > 1 %}
+  <nav class="creator-pagination" aria-label="Creator pagination">
+    {% if creatorPage.previousHref %}
+      <a class="creator-pagination__link" href="{{ creatorPage.previousHref }}">← Later videos</a>
+    {% endif %}
+    {% if creatorPage.nextHref %}
+      <a class="creator-pagination__link creator-pagination__link--next" href="{{ creatorPage.nextHref }}">Earlier videos →</a>
+    {% endif %}
+  </nav>
+{% endif %}
+
+<section class="video-grid">
+  {% for video in creatorPage.videos %}
+    {% include "video-card.njk" %}
+  {% endfor %}
+</section>
+
+{% if creatorPage.totalPages > 1 %}
+  <nav class="creator-pagination creator-pagination--bottom" aria-label="Creator pagination bottom">
+    {% if creatorPage.previousHref %}
+      <a class="creator-pagination__link" href="{{ creatorPage.previousHref }}">← Later videos</a>
+    {% endif %}
+    {% if creatorPage.nextHref %}
+      <a class="creator-pagination__link creator-pagination__link--next" href="{{ creatorPage.nextHref }}">Earlier videos →</a>
+    {% endif %}
+  </nav>
+{% endif %}
