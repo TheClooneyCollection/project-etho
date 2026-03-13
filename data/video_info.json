@@ -1247,6 +1247,12 @@
     "thumbnail": "https://i.ytimg.com/vi/ULFq3rGIQOw/maxresdefault.jpg",
     "title": "The First Automaton! | HermitCraft 11 | Ep 04"
   },
+  "https://www.youtube.com/watch?v=US1xsMKqGsQ": {
+    "fetched_at": "2026-03-13T14:42:15Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/US1xsMKqGsQ/maxresdefault.jpg",
+    "title": "Getting Distracted! Hermitcraft 11 - Episode 13"
+  },
   "https://www.youtube.com/watch?v=USg_IpGNjQU": {
     "fetched_at": "2026-02-09T18:45:24Z",
     "source": "youtube_oembed",
@@ -2380,6 +2386,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/zGyDUcoeAEM/maxresdefault.jpg",
     "title": "The Bridge that Moss Made :: Minecraft Hermitcraft"
+  },
+  "https://www.youtube.com/watch?v=zp0NMAxV5d8": {
+    "fetched_at": "2026-03-13T14:42:15Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/zp0NMAxV5d8/maxresdefault.jpg",
+    "title": "Hermitcraft S11#7: Pop-Up Conveyor Belts"
   },
   "https://www.youtube.com/watch?v=ztAhgLatox0": {
     "fetched_at": "2026-02-09T18:46:07Z",
