@@ -275,6 +275,12 @@
     "thumbnail": "https://i.ytimg.com/vi/1kYFh2nQl7s/maxresdefault.jpg",
     "title": "The Hermitcraft Hotseat (ft. everyone)"
   },
+  "https://www.youtube.com/watch?v=1zuUnEtLubw": {
+    "fetched_at": "2026-03-16T08:58:51Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/1zuUnEtLubw/maxresdefault.jpg",
+    "title": "I Feel Judged! | HermitCraft 11 | 27"
+  },
   "https://www.youtube.com/watch?v=2SjblaC69BM": {
     "fetched_at": "2026-02-12T15:42:25Z",
     "source": "youtube_oembed",
@@ -604,6 +610,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/Bt7jzDWuMgk/maxresdefault.jpg",
     "title": "Trading Higher Than Ever Before!!! - Minecraft Hermitcraft Season 11 #AD"
+  },
+  "https://www.youtube.com/watch?v=C0WM1HmJrWQ": {
+    "fetched_at": "2026-03-16T08:58:50Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/C0WM1HmJrWQ/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Episode 13 - FIRE!"
   },
   "https://www.youtube.com/watch?v=CA1hbWndFfE": {
     "fetched_at": "2026-02-09T18:46:01Z",
@@ -1696,6 +1708,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/gBeoHjmUq7E/maxresdefault.jpg",
     "title": "Hermitcraft S11#6: Going Warp Speed"
+  },
+  "https://www.youtube.com/watch?v=gBzYd-xggU8": {
+    "fetched_at": "2026-03-16T08:58:50Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/gBzYd-xggU8/maxresdefault.jpg",
+    "title": "Building With Gem And Etho! - Hermitcraft Stream!"
   },
   "https://www.youtube.com/watch?v=gDgozUZwcHQ": {
     "fetched_at": "2026-02-09T18:47:14Z",

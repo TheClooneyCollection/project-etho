@@ -1,8 +1,65 @@
 {
   "metadata": {
-    "last_updated": "2026-03-14T18:40:14Z"
+    "last_updated": "2026-03-16T08:58:51Z"
   },
   "videos": [
+    {
+      "Added date": "2026-03-16T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Skizzleman",
+      "Date": "2026-03-15T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "01h21m26s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=gBzYd-xggU8&t=01h21m26s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/gBzYd-xggU8/maxresdefault.jpg",
+      "timestamp 1 title": "Building With Gem And Etho! - Hermitcraft Stream!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-03-16T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Grian",
+      "Date": "2026-03-15T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Shenanigans (12/03 video)",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h01m25s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=C0WM1HmJrWQ&t=00h01m25s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/C0WM1HmJrWQ/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft 11: Episode 13 - FIRE!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-03-14T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "xBCrafted",
+      "Date": "2026-03-14T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Rating redstone",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h04m34s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=1zuUnEtLubw&t=00h04m34s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/1zuUnEtLubw/maxresdefault.jpg",
+      "timestamp 1 title": "I Feel Judged! | HermitCraft 11 | 27",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-03-13T00:00:00",
       "Content type": "Hermitcraft",
