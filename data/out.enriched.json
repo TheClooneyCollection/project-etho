@@ -1,8 +1,27 @@
 {
   "metadata": {
-    "last_updated": "2026-03-16T08:58:51Z"
+    "last_updated": "2026-03-18T10:58:08Z"
   },
   "videos": [
+    {
+      "Added date": "2026-03-18T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Skizzleman",
+      "Date": "2026-03-17T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "01h39m31s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=S4uT1QJdm8U&t=01h39m31s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/S4uT1QJdm8U/maxresdefault.jpg",
+      "timestamp 1 title": "I Did Stuff Today! - Hermitcraft Stream!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-03-16T00:00:00",
       "Content type": "Hermitcraft",
@@ -11,7 +30,7 @@
       "Date type": "S",
       "Icon": "",
       "Media type": "VOD",
-      "Notes": "",
+      "Notes": "Auction",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
       "timestamp 1": "01h21m26s",
       "timestamp 1 link": "https://www.youtube.com/watch?v=gBzYd-xggU8&t=01h21m26s",

@@ -1193,6 +1193,12 @@
     "thumbnail": "https://i.ytimg.com/vi/RjEGkeAfGNo/maxresdefault.jpg",
     "title": "Modded REPO is so fun! With Grian, Etho, Skizz, Scar and Impulse!"
   },
+  "https://www.youtube.com/watch?v=S4uT1QJdm8U": {
+    "fetched_at": "2026-03-18T10:58:07Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/S4uT1QJdm8U/maxresdefault.jpg",
+    "title": "I Did Stuff Today! - Hermitcraft Stream!"
+  },
   "https://www.youtube.com/watch?v=SSEnEVhcZRs": {
     "fetched_at": "2026-02-09T18:46:09Z",
     "source": "youtube_oembed",
