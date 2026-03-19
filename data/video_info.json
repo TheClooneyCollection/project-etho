@@ -479,6 +479,12 @@
     "thumbnail": "https://i.ytimg.com/vi/8uPcy5vEuN4/maxresdefault.jpg",
     "title": "Hermitcraft - Detailing the Airship!"
   },
+  "https://www.youtube.com/watch?v=91fTWyT9Vxw": {
+    "fetched_at": "2026-03-19T15:55:59Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/91fTWyT9Vxw/maxresdefault.jpg",
+    "title": "Infinite Rockets & Admin Maps [18] Hermitcraft 11"
+  },
   "https://www.youtube.com/watch?v=9L0DVsXin7s": {
     "fetched_at": "2026-02-09T18:46:54Z",
     "source": "youtube_oembed",
