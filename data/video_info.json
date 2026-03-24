@@ -149,6 +149,18 @@
     "thumbnail": null,
     "title": "Hermitcraft I guess - grian on Twitch"
   },
+  "https://www.twitch.tv/videos/2729211234": {
+    "fetched_at": "2026-03-24T09:57:28Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
+  "https://www.twitch.tv/videos/2729843294": {
+    "fetched_at": "2026-03-24T09:57:28Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermitcraft 11! Nautilus Race #5 Live! - cubfan135 on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -1036,6 +1048,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/MnZjNS2NDs4/maxresdefault.jpg",
     "title": "Hermitcraft - Wheatin and Dealin!"
+  },
+  "https://www.youtube.com/watch?v=N4M22e08EZs": {
+    "fetched_at": "2026-03-24T09:57:28Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/N4M22e08EZs/maxresdefault.jpg",
+    "title": "Getting Things \"Sorted\" Out | Hermitcraft 11 Stream"
   },
   "https://www.youtube.com/watch?v=N8kEwxX4hxs": {
     "fetched_at": "2026-02-09T18:46:16Z",
