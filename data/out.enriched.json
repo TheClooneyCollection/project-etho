@@ -1,8 +1,27 @@
 {
   "metadata": {
-    "last_updated": "2026-03-24T09:57:28Z"
+    "last_updated": "2026-03-25T09:55:26Z"
   },
   "videos": [
+    {
+      "Added date": "2026-03-25T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Skizzleman",
+      "Date": "2026-03-23T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "⤵",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h03m30s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=HsGW5lphgfg&t=00h03m30s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/HsGW5lphgfg/maxresdefault.jpg",
+      "timestamp 1 title": "Huge Hangout To Kick Things Off! - Hermitcraft Stream!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-03-24T00:00:00",
       "Content type": "Hermitcraft",
@@ -11,16 +30,16 @@
       "Date type": "S",
       "Icon": "",
       "Media type": "VOD",
-      "Notes": "",
+      "Notes": "Hangout ",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
-      "timestamp 1": "01h06m23s",
-      "timestamp 1 link": "https://www.youtube.com/watch?v=kdzsR8M4JNg&t=01h06m23s",
+      "timestamp 1": "00h50m10s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=kdzsR8M4JNg&t=00h50m10s",
       "timestamp 1 thumbnail": "https://i.ytimg.com/vi/kdzsR8M4JNg/maxresdefault.jpg",
       "timestamp 1 title": "Hermitcraft - We're Back! Huge Server Hangout!",
-      "timestamp 2": "",
-      "timestamp 2 link": "",
-      "timestamp 2 thumbnail": "",
-      "timestamp 2 title": ""
+      "timestamp 2": "01h06m23s",
+      "timestamp 2 link": "https://www.youtube.com/watch?v=kdzsR8M4JNg&t=01h06m23s",
+      "timestamp 2 thumbnail": "https://i.ytimg.com/vi/kdzsR8M4JNg/maxresdefault.jpg",
+      "timestamp 2 title": "Hermitcraft - We're Back! Huge Server Hangout!"
     },
     {
       "Added date": "2026-03-24T00:00:00",

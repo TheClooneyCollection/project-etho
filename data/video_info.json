@@ -863,6 +863,12 @@
     "thumbnail": "https://i.ytimg.com/vi/HpMnMkzYtsU/maxresdefault.jpg",
     "title": "Hermitcraft S11#1: Part Mart, Start!"
   },
+  "https://www.youtube.com/watch?v=HsGW5lphgfg": {
+    "fetched_at": "2026-03-25T09:55:26Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/HsGW5lphgfg/maxresdefault.jpg",
+    "title": "Huge Hangout To Kick Things Off! - Hermitcraft Stream!"
+  },
   "https://www.youtube.com/watch?v=Hu8c4G1hyJA": {
     "fetched_at": "2026-02-09T18:46:21Z",
     "source": "youtube_oembed",
