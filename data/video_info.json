@@ -161,6 +161,12 @@
     "thumbnail": null,
     "title": "Hermitcraft 11! Nautilus Race #5 Live! - cubfan135 on Twitch"
   },
+  "https://www.twitch.tv/videos/2731583512": {
+    "fetched_at": "2026-03-26T13:19:03Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Building Bdubs Grass Fram - Hermitcraft Stream! - goodtimeswithscar on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -292,6 +298,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/1zuUnEtLubw/maxresdefault.jpg",
     "title": "I Feel Judged! | HermitCraft 11 | 27"
+  },
+  "https://www.youtube.com/watch?v=2QDZIW7MJk4": {
+    "fetched_at": "2026-03-26T13:19:03Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/2QDZIW7MJk4/maxresdefault.jpg",
+    "title": "Hermitcraft - ScarStone and Resin Farm!"
   },
   "https://www.youtube.com/watch?v=2SjblaC69BM": {
     "fetched_at": "2026-02-12T15:42:25Z",
@@ -1690,6 +1702,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/eoW-BVtc4LE/maxresdefault.jpg",
     "title": "IN PROGRESS! Hermitcraft 11 - Episode 10"
+  },
+  "https://www.youtube.com/watch?v=f0ZleZXadCA": {
+    "fetched_at": "2026-03-26T13:19:03Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/f0ZleZXadCA/maxresdefault.jpg",
+    "title": "Possibly The Best Hang Yet? - Hermitcraft Stream!"
   },
   "https://www.youtube.com/watch?v=f3BrhUwqDzM": {
     "fetched_at": "2026-02-09T18:46:15Z",
