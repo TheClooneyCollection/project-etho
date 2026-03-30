@@ -713,6 +713,12 @@
     "thumbnail": "https://i.ytimg.com/vi/DEZbmmPFy5o/maxresdefault.jpg",
     "title": "Bdubs Wild Life :: What My Clock Taste Like"
   },
+  "https://www.youtube.com/watch?v=DS5zG8donYY": {
+    "fetched_at": "2026-03-30T20:47:44Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/DS5zG8donYY/maxresdefault.jpg",
+    "title": "Hermitcraft World tour with friends! Preparing for Charity Weekend"
+  },
   "https://www.youtube.com/watch?v=Da1rEgdmlbM": {
     "fetched_at": "2026-02-09T18:46:19Z",
     "source": "youtube_oembed",
@@ -1930,6 +1936,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/iHIEZuqShuI/maxresdefault.jpg",
     "title": "Hermitcraft 11: THE NAUTILUS RACE! (Episode 16)"
+  },
+  "https://www.youtube.com/watch?v=iVfhcqnp44Q": {
+    "fetched_at": "2026-03-30T20:47:44Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/iVfhcqnp44Q/maxresdefault.jpg",
+    "title": "Hermitcraft S11#8: Prospect Hunters - The Plan"
   },
   "https://www.youtube.com/watch?v=id_fPT3zKMY": {
     "fetched_at": "2026-02-09T18:46:48Z",
