@@ -167,6 +167,18 @@
     "thumbnail": null,
     "title": "Building Bdubs Grass Fram - Hermitcraft Stream! - goodtimeswithscar on Twitch"
   },
+  "https://www.twitch.tv/videos/2734964484": {
+    "fetched_at": "2026-03-30T13:23:27Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Touring Hermitcraft with Guests :) - geminitay on Twitch"
+  },
+  "https://www.twitch.tv/videos/2734975205": {
+    "fetched_at": "2026-03-30T13:23:27Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Young Hip Trendy Hot Gamer participates in Hermitcraft Season 11 World tour - smallishbeans on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -1012,6 +1024,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/KOFPV5xFwJA/maxresdefault.jpg",
     "title": "Etho Plays Hytale - #2: Exploring the Mineshaft"
+  },
+  "https://www.youtube.com/watch?v=KtmnDvlK0fY": {
+    "fetched_at": "2026-03-30T13:23:27Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/KtmnDvlK0fY/maxresdefault.jpg",
+    "title": "Hermitcraft World Tour Day!   - Hermitcraft VOD"
   },
   "https://www.youtube.com/watch?v=KudDpq0QqK4": {
     "fetched_at": "2026-02-09T18:45:09Z",
