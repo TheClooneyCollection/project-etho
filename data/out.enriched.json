@@ -1,8 +1,27 @@
 {
   "metadata": {
-    "last_updated": "2026-03-31T02:31:51Z"
+    "last_updated": "2026-03-31T09:02:09Z"
   },
   "videos": [
+    {
+      "Added date": "2026-03-31T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "ZombieCleo\n",
+      "Date": "2026-03-30T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD⏳",
+      "Notes": "Huge nostalgia trip",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h04m42s",
+      "timestamp 1 link": "https://www.twitch.tv/videos/2735788814?t=00h04m42s",
+      "timestamp 1 thumbnail": "",
+      "timestamp 1 title": "ð Hermitcraft Building ð - zombiecleo on Twitch",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-03-30T00:00:00",
       "Content type": "Hermitcraft",
@@ -29,17 +48,17 @@
       "Date": "2026-03-29T00:00:00",
       "Date type": "S",
       "Icon": "",
-      "Media type": "VOD⏳",
+      "Media type": "VOD",
       "Notes": "⤵",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
-      "timestamp 1": "00h10m55s",
-      "timestamp 1 link": "https://www.twitch.tv/videos/2734975205?t=00h10m55s",
-      "timestamp 1 thumbnail": "",
-      "timestamp 1 title": "Young Hip Trendy Hot Gamer participates in Hermitcraft Season 11 World tour - smallishbeans on Twitch",
-      "timestamp 2": "00h46m14s",
-      "timestamp 2 link": "https://www.twitch.tv/videos/2734975205?t=00h46m14s",
-      "timestamp 2 thumbnail": "",
-      "timestamp 2 title": "Young Hip Trendy Hot Gamer participates in Hermitcraft Season 11 World tour - smallishbeans on Twitch"
+      "timestamp 1": "00h07m30s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=NkoV2AaxzIQ&t=00h07m30s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/NkoV2AaxzIQ/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft Season 11 World Tour",
+      "timestamp 2": "00h43m07s",
+      "timestamp 2 link": "https://www.youtube.com/watch?v=NkoV2AaxzIQ&t=00h43m07s",
+      "timestamp 2 thumbnail": "https://i.ytimg.com/vi/NkoV2AaxzIQ/maxresdefault.jpg",
+      "timestamp 2 title": "Hermitcraft Season 11 World Tour"
     },
     {
       "Added date": "2026-03-30T00:00:00",
@@ -48,7 +67,7 @@
       "Date": "2026-03-29T00:00:00",
       "Date type": "S",
       "Icon": "",
-      "Media type": "VOD⏳",
+      "Media type": "VOD",
       "Notes": "⤵",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
       "timestamp 1": "00h09m50s",
