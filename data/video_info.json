@@ -587,6 +587,12 @@
     "thumbnail": "https://i.ytimg.com/vi/AQoHa2WStAs/maxresdefault.jpg",
     "title": "Among Us Is Back And In 3D!!!"
   },
+  "https://www.youtube.com/watch?v=AYKUMzHvVcg": {
+    "fetched_at": "2026-04-04T16:37:48Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/AYKUMzHvVcg/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Nautilus Cup Championship (Ep. 21)"
+  },
   "https://www.youtube.com/watch?v=AhV8mhGPLsM": {
     "fetched_at": "2026-02-09T18:45:48Z",
     "source": "youtube_oembed",
@@ -2038,6 +2044,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/kdzsR8M4JNg/maxresdefault.jpg",
     "title": "Hermitcraft - We're Back! Huge Server Hangout!"
+  },
+  "https://www.youtube.com/watch?v=l7Oj1YAbMIE": {
+    "fetched_at": "2026-04-04T16:37:48Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/l7Oj1YAbMIE/maxresdefault.jpg",
+    "title": "Baby Mob Bingo & Hermitcraft Shenanigans!"
   },
   "https://www.youtube.com/watch?v=lbpN8lZ-oa0": {
     "fetched_at": "2026-02-09T18:46:46Z",
