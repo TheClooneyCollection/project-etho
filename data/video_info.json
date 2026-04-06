@@ -185,6 +185,12 @@
     "thumbnail": null,
     "title": "ð Hermitcraft Building ð - zombiecleo on Twitch"
   },
+  "https://www.twitch.tv/videos/2740793414": {
+    "fetched_at": "2026-04-06T20:38:30Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "ð Hermitcraft - Extending the Nether Tunnels ð - zombiecleo on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -2320,6 +2326,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/rB6k5s5sric/maxresdefault.jpg",
     "title": "Hermitcraft - Spider Science!"
+  },
+  "https://www.youtube.com/watch?v=rWL_MfYoXsw": {
+    "fetched_at": "2026-04-06T20:38:30Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/rWL_MfYoXsw/maxresdefault.jpg",
+    "title": "Extending the Nether Tunnels! Hermitcraft Stream VOD"
   },
   "https://www.youtube.com/watch?v=rfnYo956U1w": {
     "fetched_at": "2026-02-09T18:46:33Z",
