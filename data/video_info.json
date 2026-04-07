@@ -383,6 +383,12 @@
     "thumbnail": "https://i.ytimg.com/vi/3o4y_0R7fIw/maxresdefault.jpg",
     "title": "Skizz's First Official MCC Training!"
   },
+  "https://www.youtube.com/watch?v=3xQfxLd2I5Q": {
+    "fetched_at": "2026-04-07T17:01:10Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/3xQfxLd2I5Q/maxresdefault.jpg",
+    "title": "Hermitcraft - Buy-a-Sign is a Game this Year!"
+  },
   "https://www.youtube.com/watch?v=4G5seww-ATY": {
     "fetched_at": "2026-02-09T18:46:45Z",
     "source": "youtube_oembed",
