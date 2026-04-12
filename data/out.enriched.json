@@ -1,8 +1,46 @@
 {
   "metadata": {
-    "last_updated": "2026-04-07T17:01:10Z"
+    "last_updated": "2026-04-12T16:40:56Z"
   },
   "videos": [
+    {
+      "Added date": "2026-04-12T00:00:00",
+      "Content type": "MCC",
+      "Creator": "SmallishBeans",
+      "Date": "2026-04-12T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "Stream",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "live",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=P2eR-t3-FA0",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/P2eR-t3-FA0/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft Gamers Outreach DAY 2 LIVE!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-04-12T00:00:00",
+      "Content type": "MCC",
+      "Creator": "BdoubleO100\n",
+      "Date": "2026-04-12T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "Stream",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "live",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=QK5HKtCeWDM",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/QK5HKtCeWDM/maxresdefault.jpg",
+      "timestamp 1 title": "Live Hermitcraft Gamers for Giving 2026 Day 2",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-04-07T00:00:00",
       "Content type": "Hermitcraft",

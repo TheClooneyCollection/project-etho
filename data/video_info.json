@@ -1235,6 +1235,12 @@
     "thumbnail": "https://i.ytimg.com/vi/OpO3SrLdmko/maxresdefault.jpg",
     "title": "VHSMP Day 8 (Part 1) - Vaultin', chillin' and ending things off with a CAKE VAULT!"
   },
+  "https://www.youtube.com/watch?v=P2eR-t3-FA0": {
+    "fetched_at": "2026-04-12T16:40:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/P2eR-t3-FA0/maxresdefault.jpg",
+    "title": "Hermitcraft Gamers Outreach DAY 2 LIVE!"
+  },
   "https://www.youtube.com/watch?v=PFTRi98mWZk": {
     "fetched_at": "2026-03-11T13:11:07Z",
     "source": "youtube_oembed",
@@ -1258,6 +1264,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/Q4eEV5bmLmM/maxresdefault.jpg",
     "title": "Hermitcraft - Frogs, Grass, and Play Testing?!"
+  },
+  "https://www.youtube.com/watch?v=QK5HKtCeWDM": {
+    "fetched_at": "2026-04-12T16:40:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/QK5HKtCeWDM/maxresdefault.jpg",
+    "title": "Live Hermitcraft Gamers for Giving 2026 Day 2"
   },
   "https://www.youtube.com/watch?v=QW6SNSrf1E8": {
     "fetched_at": "2026-02-09T18:46:26Z",
