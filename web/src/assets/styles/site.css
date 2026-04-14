@@ -169,6 +169,7 @@ p {
 .month-controls__button,
 .ui-link-button {
   display: inline-block;
+  font: inherit;
   padding: 0.35rem 0.65rem;
   border: 1px solid var(--control-border);
   border-radius: 8px;
@@ -177,9 +178,19 @@ p {
   text-decoration: none;
   font-size: 0.9rem;
 }
+.month-controls__button {
+  cursor: pointer;
+}
 .month-controls__button:hover,
 .ui-link-button:hover {
   text-decoration: underline;
+}
+.month-controls__button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.month-controls__button:disabled:hover {
+  text-decoration: none;
 }
 .month-picker {
   display: flex;

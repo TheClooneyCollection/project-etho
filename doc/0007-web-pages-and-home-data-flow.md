@@ -32,8 +32,8 @@ Supporting files (not standalone pages):
   - page title and subtitle
   - theme selector (`system`, `light`, `dark`)
   - About link (`/about/`)
+  - month controls (`Latest`, `Earliest`, `Random Month`, month picker, creator filter)
   - localized month heading marker (`.js-locale-month`)
-  - month controls include
   - top and bottom month pagination include
   - video card grid for `monthPage.videos`
 
