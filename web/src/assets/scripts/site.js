@@ -431,6 +431,62 @@
   applyFilter(activeCreator);
 })();
 
+(function initRandomMonthPageButton() {
+  const buttons = [...document.querySelectorAll(".js-random-month-page-button")];
+  const routeNodes = [...document.querySelectorAll(".month-picker__routes [data-month][href]")];
+  if (!buttons.length || !routeNodes.length) {
+    return;
+  }
+
+  function normalizePath(value) {
+    const raw = String(value || "").trim();
+    if (!raw) {
+      return "";
+    }
+
+    try {
+      const parsed = new URL(raw, window.location.origin);
+      const pathname = parsed.pathname || "/";
+      if (pathname === "/") {
+        return pathname;
+      }
+      return pathname.endsWith("/") ? pathname : `${pathname}/`;
+    } catch (_error) {
+      return "";
+    }
+  }
+
+  const monthPaths = [...new Set(routeNodes
+    .map((node) => normalizePath(node.getAttribute("href")))
+    .filter(Boolean))];
+
+  const hasChoices = monthPaths.length > 1;
+  buttons.forEach((button) => {
+    button.disabled = !hasChoices;
+  });
+
+  if (!hasChoices) {
+    return;
+  }
+
+  function goToRandomMonth() {
+    const currentPath = normalizePath(window.location.pathname || "/");
+    const options = monthPaths.filter((path) => path !== currentPath);
+    const pool = options.length ? options : monthPaths;
+    const index = Math.floor(Math.random() * pool.length);
+    const target = pool[index];
+    if (!target) {
+      return;
+    }
+
+    window.location.assign(target);
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", goToRandomMonth);
+  });
+})();
+
 (function initMonthPicker() {
   const container = document.querySelector(".js-month-picker");
   if (!container) {
