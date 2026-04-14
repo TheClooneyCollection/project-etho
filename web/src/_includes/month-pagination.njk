@@ -5,6 +5,7 @@
       data-base-href="{{ pagination.href.previous }}"
       data-month="{{ videosByMonth[pagination.pageNumber - 1].key }}"
       href="{{ pagination.href.previous }}"
+      data-umami-event="nav-prev-month"
     >
       ←
       <span
@@ -21,6 +22,7 @@
       data-base-href="{{ pagination.href.next }}"
       data-month="{{ videosByMonth[pagination.pageNumber + 1].key }}"
       href="{{ pagination.href.next }}"
+      data-umami-event="nav-next-month"
     >
       <span
         class="js-locale-month"
