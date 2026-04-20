@@ -221,6 +221,12 @@
     "thumbnail": "https://i.ytimg.com/vi/H3AapZa7sEw/maxresdefault.jpg",
     "title": "I Joined Hermitcraft to Playtest Metro Mayhem!"
   },
+  "https://www.youtube.com/live/oho9G8fgLTw": {
+    "fetched_at": "2026-04-20T10:49:41Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/oho9G8fgLTw/maxresdefault.jpg",
+    "title": "Bdubs Hungry!"
+  },
   "https://www.youtube.com/watch?v=-4M0LhRDL5c": {
     "fetched_at": "2026-02-12T15:42:24Z",
     "source": "youtube_oembed",
