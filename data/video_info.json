@@ -923,6 +923,12 @@
     "thumbnail": "https://i.ytimg.com/vi/HHSdWZgYXqc/maxresdefault.jpg",
     "title": "Hermitcraft - Gem and Etho in Hungry Hermit Chaos!"
   },
+  "https://www.youtube.com/watch?v=HLkD6QgqS2k": {
+    "fetched_at": "2026-04-21T07:53:18Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/HLkD6QgqS2k/maxresdefault.jpg",
+    "title": "Hermitcraft - Charity Event Recap!"
+  },
   "https://www.youtube.com/watch?v=HT00uktFtCo": {
     "fetched_at": "2026-02-09T18:47:03Z",
     "source": "youtube_oembed",
