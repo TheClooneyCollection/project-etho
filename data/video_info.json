@@ -2153,6 +2153,12 @@
     "thumbnail": "https://i.ytimg.com/vi/m8UUDOlyRgs/maxresdefault.jpg",
     "title": "Rose Window! Hermitcraft 11 - Episode 14"
   },
+  "https://www.youtube.com/watch?v=mMRJSXPj1pU": {
+    "fetched_at": "2026-04-24T10:22:34Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/mMRJSXPj1pU/maxresdefault.jpg",
+    "title": "Hermitcraft S11#9: Fog Moss Beach"
+  },
   "https://www.youtube.com/watch?v=mR7CKdSHeng": {
     "fetched_at": "2026-02-09T18:45:58Z",
     "source": "youtube_oembed",
