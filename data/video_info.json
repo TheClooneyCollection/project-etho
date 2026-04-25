@@ -1223,6 +1223,12 @@
     "thumbnail": "https://i.ytimg.com/vi/OISj1OtfxcQ/maxresdefault.jpg",
     "title": "The Center Piece! | HermitCraft 11 | 08"
   },
+  "https://www.youtube.com/watch?v=OJr4FV_dAXo": {
+    "fetched_at": "2026-04-25T08:54:32Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/OJr4FV_dAXo/maxresdefault.jpg",
+    "title": "Hermitcraft 11: My Base Was Missing This… Until Now! | Ep.12"
+  },
   "https://www.youtube.com/watch?v=ORaNKlz5Srg": {
     "fetched_at": "2026-02-12T15:36:04Z",
     "source": "youtube_unavailable",
@@ -1648,6 +1654,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/abjf00BHoAg/maxresdefault.jpg",
     "title": "Blowing Stuff Up With Grian!!  - Hermitcraft Season 11 VOD"
+  },
+  "https://www.youtube.com/watch?v=abrXukkfz20": {
+    "fetched_at": "2026-04-25T08:54:32Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/abrXukkfz20/maxresdefault.jpg",
+    "title": "Double Helix Tower! - Hermitcraft Season 11 Episode 22"
   },
   "https://www.youtube.com/watch?v=bP90Ohb72i4": {
     "fetched_at": "2026-02-09T18:47:01Z",
