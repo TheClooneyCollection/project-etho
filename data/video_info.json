@@ -1157,6 +1157,12 @@
     "thumbnail": "https://i.ytimg.com/vi/N8kEwxX4hxs/maxresdefault.jpg",
     "title": "My First TCG Game! Hermitcraft Stream!"
   },
+  "https://www.youtube.com/watch?v=NEx_oV3Jt2M": {
+    "fetched_at": "2026-04-26T19:49:54Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/NEx_oV3Jt2M/maxresdefault.jpg",
+    "title": "Expanding Upwards! Hermitcraft 11 - Episode 16"
+  },
   "https://www.youtube.com/watch?v=N_KHW93DD6M": {
     "fetched_at": "2026-02-09T18:46:38Z",
     "source": "youtube_oembed",
