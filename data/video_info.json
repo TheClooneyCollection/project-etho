@@ -1289,6 +1289,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Q4eEV5bmLmM/maxresdefault.jpg",
     "title": "Hermitcraft - Frogs, Grass, and Play Testing?!"
   },
+  "https://www.youtube.com/watch?v=Q9wl0SIi-pQ": {
+    "fetched_at": "2026-04-28T09:22:31Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/Q9wl0SIi-pQ/maxresdefault.jpg",
+    "title": "Hermitcraft - Design Chatting with a Banana on my Head."
+  },
   "https://www.youtube.com/watch?v=QK5HKtCeWDM": {
     "fetched_at": "2026-04-12T16:40:56Z",
     "source": "youtube_oembed",
