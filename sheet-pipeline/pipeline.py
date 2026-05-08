@@ -3,6 +3,7 @@ import csv
 import json
 import re
 from datetime import datetime, date
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 import requests
 from openpyxl import load_workbook
@@ -10,6 +11,7 @@ from openpyxl.utils import get_column_letter
 
 SHEET_ID = os.environ.get("SHEET_ID", "")
 OUT_DIR = os.environ.get("OUT_DIR", "/out")
+OVERRIDES_FILE = os.environ.get("OVERRIDES_FILE", "")
 START_ROW = int(os.environ.get("START_ROW", "5"))
 SHEET_NAME = os.environ.get("SHEET_NAME")  # optional; default = active sheet
 
@@ -26,28 +28,37 @@ LINK2_URL_HEADER  = os.environ.get("LINK2_URL_HEADER",  "ts 2 link")
 if not SHEET_ID:
     raise SystemExit("Missing SHEET_ID env var")
 
-os.makedirs(OUT_DIR, exist_ok=True)
 
-xlsx_path = os.path.join(OUT_DIR, "sheet.xlsx")
-csv_path  = os.path.join(OUT_DIR, "out.csv")
-json_path = os.path.join(OUT_DIR, "out.json")
+def load_overrides(out_dir: str, overrides_file: str) -> dict:
+    path = overrides_file or os.path.join(out_dir, "overrides.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("url_replacements", {})
 
-export_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=xlsx"
 
-print("Downloading:", export_url)
-r = requests.get(export_url, timeout=60)
-r.raise_for_status()
+def _url_strip_t(url: str) -> str:
+    try:
+        u = urlparse(url)
+        q = parse_qs(u.query, keep_blank_values=False)
+        q.pop("t", None)
+        query = urlencode([(k, v) for k, vs in q.items() for v in vs])
+        return urlunparse(u._replace(query=query))
+    except Exception:
+        return url
 
-# If not public, you may get HTML back.
-ct = (r.headers.get("content-type") or "").lower()
-if "text/html" in ct and r.content.lstrip().startswith(b"<!"):
-    raise SystemExit("Got HTML (likely not public / needs auth).")
 
-with open(xlsx_path, "wb") as f:
-    f.write(r.content)
+def apply_url_override(url: str, replacements: dict) -> str:
+    if not url or not replacements:
+        return url
+    if url in replacements:
+        return replacements[url]["url"]
+    base = _url_strip_t(url)
+    if base in replacements:
+        return replacements[base]["url"]
+    return url
 
-wb = load_workbook(xlsx_path, data_only=True)
-ws = wb[SHEET_NAME] if SHEET_NAME else wb.active
 
 def cell_link(cell) -> str:
     # Whole-cell hyperlink target (works for typical linked text cells)
@@ -75,6 +86,34 @@ def json_default(o):
         return o.isoformat()
     # Fallback: avoid crashing on weird types
     return str(o)
+
+
+os.makedirs(OUT_DIR, exist_ok=True)
+
+url_replacements = load_overrides(OUT_DIR, OVERRIDES_FILE)
+if url_replacements:
+    print(f"Loaded {len(url_replacements)} URL override(s) from overrides.json")
+
+xlsx_path = os.path.join(OUT_DIR, "sheet.xlsx")
+csv_path  = os.path.join(OUT_DIR, "out.csv")
+json_path = os.path.join(OUT_DIR, "out.json")
+
+export_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=xlsx"
+
+print("Downloading:", export_url)
+r = requests.get(export_url, timeout=60)
+r.raise_for_status()
+
+# If not public, you may get HTML back.
+ct = (r.headers.get("content-type") or "").lower()
+if "text/html" in ct and r.content.lstrip().startswith(b"<!"):
+    raise SystemExit("Got HTML (likely not public / needs auth).")
+
+with open(xlsx_path, "wb") as f:
+    f.write(r.content)
+
+wb = load_workbook(xlsx_path, data_only=True)
+ws = wb[SHEET_NAME] if SHEET_NAME else wb.active
 
 # Determine max used column
 max_col = ws.max_column
@@ -123,9 +162,9 @@ for r_idx in range(START_ROW, ws.max_row + 1):
     u2 = cell_link(c2)
 
     out[LINK1_TEXT_HEADER] = t1
-    out[LINK1_URL_HEADER]  = u1
+    out[LINK1_URL_HEADER]  = apply_url_override(u1, url_replacements)
     out[LINK2_TEXT_HEADER] = t2
-    out[LINK2_URL_HEADER]  = u2
+    out[LINK2_URL_HEADER]  = apply_url_override(u2, url_replacements)
 
     # Skip fully empty rows
     if any(v not in ("", None) for v in out.values()):
