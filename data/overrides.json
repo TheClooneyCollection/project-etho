@@ -1,0 +1,8 @@
+{
+  "url_replacements": {
+    "https://www.twitch.tv/videos/2685519131": {
+      "url": "https://www.youtube.com/watch?v=-JDcPLcVwKM&t=472s",
+      "reason": "Twitch VOD 2685519131 unavailable; replaced with YouTube mirror at matching timestamp"
+    }
+  }
+}
