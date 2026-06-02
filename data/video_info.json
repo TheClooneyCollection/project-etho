@@ -701,6 +701,12 @@
     "thumbnail": "https://i.ytimg.com/vi/BZ6mmUijhCE/maxresdefault.jpg",
     "title": "Wild Life: Episode 2 - EATING WELL!"
   },
+  "https://www.youtube.com/watch?v=BhNrqXsGHQw": {
+    "fetched_at": "2026-06-02T18:39:43Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/BhNrqXsGHQw/maxresdefault.jpg",
+    "title": "Hermitcraft S11#10: Scrappers Street"
+  },
   "https://www.youtube.com/watch?v=BlJDcoDThqM": {
     "fetched_at": "2026-02-09T18:45:14Z",
     "source": "youtube_oembed",
@@ -886,6 +892,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/Fxw5Aank-5Y/maxresdefault.jpg",
     "title": "Etho Plays Minecraft - Episode 591: The Desert Update"
+  },
+  "https://www.youtube.com/watch?v=GCD24dXulWA": {
+    "fetched_at": "2026-06-02T18:39:42Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/GCD24dXulWA/maxresdefault.jpg",
+    "title": "Hermitcraft - Autocrafting ALL the supplies!"
   },
   "https://www.youtube.com/watch?v=GDv0xPoZZiY": {
     "fetched_at": "2026-02-09T18:47:10Z",
@@ -2086,6 +2098,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/id_fPT3zKMY/maxresdefault.jpg",
     "title": "Etho Teaches Scar Redstone Tricks... (Hermitcraft Season 10 Moment)"
+  },
+  "https://www.youtube.com/watch?v=ijegiTj1NQ8": {
+    "fetched_at": "2026-06-02T18:39:42Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/ijegiTj1NQ8/maxresdefault.jpg",
+    "title": "Hanging With The Fellas! - Hermitcraft Stream"
   },
   "https://www.youtube.com/watch?v=jEDhvreqd0s": {
     "fetched_at": "2026-02-09T18:45:43Z",
