@@ -203,6 +203,12 @@
     "thumbnail": null,
     "title": null
   },
+  "https://www.twitch.tv/videos/2791101633": {
+    "fetched_at": "2026-06-08T14:07:09Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "So Many Projects Hermitcraft Stream! - goodtimeswithscar on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -856,6 +862,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/EWXr8-JfspY/maxresdefault.jpg",
     "title": "Talking Life Series With Grian & Etho -   Hermitcraft Stream VOD"
+  },
+  "https://www.youtube.com/watch?v=EjQTyznTttg": {
+    "fetched_at": "2026-06-08T14:07:10Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/EjQTyznTttg/maxresdefault.jpg",
+    "title": "Scar Gets Remixed [26] Hermitcraft 11"
   },
   "https://www.youtube.com/watch?v=EqwF7u697EU&t=02h57m53s": {
     "fetched_at": "2026-02-09T18:47:03Z",
@@ -1655,6 +1667,12 @@
     "thumbnail": "https://i.ytimg.com/vi/_SDX2pQTnZE/maxresdefault.jpg",
     "title": "Hermitcraft - Just Hanging Out with Hermits!"
   },
+  "https://www.youtube.com/watch?v=_TgLEjwjlZo": {
+    "fetched_at": "2026-06-08T14:07:10Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/_TgLEjwjlZo/maxresdefault.jpg",
+    "title": "Caught My First Robber! - HermitCraft S11 Ep17"
+  },
   "https://www.youtube.com/watch?v=_apNI5JrLdE": {
     "fetched_at": "2026-02-09T18:45:21Z",
     "source": "youtube_oembed",
@@ -1882,6 +1900,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/erkP7UbeVqs/maxresdefault.jpg",
     "title": "Can YouTubers Find What's Wrong with these Minecraft Structures?"
+  },
+  "https://www.youtube.com/watch?v=ertLvdv5bqk": {
+    "fetched_at": "2026-06-08T14:07:10Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/ertLvdv5bqk/maxresdefault.jpg",
+    "title": "PURE GENIUS! | HermitCraft 11 | 38"
   },
   "https://www.youtube.com/watch?v=f0ZleZXadCA": {
     "fetched_at": "2026-03-26T13:19:03Z",
@@ -2710,6 +2734,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/z3ns4rbD_a4/maxresdefault.jpg",
     "title": "Wild Life #3 - Slow Speed Chase"
+  },
+  "https://www.youtube.com/watch?v=z7Kdyjzl9c4": {
+    "fetched_at": "2026-06-08T14:07:11Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/z7Kdyjzl9c4/maxresdefault.jpg",
+    "title": "Squishy Explosions! | Hermitcraft 11 | 6/4/26 - Full Livestream"
   },
   "https://www.youtube.com/watch?v=zGyDUcoeAEM": {
     "fetched_at": "2026-02-09T18:45:33Z",
