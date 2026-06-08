@@ -461,6 +461,12 @@
     "thumbnail": "https://i.ytimg.com/vi/59NSMOuGSNc/maxresdefault.jpg",
     "title": "Ahhhh The High Road - Hermitcraft Stream!"
   },
+  "https://www.youtube.com/watch?v=5_HUgYZ1zQw": {
+    "fetched_at": "2026-06-08T17:54:16Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/5_HUgYZ1zQw/maxresdefault.jpg",
+    "title": "Un-hinged Fun With The Hermits - Hermitcraft VOD"
+  },
   "https://www.youtube.com/watch?v=5u1vg3NqQaw": {
     "fetched_at": "2026-02-09T18:46:05Z",
     "source": "youtube_oembed",
