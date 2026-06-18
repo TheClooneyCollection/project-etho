@@ -209,6 +209,12 @@
     "thumbnail": null,
     "title": "So Many Projects Hermitcraft Stream! - goodtimeswithscar on Twitch"
   },
+  "https://www.twitch.tv/videos/2795038785": {
+    "fetched_at": "2026-06-18T09:13:46Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -1379,6 +1385,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Qmz1EoV98QY/maxresdefault.jpg",
     "title": "POST-MCC S4 KICK OFF DISCUSSIONS AND VOD REVIEWS!"
   },
+  "https://www.youtube.com/watch?v=R18APaR7mTQ": {
+    "fetched_at": "2026-06-18T09:13:46Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/R18APaR7mTQ/maxresdefault.jpg",
+    "title": "Redefining Decked Out Tech: Huge Upgrades! - Hermitcraft 11 #17"
+  },
   "https://www.youtube.com/watch?v=R9lkT3COr6Q": {
     "fetched_at": "2026-02-09T18:45:29Z",
     "source": "youtube_oembed",
@@ -1450,6 +1462,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/TRwdVNTWQkk/maxresdefault.jpg",
     "title": "Hermits Try the New Minecraft Weapon!! Stream VOD"
+  },
+  "https://www.youtube.com/watch?v=TXnYcE_ZG-s": {
+    "fetched_at": "2026-06-18T09:13:47Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/TXnYcE_ZG-s/maxresdefault.jpg",
+    "title": "WAR ON KERALIS! | Hermitcraft 11 - Ep 27 | Minecraft Let's Play"
   },
   "https://www.youtube.com/watch?v=Tf0w9iZkU8Q": {
     "fetched_at": "2026-02-09T18:46:26Z",
@@ -1606,6 +1624,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/Xcg2TOke-7A/maxresdefault.jpg",
     "title": "Past Life #3 - Secret Society Task"
+  },
+  "https://www.youtube.com/watch?v=XsKLzKDnTv4": {
+    "fetched_at": "2026-06-18T09:13:46Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/XsKLzKDnTv4/maxresdefault.jpg",
+    "title": "SIlly Goosin!! | Hermitcraft 11 | 6/12/26 - Full Livestream"
   },
   "https://www.youtube.com/watch?v=YfvAJG_xK9Q": {
     "fetched_at": "2026-02-12T15:36:04Z",
@@ -2632,6 +2656,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/uqH6Zwns21s/maxresdefault.jpg",
     "title": "Chicken Jockey WITCHES?!? - Minecraft Hermitcraft Season 10"
+  },
+  "https://www.youtube.com/watch?v=uy0gZP85sBw": {
+    "fetched_at": "2026-06-18T09:13:45Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/uy0gZP85sBw/maxresdefault.jpg",
+    "title": "Etho, Joel & Bdubs Play My Card Game!!! - Minecraft Hermitcraft Season 11"
   },
   "https://www.youtube.com/watch?v=vEDIoklub5Y": {
     "fetched_at": "2026-02-09T18:46:52Z",
