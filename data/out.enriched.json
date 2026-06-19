@@ -1,8 +1,46 @@
 {
   "metadata": {
-    "last_updated": "2026-06-18T09:13:47Z"
+    "last_updated": "2026-06-19T19:59:32Z"
   },
   "videos": [
+    {
+      "Added date": "2026-06-19T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "EthosLab",
+      "Date": "2026-06-19T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Expanding Business",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h00m00s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=uGGayiEZyE4",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/uGGayiEZyE4/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft S11#11: Expanding Business",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-06-19T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "TangoTek",
+      "Date": "2026-06-17T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "01h39m15s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=GCD24dXulWA&t=01h39m15s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/GCD24dXulWA/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft - Autocrafting ALL the supplies!",
+      "timestamp 2": "02h47m45s",
+      "timestamp 2 link": "https://www.youtube.com/watch?v=GCD24dXulWA&t=02h47m45s",
+      "timestamp 2 thumbnail": "https://i.ytimg.com/vi/GCD24dXulWA/maxresdefault.jpg",
+      "timestamp 2 title": "Hermitcraft - Autocrafting ALL the supplies!"
+    },
     {
       "Added date": "2026-06-18T00:00:00",
       "Content type": "Hermitcraft",

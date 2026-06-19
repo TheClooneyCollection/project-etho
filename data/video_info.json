@@ -2639,6 +2639,12 @@
     "thumbnail": "https://i.ytimg.com/vi/u9SQpZPXZMA/maxresdefault.jpg",
     "title": "Helping Tango And More! - Hermitcraft Stream"
   },
+  "https://www.youtube.com/watch?v=uGGayiEZyE4": {
+    "fetched_at": "2026-06-19T19:59:31Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/uGGayiEZyE4/maxresdefault.jpg",
+    "title": "Hermitcraft S11#11: Expanding Business"
+  },
   "https://www.youtube.com/watch?v=uI_yIJ6YQCo": {
     "fetched_at": "2026-02-09T18:46:57Z",
     "source": "youtube_oembed",
