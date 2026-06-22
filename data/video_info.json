@@ -353,6 +353,12 @@
     "thumbnail": "https://i.ytimg.com/vi/1kYFh2nQl7s/maxresdefault.jpg",
     "title": "The Hermitcraft Hotseat (ft. everyone)"
   },
+  "https://www.youtube.com/watch?v=1njD7WiTlmg": {
+    "fetched_at": "2026-06-22T10:38:47Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/1njD7WiTlmg/maxresdefault.jpg",
+    "title": "I Plot My Revenge With Etho!  - Hermitcraft VOD"
+  },
   "https://www.youtube.com/watch?v=1zuUnEtLubw": {
     "fetched_at": "2026-03-16T08:58:51Z",
     "source": "youtube_oembed",
