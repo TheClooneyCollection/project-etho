@@ -1091,6 +1091,12 @@
     "thumbnail": "https://i.ytimg.com/vi/IxYsw0NHklk/maxresdefault.jpg",
     "title": "Base Progress, Iron Farm and Deepslate! - HermitCraft 11 - E06"
   },
+  "https://www.youtube.com/watch?v=JBRGTYQt1D4": {
+    "fetched_at": "2026-06-25T13:19:44Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/JBRGTYQt1D4/maxresdefault.jpg",
+    "title": "Meccha Chameleon With GIGGS & Friends! - Yeah, I'm Getting Good"
+  },
   "https://www.youtube.com/watch?v=JNPE8SQ2W0Q": {
     "fetched_at": "2026-02-09T18:45:57Z",
     "source": "youtube_oembed",
@@ -2386,6 +2392,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/nuCQs2dax9E/maxresdefault.jpg",
     "title": "Farming Ghasts with Etho and Grian! Hermitcraft Stream VOD"
+  },
+  "https://www.youtube.com/watch?v=oDVhuabVjKQ": {
+    "fetched_at": "2026-06-25T13:19:44Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/oDVhuabVjKQ/maxresdefault.jpg",
+    "title": "Nobody Could Find ME! - MECCHA CHAMELEON"
   },
   "https://www.youtube.com/watch?v=oDklktbnwpk": {
     "fetched_at": "2026-02-09T18:46:12Z",
