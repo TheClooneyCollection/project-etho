@@ -2111,6 +2111,12 @@
     "thumbnail": "https://i.ytimg.com/vi/hKmsj0lmijg/maxresdefault.jpg",
     "title": "Bdubs Wild Life :: The Worst Day of My Life"
   },
+  "https://www.youtube.com/watch?v=hTgQi98eWbU": {
+    "fetched_at": "2026-06-28T13:47:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/hTgQi98eWbU/maxresdefault.jpg",
+    "title": "I Can't Believe This Worked! - Meccha Chameleon with GIGGS+"
+  },
   "https://www.youtube.com/watch?v=hVmjT8DdOYE&t=00h51m23s": {
     "fetched_at": "2026-02-09T18:45:13Z",
     "source": "youtube_oembed",
@@ -2314,6 +2320,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/m8UUDOlyRgs/maxresdefault.jpg",
     "title": "Rose Window! Hermitcraft 11 - Episode 14"
+  },
+  "https://www.youtube.com/watch?v=mCiOE-yxALE": {
+    "fetched_at": "2026-06-28T13:47:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/mCiOE-yxALE/maxresdefault.jpg",
+    "title": "Playing the Meccha Chameleon Update!! New Poses!"
   },
   "https://www.youtube.com/watch?v=mMRJSXPj1pU": {
     "fetched_at": "2026-04-24T10:22:34Z",
@@ -2722,6 +2734,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/vEDIoklub5Y/maxresdefault.jpg",
     "title": "Hermitcraft 10 - Snails & Friends Ep. 24"
+  },
+  "https://www.youtube.com/watch?v=vEog23iSFI4": {
+    "fetched_at": "2026-06-28T13:47:56Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/vEog23iSFI4/maxresdefault.jpg",
+    "title": "I'M RIGHT HERE!"
   },
   "https://www.youtube.com/watch?v=vYfrkLvStZc": {
     "fetched_at": "2026-02-09T18:45:36Z",
