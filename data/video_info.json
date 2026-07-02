@@ -2195,6 +2195,12 @@
     "thumbnail": "https://i.ytimg.com/vi/ijegiTj1NQ8/maxresdefault.jpg",
     "title": "Hanging With The Fellas! - Hermitcraft Stream"
   },
+  "https://www.youtube.com/watch?v=j5jhOZvm5Vo": {
+    "fetched_at": "2026-07-02T20:18:27Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/j5jhOZvm5Vo/maxresdefault.jpg",
+    "title": "Etho Plays Minecraft - Episode 598: Chaos Cubed Update"
+  },
   "https://www.youtube.com/watch?v=jEDhvreqd0s": {
     "fetched_at": "2026-02-09T18:45:43Z",
     "source": "youtube_oembed",
