@@ -1181,6 +1181,12 @@
     "thumbnail": "https://i.ytimg.com/vi/LTWaRRHpD3o/maxresdefault.jpg",
     "title": "Hermitcraft - Ghast Lighting the Mountain with 7 Hermits!"
   },
+  "https://www.youtube.com/watch?v=LclCAUfV53s": {
+    "fetched_at": "2026-07-05T20:14:16Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/LclCAUfV53s/maxresdefault.jpg",
+    "title": "How Rocks are Made :: Minecraft Hermitcraft"
+  },
   "https://www.youtube.com/watch?v=M-pbAW2To-Y": {
     "fetched_at": "2026-02-09T18:46:27Z",
     "source": "youtube_oembed",
