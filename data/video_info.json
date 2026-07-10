@@ -1661,6 +1661,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Xcg2TOke-7A/maxresdefault.jpg",
     "title": "Past Life #3 - Secret Society Task"
   },
+  "https://www.youtube.com/watch?v=XgeOQY9Btic": {
+    "fetched_at": "2026-07-10T10:54:53Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/XgeOQY9Btic/maxresdefault.jpg",
+    "title": "Is That Sheep Looking At Me Vs Etho & Beef (Round 1)"
+  },
   "https://www.youtube.com/watch?v=XsKLzKDnTv4": {
     "fetched_at": "2026-06-18T09:13:46Z",
     "source": "youtube_oembed",
@@ -1846,6 +1852,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/bj7PtsLhLW8/maxresdefault.jpg",
     "title": "Among Us? Yes Please!"
+  },
+  "https://www.youtube.com/watch?v=bnsoBDpfQBQ": {
+    "fetched_at": "2026-07-10T10:54:53Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/bnsoBDpfQBQ/maxresdefault.jpg",
+    "title": "ROUND 2 With Etho And Impulse! - HERMITCRAFT S11 - EP32"
   },
   "https://www.youtube.com/watch?v=bpvK5EuaQAc": {
     "fetched_at": "2026-02-09T18:45:20Z",
