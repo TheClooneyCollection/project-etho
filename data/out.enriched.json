@@ -1,8 +1,46 @@
 {
   "metadata": {
-    "last_updated": "2026-07-10T10:54:54Z"
+    "last_updated": "2026-07-11T10:15:25Z"
   },
   "videos": [
+    {
+      "Added date": "2026-07-11T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Mumbo Jumbo",
+      "Date": "2026-07-10T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "Fire",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "01h45m04s",
+      "timestamp 1 link": "https://www.youtube.com/live/rhFQ0_JnO_A?si=1ictDSVH8vgioW2N&t=01h45m04s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/rhFQ0_JnO_A/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft 11: Resource Gathering",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-07-11T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "GeminiTay\n",
+      "Date": "2026-07-10T00:00:00",
+      "Date type": "S",
+      "Icon": "",
+      "Media type": "VOD",
+      "Notes": "Fire; Sheep game",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "01h11m43s",
+      "timestamp 1 link": "https://www.twitch.tv/videos/2816830835?t=01h11m43s",
+      "timestamp 1 thumbnail": "",
+      "timestamp 1 title": "Hermitcraft buildin n hanging out - geminitay on Twitch",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
     {
       "Added date": "2026-07-10T00:00:00",
       "Content type": "Hermitcraft",

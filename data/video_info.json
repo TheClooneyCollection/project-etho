@@ -215,6 +215,12 @@
     "thumbnail": null,
     "title": null
   },
+  "https://www.twitch.tv/videos/2816830835": {
+    "fetched_at": "2026-07-11T10:15:25Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermitcraft buildin n hanging out - geminitay on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -244,6 +250,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/oho9G8fgLTw/maxresdefault.jpg",
     "title": "Bdubs Hungry!"
+  },
+  "https://www.youtube.com/live/rhFQ0_JnO_A": {
+    "fetched_at": "2026-07-11T10:15:24Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/rhFQ0_JnO_A/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Resource Gathering"
   },
   "https://www.youtube.com/watch?v=-4M0LhRDL5c": {
     "fetched_at": "2026-02-12T15:42:24Z",
