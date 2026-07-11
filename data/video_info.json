@@ -611,6 +611,12 @@
     "thumbnail": "https://i.ytimg.com/vi/9L0DVsXin7s/maxresdefault.jpg",
     "title": "Putting Hermits To Work! - Hermitcraft Stream"
   },
+  "https://www.youtube.com/watch?v=9OHD2sT7BnA": {
+    "fetched_at": "2026-07-11T21:50:13Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/9OHD2sT7BnA/maxresdefault.jpg",
+    "title": "E.G.G. Play Zed's Sheep Game! Hermitcraft VOD"
+  },
   "https://www.youtube.com/watch?v=9PxmU3wxi6E": {
     "fetched_at": "2026-02-09T18:47:02Z",
     "source": "youtube_oembed",
@@ -1168,6 +1174,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/KOFPV5xFwJA/maxresdefault.jpg",
     "title": "Etho Plays Hytale - #2: Exploring the Mineshaft"
+  },
+  "https://www.youtube.com/watch?v=KtF4Z4mrGyY": {
+    "fetched_at": "2026-07-11T21:50:13Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/KtF4Z4mrGyY/maxresdefault.jpg",
+    "title": "EGG play Is That Sheep Looking At Me?"
   },
   "https://www.youtube.com/watch?v=KtmnDvlK0fY": {
     "fetched_at": "2026-03-30T13:23:27Z",
