@@ -17,6 +17,12 @@
     "thumbnail": "https://i.ytimg.com/vi/xtlCBa187Bc/maxresdefault.jpg",
     "title": "Nautilus Race League #2 | Hermitcraft Eleven 03/03/26"
   },
+  "http://youtube.com/watch?v=xyOZFxj2gag": {
+    "fetched_at": "2026-07-21T11:09:00Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/xyOZFxj2gag/maxresdefault.jpg",
+    "title": "Hermitcraft S11#12: Parkour + Golf = Parkolf?"
+  },
   "https://www.twitch.tv/ijevin/video/2628106649": {
     "fetched_at": "2026-02-09T19:48:56Z",
     "source": "twitch_og",
@@ -2045,6 +2051,12 @@
     "thumbnail": "https://i.ytimg.com/vi/ertLvdv5bqk/maxresdefault.jpg",
     "title": "PURE GENIUS! | HermitCraft 11 | 38"
   },
+  "https://www.youtube.com/watch?v=esP4aE9UDB8": {
+    "fetched_at": "2026-07-21T11:09:01Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/esP4aE9UDB8/maxresdefault.jpg",
+    "title": "BUILD, PLAY, WIN BABY! - HermitCraft S11 Ep20"
+  },
   "https://www.youtube.com/watch?v=f0ZleZXadCA": {
     "fetched_at": "2026-03-26T13:19:03Z",
     "source": "youtube_oembed",
@@ -2890,6 +2902,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/xnjgFNqL-vY/maxresdefault.jpg",
     "title": "Among Us 3D with Hermits AND R.E.P.O. with Gem! (Etho, Grian, Scar, and more)"
+  },
+  "https://www.youtube.com/watch?v=xtiCzR3KraU": {
+    "fetched_at": "2026-07-21T11:09:01Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/xtiCzR3KraU/maxresdefault.jpg",
+    "title": "A Storage System for Scar!! - Hermitcraft Season 11 Episode 31"
   },
   "https://www.youtube.com/watch?v=xv49GFTIx48": {
     "fetched_at": "2026-02-09T18:46:09Z",
