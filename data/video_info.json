@@ -227,6 +227,12 @@
     "thumbnail": null,
     "title": "Hermitcraft buildin n hanging out - geminitay on Twitch"
   },
+  "https://www.twitch.tv/videos/2827295927": {
+    "fetched_at": "2026-07-27T11:22:42Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -436,6 +442,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/3o4y_0R7fIw/maxresdefault.jpg",
     "title": "Skizz's First Official MCC Training!"
+  },
+  "https://www.youtube.com/watch?v=3x-cScv9oiM": {
+    "fetched_at": "2026-07-27T11:22:42Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/3x-cScv9oiM/maxresdefault.jpg",
+    "title": "NEW GAME! | HermitCraft 11 | 45"
   },
   "https://www.youtube.com/watch?v=3xQfxLd2I5Q": {
     "fetched_at": "2026-04-07T17:01:10Z",
@@ -1102,6 +1114,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/IM-Z6hJb4E4/maxresdefault.jpg",
     "title": "MAKING ETHO RICH! - Hermitcraft 10 - Episode 21"
+  },
+  "https://www.youtube.com/watch?v=IPk09tHA6cM": {
+    "fetched_at": "2026-07-27T11:22:42Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/IPk09tHA6cM/maxresdefault.jpg",
+    "title": "Hermitcraft S11: I Got Pranked...and I LOVE IT 🌈 | Episode 24"
   },
   "https://www.youtube.com/watch?v=IRiiVqq56w8": {
     "fetched_at": "2026-02-09T18:45:23Z",
@@ -2848,6 +2866,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/vEog23iSFI4/maxresdefault.jpg",
     "title": "I'M RIGHT HERE!"
+  },
+  "https://www.youtube.com/watch?v=vIWN_06b_jU": {
+    "fetched_at": "2026-07-27T11:22:43Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/vIWN_06b_jU/maxresdefault.jpg",
+    "title": "Winning With Whimsy! - Hermitcraft 11 | Ep 28"
   },
   "https://www.youtube.com/watch?v=vYfrkLvStZc": {
     "fetched_at": "2026-02-09T18:45:36Z",
