@@ -1007,6 +1007,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Gs7fieDYTZo/maxresdefault.jpg",
     "title": "The Cyber-Skyline Grows! | Hermitcraft 10 | Ep.25"
   },
+  "https://www.youtube.com/watch?v=GvqU8QHRsOA": {
+    "fetched_at": "2026-07-27T07:33:12Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/GvqU8QHRsOA/maxresdefault.jpg",
+    "title": "Moving My ENTIRE Base | Hermitcraft 11: Episode 17"
+  },
   "https://www.youtube.com/watch?v=H7xuOIYO5a8": {
     "fetched_at": "2026-02-09T18:46:53Z",
     "source": "youtube_oembed",
