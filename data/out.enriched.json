@@ -1,27 +1,8 @@
 {
   "metadata": {
-    "last_updated": "2026-08-24T11:28:46Z"
+    "last_updated": "2026-08-24T16:37:45Z"
   },
   "videos": [
-    {
-      "Added date": "2026-08-24T00:00:00",
-      "Content type": "Hermitcraft",
-      "Creator": "xBCrafted",
-      "Date": "2026-08-23T00:00:00",
-      "Date type": "U",
-      "Icon": "",
-      "Media type": "Video",
-      "Notes": "Art gallery",
-      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
-      "timestamp 1": "00h52m11s",
-      "timestamp 1 link": "https://www.youtube.com/watch?v=gPA_Fgm4Mcc&t=00h52m11s",
-      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/gPA_Fgm4Mcc/maxresdefault.jpg",
-      "timestamp 1 title": "The WHOLE Server?! | HermitCraft 11 | 49",
-      "timestamp 2": "",
-      "timestamp 2 link": "",
-      "timestamp 2 thumbnail": "",
-      "timestamp 2 title": ""
-    },
     {
       "Added date": "2026-08-24T00:00:00",
       "Content type": "Hermitcraft",
@@ -63,12 +44,31 @@
     {
       "Added date": "2026-08-24T00:00:00",
       "Content type": "Hermitcraft",
+      "Creator": "Grian",
+      "Date": "2026-08-24T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "⤵",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h10m57s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=aA9SqTG5-GA&t=00h10m57s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/aA9SqTG5-GA/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft 11: Episode 25 - THE 1000 DIAMOND PRANK!",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-08-24T00:00:00",
+      "Content type": "Hermitcraft",
       "Creator": "GeminiTay\n",
       "Date": "2026-08-21T00:00:00",
       "Date type": "U",
       "Icon": "",
       "Media type": "Video",
-      "Notes": "Prank",
+      "Notes": "⤵",
       "Overlap": "▓▓▓▓▓▓▓▓▓▓",
       "timestamp 1": "00h21m53s",
       "timestamp 1 link": "https://www.youtube.com/watch?v=dx8Hq8i7Dxg&t=00h21m53s",
@@ -78,6 +78,25 @@
       "timestamp 2 link": "",
       "timestamp 2 thumbnail": "",
       "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-08-24T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "ZombieCleo\n",
+      "Date": "2026-08-24T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Toilet; Prank",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h01m11s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=uzB65uacTj4&t=00h01m11s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/uzB65uacTj4/maxresdefault.jpg",
+      "timestamp 1 title": "EGGY FARTS - HERMITCRAFT",
+      "timestamp 2": "00h19m27s",
+      "timestamp 2 link": "https://www.youtube.com/watch?v=uzB65uacTj4&t=00h19m27s",
+      "timestamp 2 thumbnail": "https://i.ytimg.com/vi/uzB65uacTj4/maxresdefault.jpg",
+      "timestamp 2 title": "EGGY FARTS - HERMITCRAFT"
     },
     {
       "Added date": "2026-08-24T00:00:00",

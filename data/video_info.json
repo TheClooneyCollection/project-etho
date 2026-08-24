@@ -1931,6 +1931,12 @@
     "thumbnail": "https://i.ytimg.com/vi/a5h1Alay7ok/maxresdefault.jpg",
     "title": "Hermitcraft - Redstone Shop Prep and Deal Making!"
   },
+  "https://www.youtube.com/watch?v=aA9SqTG5-GA": {
+    "fetched_at": "2026-08-24T16:37:45Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/aA9SqTG5-GA/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Episode 25 - THE 1000 DIAMOND PRANK!"
+  },
   "https://www.youtube.com/watch?v=aIxBJr-X9OQ": {
     "fetched_at": "2026-02-09T18:46:18Z",
     "source": "youtube_oembed",
@@ -2992,6 +2998,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/uy0gZP85sBw/maxresdefault.jpg",
     "title": "Etho, Joel & Bdubs Play My Card Game!!! - Minecraft Hermitcraft Season 11"
+  },
+  "https://www.youtube.com/watch?v=uzB65uacTj4": {
+    "fetched_at": "2026-08-24T16:37:45Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/uzB65uacTj4/maxresdefault.jpg",
+    "title": "EGGY FARTS - HERMITCRAFT"
   },
   "https://www.youtube.com/watch?v=vEDIoklub5Y": {
     "fetched_at": "2026-02-09T18:46:52Z",
