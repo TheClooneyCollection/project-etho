@@ -2051,6 +2051,12 @@
     "thumbnail": "https://i.ytimg.com/vi/cmllUtdAJVM/maxresdefault.jpg",
     "title": "Hangin' With Hermits! | HermitCraft 11 | 48"
   },
+  "https://www.youtube.com/watch?v=cozX8bpFWtU": {
+    "fetched_at": "2026-08-24T11:28:46Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/cozX8bpFWtU/maxresdefault.jpg",
+    "title": "1000 Diamond Prank! | Hermitcraft Season 11 | Ep.23"
+  },
   "https://www.youtube.com/watch?v=dKduQECYzm8": {
     "fetched_at": "2026-02-09T18:46:36Z",
     "source": "youtube_oembed",
@@ -2254,6 +2260,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/gLbv7LFEGgI/maxresdefault.jpg",
     "title": "Past Life #1 - History Repeats"
+  },
+  "https://www.youtube.com/watch?v=gPA_Fgm4Mcc": {
+    "fetched_at": "2026-08-24T11:28:46Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/gPA_Fgm4Mcc/maxresdefault.jpg",
+    "title": "The WHOLE Server?! | HermitCraft 11 | 49"
   },
   "https://www.youtube.com/watch?v=gYImt1pAo14": {
     "fetched_at": "2026-02-09T18:46:47Z",
