@@ -2183,6 +2183,12 @@
     "thumbnail": "https://i.ytimg.com/vi/f0ZleZXadCA/maxresdefault.jpg",
     "title": "Possibly The Best Hang Yet? - Hermitcraft Stream!"
   },
+  "https://www.youtube.com/watch?v=f1M4lrjmf3U": {
+    "fetched_at": "2026-08-25T08:41:55Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/f1M4lrjmf3U/maxresdefault.jpg",
+    "title": "A New Mega Build [30] Hermitcraft 11"
+  },
   "https://www.youtube.com/watch?v=f3BrhUwqDzM": {
     "fetched_at": "2026-02-09T18:46:15Z",
     "source": "youtube_oembed",
