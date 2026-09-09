@@ -1637,6 +1637,12 @@
     "thumbnail": "https://i.ytimg.com/vi/SrBOHFqWbwU/maxresdefault.jpg",
     "title": "Donkeys and Happiness! - Wild Life #6"
   },
+  "https://www.youtube.com/watch?v=SuOT4XsuqOs": {
+    "fetched_at": "2026-09-09T08:43:34Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/SuOT4XsuqOs/maxresdefault.jpg",
+    "title": "Hermitcraft S11#14: Details Overload"
+  },
   "https://www.youtube.com/watch?v=SyZCLHkDqmw": {
     "fetched_at": "2026-02-09T18:45:38Z",
     "source": "youtube_oembed",
