@@ -425,6 +425,12 @@
     "thumbnail": "https://i.ytimg.com/vi/2sEre5_tE_M/maxresdefault.jpg",
     "title": "Hermitcraft 11: Episode 2 - LEARNING REDSTONE!"
   },
+  "https://www.youtube.com/watch?v=2tNUWYp7tE0": {
+    "fetched_at": "2026-09-13T14:06:49Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/2tNUWYp7tE0/maxresdefault.jpg",
+    "title": "Team Building!! - Hermitcraft Season 11 Episode 38"
+  },
   "https://www.youtube.com/watch?v=2tZZU2Q3X_k": {
     "fetched_at": "2026-02-09T18:46:34Z",
     "source": "youtube_oembed",
@@ -2716,6 +2722,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/nuCQs2dax9E/maxresdefault.jpg",
     "title": "Farming Ghasts with Etho and Grian! Hermitcraft Stream VOD"
+  },
+  "https://www.youtube.com/watch?v=nvMraSKfm78": {
+    "fetched_at": "2026-09-13T14:06:49Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/nvMraSKfm78/maxresdefault.jpg",
+    "title": "Back of the Base! Hermitcraft 11 - Episode 28"
   },
   "https://www.youtube.com/watch?v=oDVhuabVjKQ": {
     "fetched_at": "2026-06-25T13:19:44Z",
