@@ -1733,6 +1733,12 @@
     "thumbnail": "https://i.ytimg.com/vi/UgfODlP0fnc/maxresdefault.jpg",
     "title": "Tokens from Etho! Bottles for Skizzleman! — HermitCraft 10: ep 29"
   },
+  "https://www.youtube.com/watch?v=UjjRGyre3RY": {
+    "fetched_at": "2026-09-15T13:12:02Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/UjjRGyre3RY/maxresdefault.jpg",
+    "title": "Hermitcraft 11: Episode 27 - DECKED OUT RETURNS!"
+  },
   "https://www.youtube.com/watch?v=V5XV7pNLE1c": {
     "fetched_at": "2026-02-09T18:47:13Z",
     "source": "youtube_oembed",
@@ -1996,6 +2002,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/abrXukkfz20/maxresdefault.jpg",
     "title": "Double Helix Tower! - Hermitcraft Season 11 Episode 22"
+  },
+  "https://www.youtube.com/watch?v=bAy2VLSLm6s": {
+    "fetched_at": "2026-09-15T13:12:02Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/bAy2VLSLm6s/maxresdefault.jpg",
+    "title": "Etho Pays me to Prank Hermits....    -  Hermitcraft 11 VOD"
   },
   "https://www.youtube.com/watch?v=bP90Ohb72i4": {
     "fetched_at": "2026-02-09T18:47:01Z",
