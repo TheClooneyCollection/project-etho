@@ -233,6 +233,12 @@
     "thumbnail": null,
     "title": null
   },
+  "https://www.twitch.tv/videos/2876006097": {
+    "fetched_at": "2026-09-19T16:17:08Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": "Hermycwaft - grian on Twitch"
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -2393,6 +2399,12 @@
     "thumbnail": "https://i.ytimg.com/vi/hKmsj0lmijg/maxresdefault.jpg",
     "title": "Bdubs Wild Life :: The Worst Day of My Life"
   },
+  "https://www.youtube.com/watch?v=hSQ88Fr5G5E": {
+    "fetched_at": "2026-09-19T16:17:08Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/hSQ88Fr5G5E/maxresdefault.jpg",
+    "title": "I Just Spent 10,000 Diamonds! – Hermitcraft 11"
+  },
   "https://www.youtube.com/watch?v=hTgQi98eWbU": {
     "fetched_at": "2026-06-28T13:47:56Z",
     "source": "youtube_oembed",
@@ -3238,6 +3250,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/zGyDUcoeAEM/maxresdefault.jpg",
     "title": "The Bridge that Moss Made :: Minecraft Hermitcraft"
+  },
+  "https://www.youtube.com/watch?v=zfr02szQmU4": {
+    "fetched_at": "2026-09-19T16:17:07Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/zfr02szQmU4/maxresdefault.jpg",
+    "title": "How to NOT Kill a Tango!! - Hermitcraft Season 11 Episode 39"
   },
   "https://www.youtube.com/watch?v=zp0NMAxV5d8": {
     "fetched_at": "2026-03-13T14:42:15Z",
