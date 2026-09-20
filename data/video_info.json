@@ -1403,6 +1403,12 @@
     "thumbnail": "https://i.ytimg.com/vi/NkoV2AaxzIQ/maxresdefault.jpg",
     "title": "Hermitcraft Season 11 World Tour"
   },
+  "https://www.youtube.com/watch?v=NtMj5MBP2WY": {
+    "fetched_at": "2026-09-20T14:33:09Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/NtMj5MBP2WY/maxresdefault.jpg",
+    "title": "Perfection Personified! | HermitCraft 11 | 53"
+  },
   "https://www.youtube.com/watch?v=NwISvj4Tong": {
     "fetched_at": "2026-02-09T18:45:10Z",
     "source": "youtube_oembed",
