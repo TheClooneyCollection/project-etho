@@ -1859,6 +1859,12 @@
     "thumbnail": "https://i.ytimg.com/vi/XyXBXkzQ2Zc/maxresdefault.jpg",
     "title": "Etho And Impulse Are Going DOWN! - HERMITCRAFT S11 - EP30"
   },
+  "https://www.youtube.com/watch?v=Y742U0c1bR0": {
+    "fetched_at": "2026-09-25T13:18:40Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/Y742U0c1bR0/maxresdefault.jpg",
+    "title": "TIME TO KILL TANGO! - HERMITCRAFT"
+  },
   "https://www.youtube.com/watch?v=YEZzOe9kQCg": {
     "fetched_at": "2026-07-17T13:38:31Z",
     "source": "youtube_oembed",
@@ -2470,6 +2476,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/hxOvh5E0QgQ/maxresdefault.jpg",
     "title": "Hermitcraft - Shard Hunting and Pearl Praising"
+  },
+  "https://www.youtube.com/watch?v=i1BsPvtMoGE": {
+    "fetched_at": "2026-09-25T13:18:40Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/i1BsPvtMoGE/maxresdefault.jpg",
+    "title": "How the Hermits Kill a Tango! - Hermitcraft #24"
   },
   "https://www.youtube.com/watch?v=iHIEZuqShuI": {
     "fetched_at": "2026-03-11T13:11:08Z",
