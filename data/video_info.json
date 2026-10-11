@@ -239,6 +239,12 @@
     "thumbnail": null,
     "title": "Hermycwaft - grian on Twitch"
   },
+  "https://www.twitch.tv/videos/2896231884": {
+    "fetched_at": "2026-10-11T18:39:12Z",
+    "source": "twitch_og",
+    "thumbnail": null,
+    "title": null
+  },
   "https://www.youtube.com/live/5UFgKAcFUF0&t=00h17m19s": {
     "fetched_at": "2026-02-12T15:42:23Z",
     "source": "youtube_oembed_watch",
@@ -1876,6 +1882,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/YZ2UpIt2tm0/maxresdefault.jpg",
     "title": "Everyone Wins But Me! - Hermitcraft Stream"
+  },
+  "https://www.youtube.com/watch?v=Y_eQLqTedeE": {
+    "fetched_at": "2026-10-11T18:39:12Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/Y_eQLqTedeE/maxresdefault.jpg",
+    "title": "Hermits Go Golfing! | Hermitcraft Eleven 09/10/26"
   },
   "https://www.youtube.com/watch?v=YfvAJG_xK9Q": {
     "fetched_at": "2026-02-12T15:36:04Z",
