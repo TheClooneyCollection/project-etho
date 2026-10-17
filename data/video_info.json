@@ -1835,6 +1835,12 @@
     "thumbnail": "https://i.ytimg.com/vi/Wj3m15Mzb6c/maxresdefault.jpg",
     "title": "Vibe Check Q&A With Hermits! | HermitCraft 11 | 21"
   },
+  "https://www.youtube.com/watch?v=Wz4ip5fcgrs": {
+    "fetched_at": "2026-10-17T18:13:13Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/Wz4ip5fcgrs/maxresdefault.jpg",
+    "title": "Etho Plays Minecraft - Episode 599: Getting Dapper & Dappled"
+  },
   "https://www.youtube.com/watch?v=X8edTCgjpa0": {
     "fetched_at": "2026-02-09T18:46:42Z",
     "source": "youtube_oembed",
