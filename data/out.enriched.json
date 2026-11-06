@@ -1,10 +1,48 @@
 {
   "metadata": {
-    "last_updated": "2026-10-17T18:13:13Z"
+    "last_updated": "2026-11-06T00:49:25Z"
   },
   "videos": [
     {
-      "Added date": "",
+      "Added date": "2026-11-05T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "EthosLab",
+      "Date": "2026-11-05T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Blotting Out The Sky",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h00m00s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=eMwXEdGyPcw",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/eMwXEdGyPcw/maxresdefault.jpg",
+      "timestamp 1 title": "Hermitcraft S11#15: Blotting Out The Sky",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-11-05T00:00:00",
+      "Content type": "Hermitcraft",
+      "Creator": "Docm77",
+      "Date": "2026-10-16T00:00:00",
+      "Date type": "U",
+      "Icon": "",
+      "Media type": "Video",
+      "Notes": "Etho let’s one rip",
+      "Overlap": "▓▓▓▓▓▓▓▓▓▓",
+      "timestamp 1": "00h56m48s",
+      "timestamp 1 link": "https://www.youtube.com/watch?v=hExst65vycg&t=00h56m48s",
+      "timestamp 1 thumbnail": "https://i.ytimg.com/vi/hExst65vycg/maxresdefault.jpg",
+      "timestamp 1 title": "Whimsical Ice Climbers Grand Opening!! - Hermitcraft Season 11 Episode 43",
+      "timestamp 2": "",
+      "timestamp 2 link": "",
+      "timestamp 2 thumbnail": "",
+      "timestamp 2 title": ""
+    },
+    {
+      "Added date": "2026-10-16T00:00:00",
       "Content type": "Etho Plays",
       "Creator": "EthosLab",
       "Date": "2026-10-15T00:00:00",

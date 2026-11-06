@@ -2207,6 +2207,12 @@
     "thumbnail": "https://i.ytimg.com/vi/eL4pL8CRvG0/hqdefault.jpg",
     "title": "Tuesday MCCI Training With Impulse, Etho and Jojo!"
   },
+  "https://www.youtube.com/watch?v=eMwXEdGyPcw": {
+    "fetched_at": "2026-11-06T00:49:24Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/eMwXEdGyPcw/maxresdefault.jpg",
+    "title": "Hermitcraft S11#15: Blotting Out The Sky"
+  },
   "https://www.youtube.com/watch?v=eNO6KqZXXt8": {
     "fetched_at": "2026-04-20T20:50:00Z",
     "source": "youtube_oembed",
@@ -2410,6 +2416,12 @@
     "source": "youtube_oembed",
     "thumbnail": "https://i.ytimg.com/vi/hA2eKsUwbdY/maxresdefault.jpg",
     "title": "MOON BIG in R.E.P.O.!? (w/ Etho, Grian, Scar, Gem, and Skizz)"
+  },
+  "https://www.youtube.com/watch?v=hExst65vycg": {
+    "fetched_at": "2026-11-06T00:49:25Z",
+    "source": "youtube_oembed",
+    "thumbnail": "https://i.ytimg.com/vi/hExst65vycg/maxresdefault.jpg",
+    "title": "Whimsical Ice Climbers Grand Opening!! - Hermitcraft Season 11 Episode 43"
   },
   "https://www.youtube.com/watch?v=hGoOnaaMxW4": {
     "fetched_at": "2026-02-09T18:46:20Z",
